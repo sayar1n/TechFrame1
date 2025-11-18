@@ -1,10 +1,9 @@
 'use client';
 
 import React, { useEffect, useState, useMemo } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Project } from '@/app/types';
-import { fetchProjects } from '@/app/utils/api';
+import { fetchProjects, deleteProject } from '@/app/utils/api';
 import { useAuth } from '@/app/context/AuthContext';
 import styles from './ProjectsPage.module.scss';
 
@@ -34,6 +33,26 @@ const ProjectsPage = () => {
 
   const handleCreateProjectClick = () => {
     router.push('/projects/new');
+  };
+
+  const handleEditProject = (projectId: number) => {
+    router.push(`/projects/${projectId}/edit`);
+  };
+
+  const handleDeleteProject = async (projectId: number) => {
+    if (!token) {
+      setError('Для удаления проекта необходимо войти в систему.');
+      return;
+    }
+    if (confirm(`Вы уверены, что хотите удалить проект с ID ${projectId}? Это действие необратимо.`)) {
+      try {
+        await deleteProject(token, projectId);
+        setProjects(prevProjects => prevProjects.filter(p => p.id !== projectId));
+        alert('Проект успешно удален.');
+      } catch (err: any) {
+        setError(err.message || 'Не удалось удалить проект.');
+      }
+    }
   };
 
   const filteredAndSortedProjects = useMemo(() => {
@@ -107,20 +126,29 @@ const ProjectsPage = () => {
               <th>Описание</th>
               <th>Владелец</th>
               <th>Дата создания</th>
+              <th>Действия</th>
             </tr>
           </thead>
           <tbody>
             {filteredAndSortedProjects.map((project) => (
               <tr key={project.id} className={styles.projectRow}>
                 <td>
-                  <Link href={`/projects/${project.id}`}>{project.id}</Link>
+                  {project.id}
                 </td>
                 <td>
-                  <Link href={`/projects/${project.id}`}>{project.title}</Link>
+                  {project.title}
                 </td>
                 <td>{project.description || 'Нет описания'}</td>
                 <td>{project.owner_id}</td>
                 <td>{new Date(project.created_at).toLocaleDateString()}</td>
+                <td>
+                  {(user?.role === 'manager' || user?.id === project.owner_id) && (
+                    <>
+                      <button onClick={() => handleEditProject(project.id)} className={styles.editButton}>Редактировать</button>
+                      <button onClick={() => handleDeleteProject(project.id)} className={styles.deleteButton}>Удалить</button>
+                    </>
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>

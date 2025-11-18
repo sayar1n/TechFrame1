@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { UserCreate, UserLogin, User, Token, Project, ProjectCreate, Defect, DefectCreate, Comment, CommentCreate } from '@/app/types';
+import { UserCreate, UserLogin, User, Token, Project, ProjectCreate, Defect, DefectCreate, Comment, CommentCreate, Attachment } from '@/app/types';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000';
 
@@ -75,6 +75,15 @@ export const fetchProjectById = async (token: string, projectId: number): Promis
   return response.data;
 };
 
+export const fetchDefectById = async (token: string, defectId: number): Promise<Defect> => {
+  const response = await apiClient.get(`/defects/${defectId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
 export const fetchProjects = async (token: string): Promise<Project[]> => {
   const response = await apiClient.get('/projects/', {
     headers: {
@@ -135,6 +144,36 @@ export const createComment = async (token: string, defectId: number, commentData
     },
   });
   return response.data;
+};
+
+export const fetchAttachmentsForDefect = async (token: string, defectId: number): Promise<Attachment[]> => {
+  const response = await apiClient.get(`/defects/${defectId}/attachments/`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const uploadAttachment = async (token: string, defectId: number, file: File): Promise<Attachment> => {
+  const formData = new FormData();
+  formData.append('file', file);
+
+  const response = await apiClient.post(`/defects/${defectId}/attachments/`, formData, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'multipart/form-data',
+    },
+  });
+  return response.data;
+};
+
+export const deleteAttachment = async (token: string, defectId: number, attachmentId: number): Promise<void> => {
+  await apiClient.delete(`/defects/${defectId}/attachments/${attachmentId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
 };
 
 export const fetchUsers = async (token: string): Promise<User[]> => {

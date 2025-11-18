@@ -967,3 +967,190 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-11-18 12:26:41,666 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0617s
 2025-11-18 12:27:30,511 - backend.main - INFO - Request: OPTIONS http://localhost:8000/register/ - Status: 200 - Time: 0.0010s
 2025-11-18 12:27:30,772 - backend.main - INFO - Request: POST http://localhost:8000/register/ - Status: 200 - Time: 0.2592s
+2025-11-18 12:36:33,096 - backend.main - INFO - Request: OPTIONS http://localhost:8000/register/ - Status: 200 - Time: 0.0010s
+2025-11-18 12:36:33,404 - backend.main - INFO - Request: POST http://localhost:8000/register/ - Status: 200 - Time: 0.3055s
+2025-11-18 12:36:39,666 - backend.main - INFO - User 123 logged in successfully.
+2025-11-18 12:36:39,666 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2333s
+2025-11-18 12:36:39,671 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:36:39,672 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:38:07,807 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0010s
+2025-11-18 12:38:07,810 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:07,811 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0020s
+2025-11-18 12:38:12,716 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:12,718 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-18 12:38:17,832 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:17,834 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0060s
+2025-11-18 12:38:17,872 - backend.main - INFO - Request: OPTIONS http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0010s
+2025-11-18 12:38:17,878 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 403 - Time: 0.0040s
+2025-11-18 12:38:20,121 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:20,122 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:38:20,151 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 403 - Time: 0.0020s
+2025-11-18 12:38:23,686 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:23,688 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0060s
+2025-11-18 12:38:31,954 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:31,955 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:38:34,778 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:34,779 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0031s
+2025-11-18 12:38:34,802 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0050s
+2025-11-18 12:38:37,856 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:37,857 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:38:54,812 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:38:54,813 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0120s
+2025-11-18 12:38:55,003 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0031s
+2025-11-18 12:39:06,865 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0000s
+2025-11-18 12:39:06,866 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0010s
+2025-11-18 12:39:06,872 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:06,874 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:06,878 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:06,879 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0040s
+2025-11-18 12:39:15,786 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0020s
+2025-11-18 12:39:15,805 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0000s
+2025-11-18 12:39:15,831 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:15,838 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0220s
+2025-11-18 12:39:15,866 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:15,867 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:17,339 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:17,340 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0050s
+2025-11-18 12:39:17,345 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:17,347 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0050s
+2025-11-18 12:39:22,635 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/1/projects/ - Status: 200 - Time: 0.0000s
+2025-11-18 12:39:22,652 - backend.main - INFO - User 123 created project 2222 (ID: 1).
+2025-11-18 12:39:22,656 - backend.main - INFO - Request: POST http://localhost:8000/users/1/projects/ - Status: 200 - Time: 0.0191s
+2025-11-18 12:39:22,721 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:22,723 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0060s
+2025-11-18 12:39:22,731 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:22,733 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:24,390 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:24,392 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0050s
+2025-11-18 12:39:24,398 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:24,399 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0050s
+2025-11-18 12:39:25,743 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:25,746 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0150s
+2025-11-18 12:39:25,753 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:25,756 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:25,960 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0050s
+2025-11-18 12:39:25,967 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0040s
+2025-11-18 12:39:36,209 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0000s
+2025-11-18 12:39:36,225 - backend.main - INFO - Request: POST http://localhost:8000/defects/ - Status: 200 - Time: 0.0141s
+2025-11-18 12:39:36,309 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:36,311 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:36,344 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:36,348 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0101s
+2025-11-18 12:39:44,452 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0060s
+2025-11-18 12:39:44,458 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:39:46,559 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:46,562 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:46,567 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:46,570 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:47,687 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:47,690 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0070s
+2025-11-18 12:39:47,694 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:39:47,697 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0050s
+2025-11-18 12:39:47,903 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0043s
+2025-11-18 12:39:47,910 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0040s
+2025-11-18 12:39:58,794 - backend.main - INFO - Request: POST http://localhost:8000/defects/ - Status: 200 - Time: 0.0102s
+2025-11-18 12:39:58,867 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:58,872 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0090s
+2025-11-18 12:39:58,897 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:39:58,900 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0072s
+2025-11-18 12:40:06,192 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:40:06,206 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0302s
+2025-11-18 12:40:06,224 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 12:40:06,227 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0060s
+2025-11-18 12:40:06,238 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0040s
+2025-11-18 12:40:06,246 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0040s
+2025-11-18 12:40:06,413 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:40:06,416 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0060s
+2025-11-18 12:40:06,425 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:40:06,430 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0090s
+2025-11-18 12:40:09,295 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:40:09,296 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0160s
+2025-11-18 12:40:09,482 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:40:09,487 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0090s
+2025-11-18 12:46:40,835 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:46:40,869 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0591s
+2025-11-18 12:46:40,893 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:46:40,898 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0100s
+2025-11-18 12:47:16,219 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:47:16,252 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0581s
+2025-11-18 12:47:18,752 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:47:18,766 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0210s
+2025-11-18 12:47:18,778 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:47:18,786 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0157s
+2025-11-18 12:47:56,508 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:47:56,509 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:47:56,527 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:47:56,530 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0060s
+2025-11-18 12:48:01,833 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:48:01,834 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:48:24,745 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0010s
+2025-11-18 12:48:24,749 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:48:24,749 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0020s
+2025-11-18 12:51:48,389 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:51:48,458 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.1010s
+2025-11-18 12:52:02,205 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0010s
+2025-11-18 12:52:02,208 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0000s
+2025-11-18 12:52:02,221 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:52:02,233 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0220s
+2025-11-18 12:52:02,263 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:52:02,267 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0100s
+2025-11-18 12:53:00,360 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:53:00,402 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0749s
+2025-11-18 12:54:43,152 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:54:43,152 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 12:55:06,794 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 12:55:06,840 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0946s
+2025-11-18 12:55:12,041 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:55:12,050 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0230s
+2025-11-18 12:55:12,074 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:55:12,081 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0130s
+2025-11-18 12:55:30,198 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:55:30,202 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0100s
+2025-11-18 12:55:30,209 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 12:55:30,213 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0080s
+2025-11-18 13:06:33,633 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0000s
+2025-11-18 13:06:33,638 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 13:06:33,638 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-18 13:06:33,659 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0000s
+2025-11-18 13:06:33,665 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:06:33,667 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0060s
+2025-11-18 13:07:34,425 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0100s
+2025-11-18 13:07:40,611 - backend.main - WARNING - Failed login attempt for username: 123
+2025-11-18 13:07:40,612 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 401 - Time: 0.2656s
+2025-11-18 13:07:45,946 - backend.main - WARNING - Failed login attempt for username: 111
+2025-11-18 13:07:45,947 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 401 - Time: 0.0030s
+2025-11-18 13:07:54,274 - backend.main - INFO - User 123 logged in successfully.
+2025-11-18 13:07:54,275 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2413s
+2025-11-18 13:07:54,280 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 13:07:54,312 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0333s
+2025-11-18 13:07:56,264 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:07:56,273 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0160s
+2025-11-18 13:07:56,294 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:07:56,299 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0110s
+2025-11-18 13:08:58,968 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2 - Status: 200 - Time: 0.0000s
+2025-11-18 13:08:58,973 - backend.main - INFO - User 123 accessed defect 234234 (ID: 2).
+2025-11-18 13:08:58,975 - backend.main - INFO - Request: GET http://localhost:8000/defects/2 - Status: 200 - Time: 0.0050s
+2025-11-18 13:08:58,980 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0000s
+2025-11-18 13:08:58,986 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 13:08:58,991 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0090s
+2025-11-18 13:08:58,996 - backend.main - INFO - Request: OPTIONS http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0000s
+2025-11-18 13:08:59,002 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0040s
+2025-11-18 13:10:06,940 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:10:06,943 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0060s
+2025-11-18 13:10:06,948 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:10:06,952 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0072s
+2025-11-18 13:10:15,220 - backend.main - INFO - User 123 accessed defect 234234 (ID: 2).
+2025-11-18 13:10:15,225 - backend.main - INFO - Request: GET http://localhost:8000/defects/2 - Status: 200 - Time: 0.0110s
+2025-11-18 13:10:15,291 - backend.main - INFO - User 123 accessed list of projects.
+2025-11-18 13:10:15,296 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0100s
+2025-11-18 13:10:15,454 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0030s
+2025-11-18 13:10:16,595 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:10:16,598 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0080s
+2025-11-18 13:10:16,611 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:10:16,615 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0120s
+2025-11-18 13:10:25,056 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:10:25,059 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0060s
+2025-11-18 13:10:25,064 - backend.main - INFO - User 123 accessed list of defects with filters.
+2025-11-18 13:10:25,069 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0080s
+2025-11-18 13:10:26,597 - backend.main - INFO - User 123 deleted defect (ID: 2).
+2025-11-18 13:10:26,598 - backend.main - INFO - Request: DELETE http://localhost:8000/defects/2 - Status: 204 - Time: 0.0175s

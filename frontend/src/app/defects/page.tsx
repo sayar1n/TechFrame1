@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useEffect, useState, useMemo } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // Импортируем useRouter
 import { Defect } from '@/app/types';
-import { fetchDefects } from '@/app/utils/api';
+import { fetchDefects, deleteDefect } from '@/app/utils/api'; // Импортируем deleteDefect
 import { useAuth } from '@/app/context/AuthContext';
 import styles from './DefectsPage.module.scss';
 
@@ -36,6 +36,26 @@ const DefectsPage = () => {
 
   const handleCreateDefectClick = () => {
     router.push('/defects/new');
+  };
+
+  const handleEditDefect = (defectId: number) => {
+    router.push(`/defects/${defectId}/edit`);
+  };
+
+  const handleDeleteDefect = async (defectId: number) => {
+    if (!token) {
+      setError('Для удаления дефекта необходимо войти в систему.');
+      return;
+    }
+    if (confirm(`Вы уверены, что хотите удалить дефект с ID ${defectId}? Это действие необратимо.`)) {
+      try {
+        await deleteDefect(token, defectId);
+        setDefects(prevDefects => prevDefects.filter(d => d.id !== defectId));
+        alert('Дефект успешно удален.');
+      } catch (err: any) {
+        setError(err.message || 'Не удалось удалить дефект.');
+      }
+    }
   };
 
   const filteredAndSortedDefects = useMemo(() => {
@@ -132,22 +152,31 @@ const DefectsPage = () => {
               <th>Исполнитель ID</th>
               <th>Проект ID</th>
               <th>Дата создания</th>
+              <th>Действия</th>
             </tr>
           </thead>
           <tbody>
             {filteredAndSortedDefects.map((defect) => (
               <tr key={defect.id} className={styles.defectRow}>
                 <td>
-                  <Link href={`/defects/${defect.id}`}>{defect.id}</Link>
+                  {defect.id}
                 </td>
                 <td>
-                  <Link href={`/defects/${defect.id}`}>{defect.title}</Link>
+                  {defect.title}
                 </td>
                 <td>{defect.status}</td>
                 <td>{defect.priority}</td>
                 <td>{defect.assignee_id || 'Не назначен'}</td>
                 <td>{defect.project_id}</td>
                 <td>{new Date(defect.created_at).toLocaleDateString()}</td>
+                <td>
+                  {(user?.role === 'manager' || user?.id === defect.reporter_id || user?.id === defect.assignee_id) && (
+                    <>
+                      <button onClick={() => handleEditDefect(defect.id)} className={styles.editButton}>Редактировать</button>
+                      <button onClick={() => handleDeleteDefect(defect.id)} className={styles.deleteButton}>Удалить</button>
+                    </>
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>

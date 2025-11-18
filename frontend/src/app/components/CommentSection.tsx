@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Comment, CommentCreate, User } from '../../types';
-import { fetchCommentsForDefect, createComment } from '../../utils/api';
-import { useAuth } from '../../context/AuthContext';
+import { Comment, CommentCreate, User } from '@/app/types';
+import { fetchCommentsForDefect, createComment } from '@/app/utils/api';
+import { useAuth } from '@/app/context/AuthContext';
 import styles from './CommentSection.module.scss';
 
 interface CommentSectionProps {

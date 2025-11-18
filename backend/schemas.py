@@ -99,7 +99,7 @@ class AttachmentBase(BaseModel):
     filename: str
     file_path: str
 
-class AttachmentCreate(AttachmentBase):
+class AttachmentCreate(BaseModel):
     defect_id: int
 
 class Attachment(AttachmentBase):
@@ -120,3 +120,4 @@ class TokenData(BaseModel):
 # Update forward refs
 Project.model_rebuild()
 Defect.model_rebuild()
+Attachment.model_rebuild()

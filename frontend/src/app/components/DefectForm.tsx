@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { DefectCreate, Defect, Project, User } from '../../types';
+import { DefectCreate, Defect, Project, User } from '@/app/types';
 import styles from './DefectForm.module.scss';
 
 interface DefectFormProps {

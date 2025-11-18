@@ -5,8 +5,10 @@ from io import StringIO
 import logging
 import time
 import io
+import shutil
+import os
 
-from fastapi import FastAPI, Depends, HTTPException, status, Query, Request
+from fastapi import FastAPI, Depends, HTTPException, status, Query, Request, UploadFile, File
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 from jose import JWTError, jwt
@@ -14,6 +16,7 @@ from starlette.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from passlib.context import CryptContext
 from openpyxl import Workbook
+from starlette.responses import FileResponse
 
 from backend import crud, models, schemas
 from .database import engine, SessionLocal
@@ -398,14 +401,30 @@ def delete_comment(comment_id: int, db: Session = Depends(get_db), current_user:
 
 # Attachment API endpoints
 @app.post("/defects/{defect_id}/attachments/", response_model=schemas.Attachment, tags=["Attachments"])
-def create_attachment_for_defect(
-    defect_id: int, attachment: schemas.AttachmentCreate, db: Session = Depends(get_db), current_user: schemas.User = Depends(get_current_active_user)
+def create_upload_attachment_for_defect(
+    defect_id: int,
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user)
 ):
     db_defect = crud.get_defect(db, defect_id=defect_id)
     if db_defect is None:
         logger.warning(f"User {current_user.username} tried to create attachment for non-existent defect with ID: {defect_id}.")
         raise HTTPException(status_code=404, detail="Defect not found")
-    new_attachment = crud.create_attachment(db=db, attachment=attachment, uploader_id=current_user.id)
+    
+    # Check if the user is authorized to add attachments to this defect
+    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.engineer]:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized to add attachments")
+
+    upload_dir = f"./attachments/{defect_id}"
+    os.makedirs(upload_dir, exist_ok=True)
+    file_location = f"{upload_dir}/{file.filename}"
+
+    with open(file_location, "wb+") as file_object:
+        shutil.copyfileobj(file.file, file_object)
+    
+    attachment_create = schemas.AttachmentCreate(defect_id=defect_id)
+    new_attachment = crud.create_attachment(db=db, attachment=attachment_create, uploader_id=current_user.id, filename=file.filename, file_path=file_location)
     logger.info(f"User {current_user.username} added attachment {new_attachment.filename} (ID: {new_attachment.id}) to defect {defect_id}.")
     return new_attachment
 
@@ -416,32 +435,45 @@ def read_attachments_for_defect(defect_id: int, skip: int = 0, limit: int = 100,
     logger.info(f"User {current_user.username} accessed attachments for defect {defect_id}.")
     return attachments
 
-@app.put("/attachments/{attachment_id}", response_model=schemas.Attachment, tags=["Attachments"])
-def update_attachment(
-    attachment_id: int, attachment: schemas.AttachmentCreate, db: Session = Depends(get_db), current_user: schemas.User = Depends(get_current_active_user)
+@app.get("/defects/{defect_id}/attachments/{attachment_id}/download", tags=["Attachments"], summary="Download an attachment")
+def download_attachment(
+    defect_id: int,
+    attachment_id: int,
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user)
 ):
     db_attachment = crud.get_attachment(db, attachment_id=attachment_id)
-    if db_attachment is None:
-        logger.warning(f"User {current_user.username} tried to update non-existent attachment with ID: {attachment_id}.")
+    if db_attachment is None or db_attachment.defect_id != defect_id:
         raise HTTPException(status_code=404, detail="Attachment not found")
-    if db_attachment.uploader_id != current_user.id and current_user.role != schemas.UserRole.manager: # Only uploader or manager can update
-        logger.warning(f"User {current_user.username} not authorized to update attachment {attachment_id}.")
-        raise HTTPException(status_code=403, detail="Not authorized to update this attachment")
-    updated_attachment = crud.update_attachment(db=db, attachment_id=attachment_id, attachment=attachment)
-    logger.info(f"User {current_user.username} updated attachment (ID: {attachment_id}) for defect {updated_attachment.defect_id}.")
-    return updated_attachment
+    
+    # Add authorization check if needed
 
-@app.delete("/attachments/{attachment_id}", status_code=status.HTTP_204_NO_CONTENT, tags=["Attachments"])
-def delete_attachment(attachment_id: int, db: Session = Depends(get_db), current_user: schemas.User = Depends(get_current_active_user)):
+    file_path = db_attachment.file_path
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="File not found on server")
+
+    return FileResponse(file_path, filename=db_attachment.filename)
+
+@app.delete("/defects/{defect_id}/attachments/{attachment_id}", status_code=status.HTTP_204_NO_CONTENT, tags=["Attachments"])
+def delete_attachment(
+    defect_id: int,
+    attachment_id: int,
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user)
+):
     db_attachment = crud.get_attachment(db, attachment_id=attachment_id)
-    if db_attachment is None:
-        logger.warning(f"User {current_user.username} tried to delete non-existent attachment with ID: {attachment_id}.")
+    if db_attachment is None or db_attachment.defect_id != defect_id:
         raise HTTPException(status_code=404, detail="Attachment not found")
-    if db_attachment.uploader_id != current_user.id and current_user.role != schemas.UserRole.manager: # Only uploader or manager can delete
-        logger.warning(f"User {current_user.username} not authorized to delete attachment {attachment_id}.")
+    
+    if current_user.id != db_attachment.uploader_id and current_user.role != schemas.UserRole.manager:
         raise HTTPException(status_code=403, detail="Not authorized to delete this attachment")
+
+    file_path = db_attachment.file_path
+    if os.path.exists(file_path):
+        os.remove(file_path)
+
     crud.delete_attachment(db=db, attachment_id=attachment_id)
-    logger.info(f"User {current_user.username} deleted attachment (ID: {attachment_id}).")
+    logger.info(f"User {current_user.username} deleted attachment {db_attachment.filename} (ID: {attachment_id}) from defect {defect_id}.")
     return
 
 # Reporting API endpoint

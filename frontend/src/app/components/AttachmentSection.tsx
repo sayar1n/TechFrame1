@@ -49,10 +49,10 @@ const AttachmentSection = ({ defectId }: AttachmentSectionProps) => {
     setIsLoading(true);
     setError(null);
     try {
-      const formData = new FormData();
-      formData.append('file', selectedFile);
+      // const formData = new FormData();
+      // formData.append('file', selectedFile);
       // Assuming the backend endpoint handles the defect_id from the URL path
-      await uploadAttachment(token, defectId, formData);
+      await uploadAttachment(token, defectId, selectedFile as File);
       setSelectedFile(null);
       getAttachments(); // Обновить список вложений
     } catch (err: any) {
@@ -68,7 +68,7 @@ const AttachmentSection = ({ defectId }: AttachmentSectionProps) => {
     setIsLoading(true);
     setError(null);
     try {
-      await deleteAttachment(token, attachmentId);
+      await deleteAttachment(token, defectId, attachmentId);
       getAttachments(); // Обновить список вложений
     } catch (err: any) {
       setError(err.message || 'Не удалось удалить вложение.');

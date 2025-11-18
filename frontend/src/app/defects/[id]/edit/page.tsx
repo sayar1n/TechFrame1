@@ -15,20 +15,31 @@ interface EditDefectPageProps {
 }
 
 const EditDefectPage = ({ params }: EditDefectPageProps) => {
-  const { id } = params;
-  const defectId = parseInt(id, 10);
+  const [defectId, setDefectId] = useState<number | null>(null);
   const { token, isLoading: authLoading } = useAuth();
   const router = useRouter();
   const [defect, setDefect] = useState<Defect | null>(null);
   const [projects, setProjects] = useState<Project[]>([]);
   const [users, setUsers] = useState<User[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [loadingData, setLoadingData] = useState(false); // Изменяем имя стейта
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      if (!token || authLoading || isNaN(defectId)) return;
+    // Извлекаем id из pathname после гидратации на клиенте
+    if (typeof window !== 'undefined') {
+      const pathParts = window.location.pathname.split('/');
+      const idFromPath = parseInt(pathParts[pathParts.length - 2], 10); // /defects/[id]/edit
+      if (!isNaN(idFromPath)) {
+        setDefectId(idFromPath);
+      }
+    }
+  }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      if (!token || authLoading || defectId === null || isNaN(defectId)) return;
+
+      setLoadingData(true); // Устанавливаем загрузку данных
       try {
         const fetchedDefect = await fetchDefectById(token, defectId);
         setDefect(fetchedDefect);
@@ -38,6 +49,8 @@ const EditDefectPage = ({ params }: EditDefectPageProps) => {
         setUsers(fetchedUsers);
       } catch (err: any) {
         setError(err.message || 'Не удалось загрузить данные дефекта.');
+      } finally {
+        setLoadingData(false); // Снимаем загрузку данных
       }
     };
 
@@ -45,12 +58,12 @@ const EditDefectPage = ({ params }: EditDefectPageProps) => {
   }, [token, authLoading, defectId]);
 
   const handleSubmit = async (defectData: DefectCreate) => {
-    if (!token || isNaN(defectId)) {
+    if (!token || defectId === null || isNaN(defectId)) {
       setError('Для обновления дефекта необходимо войти в систему или указать корректный ID.');
       return;
     }
 
-    setIsLoading(true);
+    setLoadingData(true); // Устанавливаем загрузку данных
     setError(null);
     try {
       await updateDefect(token, defectId, defectData);
@@ -58,11 +71,11 @@ const EditDefectPage = ({ params }: EditDefectPageProps) => {
     } catch (err: any) {
       setError(err.message || 'Не удалось обновить дефект.');
     } finally {
-      setIsLoading(false);
+      setLoadingData(false); // Снимаем загрузку данных
     }
   };
 
-  if (authLoading || isLoading || isNaN(defectId)) {
+  if (authLoading || loadingData || defectId === null || isNaN(defectId)) { // Используем loadingData
     return <div>Загрузка...</div>;
   }
 
@@ -80,7 +93,7 @@ const EditDefectPage = ({ params }: EditDefectPageProps) => {
       <DefectForm
         initialData={defect}
         onSubmit={handleSubmit}
-        isLoading={isLoading}
+        isLoading={loadingData} // Передаем loadingData в DefectForm
         error={error}
         projects={projects}
         users={users}
