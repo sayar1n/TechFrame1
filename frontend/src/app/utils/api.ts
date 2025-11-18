@@ -198,6 +198,17 @@ export const updateUserRole = async (token: string, userId: number, newRole: "ma
   return response.data;
 };
 
+export const exportDefectsToCsvExcel = async (token: string, format: "csv" | "xlsx", filters?: Record<string, any>): Promise<Blob> => {
+  const response = await apiClient.get('/reports/defects/export', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    params: { format, ...filters },
+    responseType: 'blob', // Важно для получения бинарных данных файла
+  });
+  return response.data;
+};
+
 // Добавляем интерцептор для автоматического добавления токена к запросам
 apiClient.interceptors.request.use(
   (config) => {

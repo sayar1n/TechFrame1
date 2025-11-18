@@ -2,7 +2,7 @@ export interface User {
   id: number;
   username: string;
   email: string;
-  role: "manager" | "engineer" | "observer"; // Роли соответствуют бэкенду
+  role: "manager" | "engineer" | "observer" | "admin";
   is_active: boolean;
 }
 
@@ -15,7 +15,7 @@ export interface UserCreate {
   username: string;
   email: string;
   password: string;
-  role: "manager" | "engineer" | "observer";
+  role: "manager" | "engineer" | "observer" | "admin";
 }
 
 export interface Token {

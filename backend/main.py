@@ -171,7 +171,7 @@ async def update_user_role(
     db: Session = Depends(get_db),
     current_user: schemas.User = Depends(get_current_active_user)
 ):
-    if current_user.role != schemas.UserRole.manager:
+    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]:
         raise HTTPException(status_code=403, detail="Not authorized to change user roles")
     
     db_user = crud.get_user(db, user_id=user_id)
@@ -186,7 +186,7 @@ async def read_all_users_admin(
     db: Session = Depends(get_db),
     current_user: schemas.User = Depends(get_current_active_user)
 ):
-    if current_user.role != schemas.UserRole.manager:
+    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized to access admin features")
     users = crud.get_users(db)
     return users
@@ -205,7 +205,7 @@ def read_user(user_id: int, db: Session = Depends(get_db), current_user: schemas
 def create_project_for_user(
     user_id: int, project: schemas.ProjectCreate, db: Session = Depends(get_db), current_user: schemas.User = Depends(get_current_active_user)
 ):
-    if current_user.id != user_id:
+    if current_user.id != user_id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]:
         logger.warning(f"User {current_user.username} tried to create project for another user {user_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to create projects for this user")
     new_project = crud.create_user_project(db=db, project=project, user_id=user_id)
@@ -235,7 +235,7 @@ def update_project(
     if db_project is None:
         logger.warning(f"User {current_user.username} tried to update non-existent project with ID: {project_id}.")
         raise HTTPException(status_code=404, detail="Project not found")
-    if db_project.owner_id != current_user.id and current_user.role != schemas.UserRole.manager: # Only owner or manager can update
+    if db_project.owner_id != current_user.id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]: # Only owner or manager/admin can update
         logger.warning(f"User {current_user.username} not authorized to update project {project_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to update this project")
     updated_project = crud.update_project(db=db, project_id=project_id, project=project)
@@ -248,7 +248,7 @@ def delete_project(project_id: int, db: Session = Depends(get_db), current_user:
     if db_project is None:
         logger.warning(f"User {current_user.username} tried to delete non-existent project with ID: {project_id}.")
         raise HTTPException(status_code=404, detail="Project not found")
-    if db_project.owner_id != current_user.id and current_user.role != schemas.UserRole.manager: # Only owner or manager can delete
+    if db_project.owner_id != current_user.id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]: # Only owner or manager/admin can delete
         logger.warning(f"User {current_user.username} not authorized to delete project {project_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to delete this project")
     crud.delete_project(db=db, project_id=project_id)
@@ -264,7 +264,7 @@ def create_defect_for_project(
     if db_project is None:
         raise HTTPException(status_code=404, detail="Project not found")
     # Only members of the project or managers can create defects
-    if current_user.id != db_project.owner_id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.engineer]:
+    if current_user.id != db_project.owner_id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.engineer, schemas.UserRole.admin]:
         raise HTTPException(status_code=403, detail="Not authorized to create defects for this project")
     new_defect = crud.create_defect(db=db, defect=defect, reporter_id=current_user.id)
     return new_defect
@@ -275,6 +275,8 @@ async def create_defect_global(
     db: Session = Depends(get_db),
     current_user: schemas.User = Depends(get_current_active_user)
 ):
+    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.engineer, schemas.UserRole.admin]:
+        raise HTTPException(status_code=403, detail="Not authorized to create defects")
     return crud.create_defect(db=db, defect=defect, reporter_id=current_user.id)
 
 @app.get("/defects/", response_model=List[schemas.Defect], tags=["Defects"])
@@ -330,7 +332,7 @@ def update_defect(
         logger.warning(f"User {current_user.username} tried to update non-existent defect with ID: {defect_id}.")
         raise HTTPException(status_code=404, detail="Defect not found")
     # Only reporter, assignee, or manager can update
-    if current_user.id not in [db_defect.reporter_id, db_defect.assignee_id] and current_user.role != schemas.UserRole.manager:
+    if current_user.id not in [db_defect.reporter_id, db_defect.assignee_id] and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]:
         logger.warning(f"User {current_user.username} not authorized to update defect {defect_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to update this defect")
     updated_defect = crud.update_defect(db=db, defect_id=defect_id, defect=defect)
@@ -344,7 +346,7 @@ def delete_defect(defect_id: int, db: Session = Depends(get_db), current_user: s
         logger.warning(f"User {current_user.username} tried to delete non-existent defect with ID: {defect_id}.")
         raise HTTPException(status_code=404, detail="Defect not found")
     # Only reporter or manager can delete
-    if current_user.id != db_defect.reporter_id and current_user.role != schemas.UserRole.manager:
+    if current_user.id != db_defect.reporter_id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]:
         logger.warning(f"User {current_user.username} not authorized to delete defect {defect_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to delete this defect")
     crud.delete_defect(db=db, defect_id=defect_id)
@@ -379,7 +381,7 @@ def update_comment(
     if db_comment is None:
         logger.warning(f"User {current_user.username} tried to update non-existent comment with ID: {comment_id}.")
         raise HTTPException(status_code=404, detail="Comment not found")
-    if db_comment.author_id != current_user.id and current_user.role != schemas.UserRole.manager: # Only author or manager can update
+    if db_comment.author_id != current_user.id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]: # Only author or manager/admin can update
         logger.warning(f"User {current_user.username} not authorized to update comment {comment_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to update this comment")
     updated_comment = crud.update_comment(db=db, comment_id=comment_id, comment=comment)
@@ -392,7 +394,7 @@ def delete_comment(comment_id: int, db: Session = Depends(get_db), current_user:
     if db_comment is None:
         logger.warning(f"User {current_user.username} tried to delete non-existent comment with ID: {comment_id}.")
         raise HTTPException(status_code=404, detail="Comment not found")
-    if db_comment.author_id != current_user.id and current_user.role != schemas.UserRole.manager: # Only author or manager can delete
+    if db_comment.author_id != current_user.id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]: # Only author or manager/admin can delete
         logger.warning(f"User {current_user.username} not authorized to delete comment {comment_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to delete this comment")
     crud.delete_comment(db=db, comment_id=comment_id)
@@ -413,7 +415,7 @@ def create_upload_attachment_for_defect(
         raise HTTPException(status_code=404, detail="Defect not found")
     
     # Check if the user is authorized to add attachments to this defect
-    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.engineer]:
+    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.engineer, schemas.UserRole.admin]:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized to add attachments")
 
     upload_dir = f"./attachments/{defect_id}"
@@ -465,7 +467,7 @@ def delete_attachment(
     if db_attachment is None or db_attachment.defect_id != defect_id:
         raise HTTPException(status_code=404, detail="Attachment not found")
     
-    if current_user.id != db_attachment.uploader_id and current_user.role != schemas.UserRole.manager:
+    if current_user.id != db_attachment.uploader_id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]:
         raise HTTPException(status_code=403, detail="Not authorized to delete this attachment")
 
     file_path = db_attachment.file_path
@@ -493,7 +495,7 @@ def export_defects_to_csv_excel(
     due_end_date: Optional[datetime] = Query(None),
     search_query: Optional[str] = Query(None)
 ):
-    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer]:
+    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
         logger.warning(f"User {current_user.username} not authorized to export reports.")
         raise HTTPException(status_code=403, detail="Not authorized to export reports")
 

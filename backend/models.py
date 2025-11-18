@@ -11,7 +11,7 @@ class User(Base):
     username = Column(String, unique=True, index=True, nullable=False)
     email = Column(String, unique=True, index=True, nullable=False)
     hashed_password = Column(String, nullable=False)
-    role = Column(Enum("manager", "engineer", "observer", name="user_roles"), default="engineer", nullable=False)
+    role = Column(Enum("manager", "engineer", "observer", "admin", name="user_roles"), default="engineer", nullable=False)
     is_active = Column(Boolean, default=True)
 
     projects = relationship("Project", back_populates="owner")

@@ -84,7 +84,7 @@ const ProjectsPage = () => {
     return <div className={styles.error}>{error}</div>;
   }
 
-  const canCreateProject = user && (user.role === 'manager' || user.role === 'engineer');
+  const canCreateProject = user && (user.role === 'manager' || user.role === 'engineer' || user.role === 'admin');
 
   return (
     <div className={styles.projectsContainer}>
@@ -142,7 +142,7 @@ const ProjectsPage = () => {
                 <td>{project.owner_id}</td>
                 <td>{new Date(project.created_at).toLocaleDateString()}</td>
                 <td>
-                  {(user?.role === 'manager' || user?.id === project.owner_id) && (
+                  {(user?.role === 'manager' || user?.id === project.owner_id || user?.role === 'admin') && (
                     <>
                       <button onClick={() => handleEditProject(project.id)} className={styles.editButton}>Редактировать</button>
                       <button onClick={() => handleDeleteProject(project.id)} className={styles.deleteButton}>Удалить</button>

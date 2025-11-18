@@ -33,9 +33,9 @@ const UsersPage = () => {
     getUsers();
   }, [token, authLoading]);
 
-  const handleRoleChange = async (userId: number, newRole: "manager" | "engineer" | "observer") => {
-    if (!token || !user || user.role !== 'manager') {
-      alert('У вас нет прав для изменения роли.');
+  const handleRoleChange = async (userId: number, newRole: "manager" | "engineer" | "observer" | "admin") => {
+    if (!token || !user || (user.role !== 'manager' && user.role !== 'admin') || userId === user.id) {
+      alert('У вас нет прав для изменения роли или вы пытаетесь изменить свою собственную роль.');
       return;
     }
 
@@ -85,11 +85,11 @@ const UsersPage = () => {
     return <div className={styles.error}>{error}</div>;
   }
 
-  const roles = ["Все", "manager", "engineer", "observer"];
-  const canEditRoles = user?.role === 'manager'; // Только менеджеры могут редактировать роли
+  const roles = ["Все", "manager", "engineer", "observer", "admin"];
+  const canEditRoles = user && (user.role === 'manager' || user.role === 'admin'); // Менеджеры и Админы могут редактировать роли
 
   return (
-    <AuthGuard roles={['manager']}>
+    <AuthGuard roles={['manager', 'admin']}>
       <div className={styles.usersContainer}>
         <h1>Страница пользователей</h1>
 
@@ -132,28 +132,29 @@ const UsersPage = () => {
               </tr>
             </thead>
             <tbody>
-              {filteredAndSortedUsers.map((user) => (
-                <tr key={user.id} className={styles.userRow}>
-                  <td>{user.id}</td>
-                  <td>{user.username}</td>
-                  <td>{user.email}</td>
+              {filteredAndSortedUsers.map((u) => (
+                <tr key={u.id} className={styles.userRow}>
+                  <td>{u.id}</td>
+                  <td>{u.username}</td>
+                  <td>{u.email}</td>
                   <td>
-                    {canEditRoles ? (
+                    {canEditRoles && u.id !== user?.id ? (
                       <select
-                        value={user.role}
-                        onChange={(e) => handleRoleChange(user.id, e.target.value as "manager" | "engineer" | "observer")}
-                        disabled={isUpdatingRole} // Отключаем, пока идет обновление
+                        value={u.role}
+                        onChange={(e) => handleRoleChange(u.id, e.target.value as "manager" | "engineer" | "observer" | "admin")}
+                        disabled={isUpdatingRole}
                         className={styles.roleSelect}
                       >
                         <option value="observer">Наблюдатель</option>
                         <option value="engineer">Инженер</option>
                         <option value="manager">Менеджер</option>
+                        <option value="admin">Админ</option>
                       </select>
                     ) : (
-                      user.role
+                      u.role
                     )}
                   </td>
-                  <td>{user.is_active ? 'Да' : 'Нет'}</td>
+                  <td>{u.is_active ? 'Да' : 'Нет'}</td>
                 </tr>
               ))
             }

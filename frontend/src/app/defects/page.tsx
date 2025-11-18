@@ -97,7 +97,7 @@ const DefectsPage = () => {
 
   const statuses = ["Все", "Новая", "В работе", "На проверке", "Закрыта", "Отменена"];
   const priorities = ["Все", "Низкий", "Средний", "Высокий", "Критический"];
-  const canCreateDefect = user && (user.role === 'manager' || user.role === 'engineer');
+  const canCreateDefect = user && (user.role === 'manager' || user.role === 'engineer' || user.role === 'admin');
 
   return (
     <div className={styles.defectsContainer}>
@@ -170,7 +170,7 @@ const DefectsPage = () => {
                 <td>{defect.project_id}</td>
                 <td>{new Date(defect.created_at).toLocaleDateString()}</td>
                 <td>
-                  {(user?.role === 'manager' || user?.id === defect.reporter_id || user?.id === defect.assignee_id) && (
+                  {(user?.role === 'manager' || user?.id === defect.reporter_id || user?.id === defect.assignee_id || user?.role === 'admin') && (
                     <>
                       <button onClick={() => handleEditDefect(defect.id)} className={styles.editButton}>Редактировать</button>
                       <button onClick={() => handleDeleteDefect(defect.id)} className={styles.deleteButton}>Удалить</button>

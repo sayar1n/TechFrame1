@@ -17,10 +17,10 @@ const Header = () => {
         <ul>
           <li><Link href="/projects">Проекты</Link></li>
           <li><Link href="/defects">Дефекты</Link></li>
-          {user?.role === 'manager' && (
+          {user?.role === 'manager' || user?.role === 'admin' && (
             <li><Link href="/users">Пользователи</Link></li>
           )}
-          {(user?.role === 'manager' || user?.role === 'observer') && (
+          {(user?.role === 'manager' || user?.role === 'observer' || user?.role === 'admin') && (
             <li><Link href="/reports">Отчеты</Link></li>
           )}
         </ul>

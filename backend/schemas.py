@@ -8,6 +8,7 @@ class UserRole(str, Enum):
     manager = "manager"
     engineer = "engineer"
     observer = "observer"
+    admin = "admin"
 
 class UserBase(BaseModel):
     username: str
