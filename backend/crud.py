@@ -34,6 +34,15 @@ def create_user(db: Session, user: schemas.UserCreate, pwd_context: CryptContext
     db.refresh(db_user)
     return db_user
 
+def update_user_role(db: Session, user_id: int, new_role: schemas.UserRole):
+    db_user = db.query(models.User).filter(models.User.id == user_id).first()
+    if db_user:
+        db_user.role = new_role
+        db.add(db_user)
+        db.commit()
+        db.refresh(db_user)
+    return db_user
+
 # --- Project CRUD operations ---
 def get_project(db: Session, project_id: int):
     return db.query(models.Project).filter(models.Project.id == project_id).first()
@@ -42,7 +51,7 @@ def get_projects(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Project).offset(skip).limit(limit).all()
 
 def create_user_project(db: Session, project: schemas.ProjectCreate, user_id: int):
-    db_project = models.Project(**project.dict(), owner_id=user_id)
+    db_project = models.Project(**project.model_dump(), owner_id=user_id)
     db.add(db_project)
     db.commit()
     db.refresh(db_project)
@@ -51,7 +60,7 @@ def create_user_project(db: Session, project: schemas.ProjectCreate, user_id: in
 def update_project(db: Session, project_id: int, project: schemas.ProjectCreate):
     db_project = db.query(models.Project).filter(models.Project.id == project_id).first()
     if db_project:
-        update_data = project.dict(exclude_unset=True)
+        update_data = project.model_dump(exclude_unset=True)
         for key, value in update_data.items():
             setattr(db_project, key, value)
         db.add(db_project)
@@ -112,7 +121,7 @@ def get_defects(
     return query.offset(skip).limit(limit).all()
 
 def create_defect(db: Session, defect: schemas.DefectCreate, reporter_id: int):
-    db_defect = models.Defect(**defect.dict(exclude_unset=True), reporter_id=reporter_id)
+    db_defect = models.Defect(**defect.model_dump(exclude_unset=True), reporter_id=reporter_id)
     db.add(db_defect)
     db.commit()
     db.refresh(db_defect)
@@ -121,7 +130,7 @@ def create_defect(db: Session, defect: schemas.DefectCreate, reporter_id: int):
 def update_defect(db: Session, defect_id: int, defect: schemas.DefectUpdate):
     db_defect = db.query(models.Defect).filter(models.Defect.id == defect_id).first()
     if db_defect:
-        update_data = defect.dict(exclude_unset=True)
+        update_data = defect.model_dump(exclude_unset=True)
         for key, value in update_data.items():
             setattr(db_defect, key, value)
         db.add(db_defect)
@@ -141,7 +150,7 @@ def get_comment(db: Session, comment_id: int):
     return db.query(models.Comment).filter(models.Comment.id == comment_id).first()
 
 def create_comment(db: Session, comment: schemas.CommentCreate, author_id: int):
-    db_comment = models.Comment(**comment.dict(), author_id=author_id)
+    db_comment = models.Comment(**comment.model_dump(), author_id=author_id)
     db.add(db_comment)
     db.commit()
     db.refresh(db_comment)
@@ -150,7 +159,7 @@ def create_comment(db: Session, comment: schemas.CommentCreate, author_id: int):
 def update_comment(db: Session, comment_id: int, comment: schemas.CommentCreate):
     db_comment = db.query(models.Comment).filter(models.Comment.id == comment_id).first()
     if db_comment:
-        update_data = comment.dict(exclude_unset=True)
+        update_data = comment.model_dump(exclude_unset=True)
         for key, value in update_data.items():
             setattr(db_comment, key, value)
         db.add(db_comment)
@@ -170,7 +179,7 @@ def get_attachment(db: Session, attachment_id: int):
     return db.query(models.Attachment).filter(models.Attachment.id == attachment_id).first()
 
 def create_attachment(db: Session, attachment: schemas.AttachmentCreate, uploader_id: int):
-    db_attachment = models.Attachment(**attachment.dict(), uploader_id=uploader_id)
+    db_attachment = models.Attachment(**attachment.model_dump(), uploader_id=uploader_id)
     db.add(db_attachment)
     db.commit()
     db.refresh(db_attachment)
@@ -179,7 +188,7 @@ def create_attachment(db: Session, attachment: schemas.AttachmentCreate, uploade
 def update_attachment(db: Session, attachment_id: int, attachment: schemas.AttachmentCreate):
     db_attachment = db.query(models.Attachment).filter(models.Attachment.id == attachment_id).first()
     if db_attachment:
-        update_data = attachment.dict(exclude_unset=True)
+        update_data = attachment.model_dump(exclude_unset=True)
         for key, value in update_data.items():
             setattr(db_attachment, key, value)
         db.add(db_attachment)

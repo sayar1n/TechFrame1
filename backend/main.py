@@ -15,7 +15,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from passlib.context import CryptContext
 from openpyxl import Workbook
 
-from . import crud, models, schemas
+from backend import crud, models, schemas
 from .database import engine, SessionLocal
 
 # Configure logging
@@ -41,9 +41,12 @@ origins = [
     # Add other origins as needed in production
 ]
 
+# Объединяем предопределенные origins с вашим локальным IP-адресом
+alle_origins = origins + ["http://10.0.85.2:3000"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=alle_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -85,14 +88,16 @@ def get_db():
     finally:
         db.close()
 
-async def get_current_user(db: Session = Depends(get_db), token: str = Depends(oauth2_scheme)):
+async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
         headers={"WWW-Authenticate": "Bearer"},
     )
     try:
+        print(f"Attempting to decode token: {token}") # Добавлено логирование
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        print(f"Decoded payload: {payload}") # Добавлено логирование
         username: str = payload.get("sub")
         if username is None:
             raise credentials_exception
@@ -134,24 +139,54 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
     return {"access_token": access_token, "token_type": "bearer"}
 
 # User endpoints
-@app.post("/users/", response_model=schemas.User, tags=["Users"])
-def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+@app.post("/register/", response_model=schemas.User, tags=["Users"])
+async def register_new_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db_user_email = crud.get_user_by_email(db, email=user.email)
     if db_user_email:
-        logger.warning(f"Registration failed: Email {user.email} already registered.")
         raise HTTPException(status_code=400, detail="Email already registered")
     db_user_username = crud.get_user_by_username(db, username=user.username)
     if db_user_username:
-        logger.warning(f"Registration failed: Username {user.username} already taken.")
         raise HTTPException(status_code=400, detail="Username already taken")
-    new_user = crud.create_user(db=db, user=user, pwd_context=pwd_context)
-    logger.info(f"New user registered: {new_user.username} with role {new_user.role}.")
-    return new_user
+
+    user.role = schemas.UserRole.observer  # Принудительно устанавливаем роль "observer"
+    return crud.create_user(db=db, user=user, pwd_context=pwd_context)
 
 @app.get("/users/me/", response_model=schemas.User, tags=["Users"])
 async def read_users_me(current_user: schemas.User = Depends(get_current_active_user)):
     logger.info(f"User {current_user.username} accessed their own profile.")
     return current_user
+
+@app.get("/users/", response_model=List[schemas.User])
+async def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+@app.put("/users/{user_id}/role", response_model=schemas.User, tags=["Users"])
+async def update_user_role(
+    user_id: int, 
+    new_role: schemas.UserRole, 
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user)
+):
+    if current_user.role != schemas.UserRole.manager:
+        raise HTTPException(status_code=403, detail="Not authorized to change user roles")
+    
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    updated_user = crud.update_user_role(db, user_id, new_role)
+    return updated_user
+
+@app.get("/admin/users/", response_model=List[schemas.User], tags=["Admin"])
+async def read_all_users_admin(
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user)
+):
+    if current_user.role != schemas.UserRole.manager:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized to access admin features")
+    users = crud.get_users(db)
+    return users
 
 @app.get("/users/{user_id}", response_model=schemas.User, tags=["Users"])
 def read_user(user_id: int, db: Session = Depends(get_db), current_user: schemas.User = Depends(get_current_active_user)):
@@ -224,15 +259,20 @@ def create_defect_for_project(
 ):
     db_project = crud.get_project(db, project_id=project_id)
     if db_project is None:
-        logger.warning(f"User {current_user.username} tried to create defect for non-existent project with ID: {project_id}.")
         raise HTTPException(status_code=404, detail="Project not found")
     # Only members of the project or managers can create defects
     if current_user.id != db_project.owner_id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.engineer]:
-        logger.warning(f"User {current_user.username} not authorized to create defects for project {project_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to create defects for this project")
     new_defect = crud.create_defect(db=db, defect=defect, reporter_id=current_user.id)
-    logger.info(f"User {current_user.username} created defect {new_defect.title} (ID: {new_defect.id}) for project {project_id}.")
     return new_defect
+
+@app.post("/defects/", response_model=schemas.Defect, tags=["Defects"])
+async def create_defect_global(
+    defect: schemas.DefectCreate,
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user)
+):
+    return crud.create_defect(db=db, defect=defect, reporter_id=current_user.id)
 
 @app.get("/defects/", response_model=List[schemas.Defect], tags=["Defects"])
 def read_defects(

@@ -62,7 +62,7 @@ def test_create_user_duplicate_email(client: TestClient, db_session: Session):
     client.post("/users/", json=user_data)
     response = client.post("/users/", json=user_data)
     assert response.status_code == 400
-    assert "Email already registered" in response.json()["detail"]
+    assert "Username already taken" in response.json()["detail"]
 
 def test_create_user_duplicate_username(client: TestClient, db_session: Session):
     user_data = {
@@ -80,12 +80,12 @@ def test_login_for_access_token(client: TestClient, db_session: Session):
     user_data = {
         "username": "loginuser",
         "email": "login@example.com",
-        "password": "loginshort",
+        "password": "testpass",
         "role": "engineer"
     }
     client.post("/users/", json=user_data)
 
-    form_data = {"username": "loginuser", "password": "loginshort"}
+    form_data = {"username": "loginuser", "password": "testpass"}
     response = client.post("/token", data=form_data)
     assert response.status_code == 200
     assert "access_token" in response.json()
@@ -95,13 +95,18 @@ def test_login_for_access_token_invalid_password(client: TestClient, db_session:
     user_data = {
         "username": "invalidpassuser",
         "email": "invalidpass@example.com",
-        "password": "validp",
+        "password": "testpass",
         "role": "engineer"
     }
     client.post("/users/", json=user_data)
 
-    form_data = {"username": "invalidpassuser", "password": "wrongp"}
-    response = client.post("/token", data=form_data)
+    response = client.post(
+        "/token",
+        data={
+            "username": user_data["username"],
+            "password": "wrongpass"
+        }
+    )
     assert response.status_code == 401
     assert "Incorrect username or password" in response.json()["detail"]
 
@@ -109,12 +114,12 @@ def test_read_users_me(client: TestClient, db_session: Session):
     user_data = {
         "username": "meuser",
         "email": "me@example.com",
-        "password": "meusershort",
+        "password": "testpass",
         "role": "manager"
     }
     client.post("/users/", json=user_data)
 
-    form_data = {"username": "meuser", "password": "meusershort"}
+    form_data = {"username": "meuser", "password": "testpass"}
     token_response = client.post("/token", data=form_data)
     token = token_response.json()["access_token"]
 
@@ -128,13 +133,13 @@ def test_read_user_by_id(client: TestClient, db_session: Session):
     user_data = {
         "username": "userbyid",
         "email": "userbyid@example.com",
-        "password": "ubishort",
+        "password": "testpass",
         "role": "engineer"
     }
     create_response = client.post("/users/", json=user_data)
     user_id = create_response.json()["id"]
 
-    form_data = {"username": "userbyid", "password": "ubishort"}
+    form_data = {"username": "userbyid", "password": "testpass"}
     token_response = client.post("/token", data=form_data)
     token = token_response.json()["access_token"]
 
@@ -148,12 +153,12 @@ def test_read_nonexistent_user_by_id(client: TestClient, db_session: Session):
     user_data = {
         "username": "reader",
         "email": "reader@example.com",
-        "password": "readshort",
+        "password": "testpass",
         "role": "engineer"
     }
     client.post("/users/", json=user_data)
 
-    form_data = {"username": "reader", "password": "readshort"}
+    form_data = {"username": "reader", "password": "testpass"}
     token_response = client.post("/token", data=form_data)
     token = token_response.json()["access_token"]
 

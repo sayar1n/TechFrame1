@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '@/app/context/AuthContext';
 
 interface AuthGuardProps {
   children: React.ReactNode;
@@ -20,7 +20,7 @@ const AuthGuard = ({ children, roles }: AuthGuardProps) => {
         router.push('/login');
       } else if (roles && !roles.includes(user.role)) {
         // Если у пользователя нет нужной роли, перенаправляем на дашборд или страницу ошибки
-        router.push('/dashboard'); // Или другая страница для отказа в доступе
+        router.push('/'); // Или другая страница для отказа в доступе
       }
     }
   }, [isLoading, user, roles, router]);

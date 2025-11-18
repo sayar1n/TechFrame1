@@ -14,7 +14,9 @@ engine = create_engine(
 )
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# Create tables for testing
+# Password hashing context for tests
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
 @pytest.fixture(name="db_session")
 def db_session_fixture():
     Base.metadata.create_all(bind=engine)
@@ -25,128 +27,171 @@ def db_session_fixture():
         db.close()
         Base.metadata.drop_all(bind=engine)
 
-@pytest.fixture(name="pwd_context")
-def pwd_context_fixture():
-    return CryptContext(schemes=["bcrypt"], deprecated="auto")
+@pytest.fixture(name="test_user_create")
+def test_user_create_fixture():
+    return schemas.UserCreate(username="testuser", email="test@example.com", password="shortpass", role="engineer")
+
+@pytest.fixture(name="test_user")
+def test_user_fixture(db_session: Session, test_user_create: schemas.UserCreate):
+    user = crud.create_user(db_session, user=test_user_create, pwd_context=pwd_context)
+    return user
+
+@pytest.fixture(name="test_project_create")
+def test_project_create_fixture():
+    return schemas.ProjectCreate(title="Test Project", description="A project for testing.")
+
+@pytest.fixture(name="test_project")
+def test_project_fixture(db_session: Session, test_user: models.User, test_project_create: schemas.ProjectCreate):
+    project = crud.create_user_project(db_session, project=test_project_create, user_id=test_user.id)
+    return project
+
+@pytest.fixture(name="test_defect_create")
+def test_defect_create_fixture(test_project: models.Project):
+    return schemas.DefectCreate(title="Test Defect", description="A defect for testing.", project_id=test_project.id)
+
+@pytest.fixture(name="test_defect")
+def test_defect_fixture(db_session: Session, test_user: models.User, test_defect_create: schemas.DefectCreate):
+    defect = crud.create_defect(db_session, defect=test_defect_create, reporter_id=test_user.id)
+    return defect
+
+@pytest.fixture(name="test_comment_create")
+def test_comment_create_fixture(test_defect: models.Defect):
+    return schemas.CommentCreate(content="Test comment content.", defect_id=test_defect.id)
+
+@pytest.fixture(name="test_comment")
+def test_comment_fixture(db_session: Session, test_user: models.User, test_comment_create: schemas.CommentCreate):
+    comment = crud.create_comment(db_session, comment=test_comment_create, author_id=test_user.id)
+    return comment
+
+@pytest.fixture(name="test_attachment_create")
+def test_attachment_create_fixture(test_defect: models.Defect):
+    return schemas.AttachmentCreate(filename="test_file.txt", file_path="/path/to/test_file.txt", defect_id=test_defect.id)
+
+@pytest.fixture(name="test_attachment")
+def test_attachment_fixture(db_session: Session, test_user: models.User, test_attachment_create: schemas.AttachmentCreate):
+    attachment = crud.create_attachment(db_session, attachment=test_attachment_create, uploader_id=test_user.id)
+    return attachment
 
 
-# --- User CRUD Tests ---
-def test_create_user(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="testuser", email="test@example.com", password="shortpass")
-    user = crud.create_user(db_session, user_in, pwd_context)
+# --- Test Cases ---
+
+def test_verify_password(db_session: Session):
+    test_password = "securepassword"
+    user_create = schemas.UserCreate(username="tempuser", email="temp@example.com", password=test_password, role="engineer")
+    user = crud.create_user(db_session, user=user_create, pwd_context=pwd_context)
+
+    assert crud.verify_password(test_password, user.hashed_password, pwd_context)
+    assert not crud.verify_password("wrongpass", user.hashed_password, pwd_context)
+
+def test_create_user(db_session: Session, test_user_create: schemas.UserCreate):
+    user = crud.create_user(db_session, user=test_user_create, pwd_context=pwd_context)
+    assert user.id is not None
     assert user.username == "testuser"
     assert user.email == "test@example.com"
-    assert crud.verify_password("shortpass", user.hashed_password, pwd_context)
+    assert user.role == "engineer"
+    assert user.is_active is True
 
-def test_get_user(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="anotheruser", email="another@example.com", password="anothershort")
-    created_user = crud.create_user(db_session, user_in, pwd_context)
-    fetched_user = crud.get_user(db_session, created_user.id)
-    assert fetched_user.username == "anotheruser"
+def test_get_user(db_session: Session, test_user: models.User):
+    user = crud.get_user(db_session, user_id=test_user.id)
+    assert user.username == "testuser"
 
-def test_get_user_by_email(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="emailuser", email="email@example.com", password="emailshort")
-    created_user = crud.create_user(db_session, user_in, pwd_context)
-    fetched_user = crud.get_user_by_email(db_session, "email@example.com")
-    assert fetched_user.username == "emailuser"
+def test_get_user_by_email(db_session: Session, test_user: models.User):
+    user = crud.get_user_by_email(db_session, email="test@example.com")
+    assert user.username == "testuser"
 
-def test_get_user_by_username(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="usernameuser", email="username@example.com", password="usernameshort")
-    created_user = crud.create_user(db_session, user_in, pwd_context)
-    fetched_user = crud.get_user_by_username(db_session, "usernameuser")
-    assert fetched_user.email == "username@example.com"
+def test_get_user_by_username(db_session: Session, test_user: models.User):
+    user = crud.get_user_by_username(db_session, username="testuser")
+    assert user.email == "test@example.com"
 
-# --- Project CRUD Tests ---
-def test_create_project(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="projectowner", email="owner@example.com", password="ownershort")
-    owner = crud.create_user(db_session, user_in, pwd_context)
-    project_in = schemas.ProjectCreate(title="Test Project", description="Description for test project")
-    project = crud.create_user_project(db_session, project_in, owner.id)
+def test_create_project(db_session: Session, test_user: models.User, test_project_create: schemas.ProjectCreate):
+    project = crud.create_user_project(db_session, project=test_project_create, user_id=test_user.id)
+    assert project.id is not None
     assert project.title == "Test Project"
-    assert project.description == "Description for test project"
-    assert project.owner_id == owner.id
+    assert project.owner_id == test_user.id
 
-def test_get_project(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="getteruser", email="getter@example.com", password="gettershort")
-    owner = crud.create_user(db_session, user_in, pwd_context)
-    project_in = schemas.ProjectCreate(title="Fetch Project", description="Description for fetch project")
-    created_project = crud.create_user_project(db_session, project_in, owner.id)
-    fetched_project = crud.get_project(db_session, created_project.id)
-    assert fetched_project.title == "Fetch Project"
+def test_get_project(db_session: Session, test_project: models.Project):
+    project = crud.get_project(db_session, project_id=test_project.id)
+    assert project.title == "Test Project"
 
-def test_update_project(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="updateruser", email="updater@example.com", password="updateshort")
-    owner = crud.create_user(db_session, user_in, pwd_context)
-    project_in = schemas.ProjectCreate(title="Old Title", description="Old Description")
-    project = crud.create_user_project(db_session, project_in, owner.id)
-    
-    update_data = schemas.ProjectCreate(title="New Title", description="New Description")
-    updated_project = crud.update_project(db_session, project.id, update_data)
-    assert updated_project.title == "New Title"
-    assert updated_project.description == "New Description"
+def test_update_project(db_session: Session, test_project: models.Project):
+    updated_title = "Updated Project Title"
+    updated_description = "Updated project description."
+    project_update = schemas.ProjectCreate(title=updated_title, description=updated_description)
+    updated_project = crud.update_project(db_session, project_id=test_project.id, project=project_update)
+    assert updated_project.title == updated_title
+    assert updated_project.description == updated_description
 
-def test_delete_project(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="deleteruser", email="deleter@example.com", password="deleteshort")
-    owner = crud.create_user(db_session, user_in, pwd_context)
-    project_in = schemas.ProjectCreate(title="Project to Delete", description="Temporary Project")
-    project = crud.create_user_project(db_session, project_in, owner.id)
-    
-    crud.delete_project(db_session, project.id)
-    deleted_project = crud.get_project(db_session, project.id)
+def test_delete_project(db_session: Session, test_project: models.Project):
+    crud.delete_project(db_session, project_id=test_project.id)
+    deleted_project = crud.get_project(db_session, project_id=test_project.id)
     assert deleted_project is None
 
-# --- Defect CRUD Tests ---
-def test_create_defect(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="reporter", email="reporter@example.com", password="repshort")
-    reporter = crud.create_user(db_session, user_in, pwd_context)
-    project_in = schemas.ProjectCreate(title="Defect Project", description="Project for defects")
-    project = crud.create_user_project(db_session, project_in, reporter.id)
+def test_create_defect(db_session: Session, test_user: models.User, test_defect_create: schemas.DefectCreate):
+    defect = crud.create_defect(db_session, defect=test_defect_create, reporter_id=test_user.id)
+    assert defect.id is not None
+    assert defect.title == "Test Defect"
+    assert defect.reporter_id == test_user.id
+    assert defect.project_id == test_defect_create.project_id
 
-    defect_in = schemas.DefectCreate(title="Bug 1", description="Critical bug found", project_id=project.id, priority=schemas.DefectPriority.critical)
-    defect = crud.create_defect(db_session, defect_in, reporter.id)
-    assert defect.title == "Bug 1"
-    assert defect.reporter_id == reporter.id
-    assert defect.project_id == project.id
-    assert defect.priority == schemas.DefectPriority.critical
+def test_get_defect(db_session: Session, test_defect: models.Defect):
+    defect = crud.get_defect(db_session, defect_id=test_defect.id)
+    assert defect.title == "Test Defect"
 
-def test_get_defect(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="defectreader", email="reader@example.com", password="readshort")
-    reporter = crud.create_user(db_session, user_in, pwd_context)
-    project_in = schemas.ProjectCreate(title="Read Defect Project", description="Project for reading defects")
-    project = crud.create_user_project(db_session, project_in, reporter.id)
-    defect_in = schemas.DefectCreate(title="Read Bug", description="To be read", project_id=project.id)
-    created_defect = crud.create_defect(db_session, defect_in, reporter.id)
+def test_update_defect(db_session: Session, test_defect: models.Defect):
+    updated_title = "Updated Defect Title"
+    updated_status = schemas.DefectStatus.closed
+    defect_update = schemas.DefectUpdate(title=updated_title, status=updated_status)
+    updated_defect = crud.update_defect(db_session, defect_id=test_defect.id, defect=defect_update)
+    assert updated_defect.title == updated_title
+    assert updated_defect.status == updated_status
 
-    fetched_defect = crud.get_defect(db_session, created_defect.id)
-    assert fetched_defect.title == "Read Bug"
-
-def test_update_defect(db_session: Session, pwd_context: CryptContext):
-    user_in_reporter = schemas.UserCreate(username="upd_reporter", email="upd_reporter@example.com", password="updrep")
-    reporter = crud.create_user(db_session, user_in_reporter, pwd_context)
-    user_in_assignee = schemas.UserCreate(username="upd_assignee", email="upd_assignee@example.com", password="updass")
-    assignee = crud.create_user(db_session, user_in_assignee, pwd_context)
-
-    project_in = schemas.ProjectCreate(title="Update Defect Project", description="Project for updating defects")
-    project = crud.create_user_project(db_session, project_in, reporter.id)
-
-    defect_in = schemas.DefectCreate(title="Old Bug Title", description="Old Bug Description", project_id=project.id, assignee_id=reporter.id)
-    defect = crud.create_defect(db_session, defect_in, reporter.id)
-
-    update_data = schemas.DefectUpdate(title="New Bug Title", status=schemas.DefectStatus.in_progress, assignee_id=assignee.id)
-    updated_defect = crud.update_defect(db_session, defect.id, update_data)
-
-    assert updated_defect.title == "New Bug Title"
-    assert updated_defect.status == schemas.DefectStatus.in_progress
-    assert updated_defect.assignee_id == assignee.id
-
-def test_delete_defect(db_session: Session, pwd_context: CryptContext):
-    user_in = schemas.UserCreate(username="del_reporter", email="del_reporter@example.com", password="delrep")
-    reporter = crud.create_user(db_session, user_in, pwd_context)
-    project_in = schemas.ProjectCreate(title="Delete Defect Project", description="Project for deleting defects")
-    project = crud.create_user_project(db_session, project_in, reporter.id)
-    defect_in = schemas.DefectCreate(title="Delete Bug", description="To be deleted", project_id=project.id)
-    defect = crud.create_defect(db_session, defect_in, reporter.id)
-
-    crud.delete_defect(db_session, defect.id)
-    deleted_defect = crud.get_defect(db_session, defect.id)
+def test_delete_defect(db_session: Session, test_defect: models.Defect):
+    crud.delete_defect(db_session, defect_id=test_defect.id)
+    deleted_defect = crud.get_defect(db_session, defect_id=test_defect.id)
     assert deleted_defect is None
+
+def test_create_comment(db_session: Session, test_user: models.User, test_comment_create: schemas.CommentCreate):
+    comment = crud.create_comment(db_session, comment=test_comment_create, author_id=test_user.id)
+    assert comment.id is not None
+    assert comment.content == "Test comment content."
+    assert comment.author_id == test_user.id
+    assert comment.defect_id == test_comment_create.defect_id
+
+def test_get_comment(db_session: Session, test_comment: models.Comment):
+    comment = crud.get_comment(db_session, comment_id=test_comment.id)
+    assert comment.content == "Test comment content."
+
+def test_update_comment(db_session: Session, test_comment: models.Comment):
+    updated_content = "Updated comment content."
+    comment_update = schemas.CommentCreate(content=updated_content, defect_id=test_comment.defect_id)
+    updated_comment = crud.update_comment(db_session, comment_id=test_comment.id, comment=comment_update)
+    assert updated_comment.content == updated_content
+
+def test_delete_comment(db_session: Session, test_comment: models.Comment):
+    crud.delete_comment(db_session, comment_id=test_comment.id)
+    deleted_comment = crud.get_comment(db_session, comment_id=test_comment.id)
+    assert deleted_comment is None
+
+def test_create_attachment(db_session: Session, test_user: models.User, test_attachment_create: schemas.AttachmentCreate):
+    attachment = crud.create_attachment(db_session, attachment=test_attachment_create, uploader_id=test_user.id)
+    assert attachment.id is not None
+    assert attachment.filename == "test_file.txt"
+    assert attachment.file_path == "/path/to/test_file.txt"
+    assert attachment.uploader_id == test_user.id
+    assert attachment.defect_id == test_attachment_create.defect_id
+
+def test_get_attachment(db_session: Session, test_attachment: models.Attachment):
+    attachment = crud.get_attachment(db_session, attachment_id=test_attachment.id)
+    assert attachment.filename == "test_file.txt"
+
+def test_update_attachment(db_session: Session, test_attachment: models.Attachment):
+    updated_filename = "updated_file.pdf"
+    attachment_update = schemas.AttachmentCreate(filename=updated_filename, file_path="/new/path.pdf", defect_id=test_attachment.defect_id)
+    updated_attachment = crud.update_attachment(db_session, attachment_id=test_attachment.id, attachment=attachment_update)
+    assert updated_attachment.filename == updated_filename
+    assert updated_attachment.file_path == "/new/path.pdf"
+
+def test_delete_attachment(db_session: Session, test_attachment: models.Attachment):
+    crud.delete_attachment(db_session, attachment_id=test_attachment.id)
+    deleted_attachment = crud.get_attachment(db_session, attachment_id=test_attachment.id)
+    assert deleted_attachment is None

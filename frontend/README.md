@@ -9,9 +9,9 @@ npm run dev
 # or
 yarn dev
 # or
-pnpm dev
+# pnpm dev # pnpm не используется в текущем проекте
 # or
-bun dev
+# bun dev # bun не используется в текущем проекте
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

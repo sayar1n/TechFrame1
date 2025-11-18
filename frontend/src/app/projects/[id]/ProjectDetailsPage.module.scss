@@ -1,0 +1,66 @@
+.projectDetailsContainer {
+  padding: 2rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 0.8rem;
+    color: #555;
+    font-size: 1.1rem;
+
+    strong {
+      color: #333;
+    }
+  }
+
+  .error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+
+    .editButton,
+    .deleteButton {
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      border: none;
+      color: white;
+    }
+
+    .editButton {
+      background-color: #007bff;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .deleteButton {
+      background-color: #dc3545;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+}

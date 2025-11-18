@@ -1,0 +1,1827 @@
+2025-11-17 21:34:21,427 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:22,154 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:22,711 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:23,236 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:23,768 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:24,325 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:24,870 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:25,608 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:26,227 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:26,800 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:27,410 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:27,998 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:28,585 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:29,195 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:29,775 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:30,391 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:31,067 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:31,948 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:32,686 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:33,295 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:33,896 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:34,611 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:36,295 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:37,135 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:34:37,137 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0281s
+2025-11-17 21:34:37,139 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:34:37,288 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:37,973 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:34:37,974 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0090s
+2025-11-17 21:34:37,975 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:34:38,101 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:39,012 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:39,711 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:41,450 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:43,332 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:45,249 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:46,882 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:48,590 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:50,855 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:34:52,724 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:50,376 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:51,233 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:51,811 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:52,399 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:53,020 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:53,594 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:54,180 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:54,786 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:55,371 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:56,015 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:56,593 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:57,181 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:57,800 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:58,385 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:58,975 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:35:59,597 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:00,186 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:00,802 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:01,402 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:01,990 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:02,637 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:03,316 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:04,985 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:05,586 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:36:05,587 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0098s
+2025-11-17 21:36:05,588 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:36:05,774 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:06,358 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:36:06,359 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0082s
+2025-11-17 21:36:06,360 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:36:06,478 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:07,105 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:07,700 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:09,330 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:11,052 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:12,692 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:14,291 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:16,089 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:17,816 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:19,456 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:36:59,520 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:00,309 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:00,966 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:01,623 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:02,182 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:02,788 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:03,347 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:03,996 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:04,558 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:05,119 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:05,707 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:06,264 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:06,829 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:07,421 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:07,986 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:08,597 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:09,174 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:09,738 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:10,334 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:10,909 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:11,478 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:12,145 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:13,692 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:14,314 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:37:14,315 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0100s
+2025-11-17 21:37:14,317 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:37:14,435 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:15,015 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:37:15,016 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0090s
+2025-11-17 21:37:15,016 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:37:15,134 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:15,749 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:16,327 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:17,883 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:19,553 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:21,098 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:22,699 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:24,254 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:25,863 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:37:27,420 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:06,554 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:07,343 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:07,956 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:08,541 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:09,114 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:09,730 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:10,313 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:10,930 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:11,509 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:12,086 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:12,782 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:13,357 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:13,981 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:14,590 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:15,174 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:15,791 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:16,398 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:16,974 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:17,613 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:18,186 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:18,748 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:19,426 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:21,006 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:21,635 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:38:21,637 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0100s
+2025-11-17 21:38:21,638 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:38:21,760 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:22,339 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:38:22,341 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0101s
+2025-11-17 21:38:22,342 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:38:22,464 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:23,039 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:23,678 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:25,314 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:26,931 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:28,509 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:30,121 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:31,677 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:33,319 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:38:34,895 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-11-17 21:43:01,521 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:43:01,525 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2625s
+2025-11-17 21:43:01,527 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:02,155 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:43:02,155 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2618s
+2025-11-17 21:43:02,157 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:02,287 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:43:02,288 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0133s
+2025-11-17 21:43:02,290 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:43:02,920 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:43:02,920 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2540s
+2025-11-17 21:43:02,922 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:02,938 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:43:02,942 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0176s
+2025-11-17 21:43:02,943 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:03,080 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:43:03,081 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0141s
+2025-11-17 21:43:03,082 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:43:03,711 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:43:03,712 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2589s
+2025-11-17 21:43:03,713 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:03,730 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:43:03,732 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0164s
+2025-11-17 21:43:03,733 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:03,751 - backend.main - INFO - User testuser updated project Updated Project via API (ID: 1).
+2025-11-17 21:43:03,753 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0170s
+2025-11-17 21:43:03,754 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 21:43:04,377 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:43:04,378 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2619s
+2025-11-17 21:43:04,380 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:04,392 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:43:04,394 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0130s
+2025-11-17 21:43:04,396 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:04,410 - backend.main - INFO - User testuser deleted project (ID: 1).
+2025-11-17 21:43:04,411 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0141s
+2025-11-17 21:43:04,412 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 21:43:04,418 - backend.main - WARNING - User testuser tried to access non-existent project with ID: 1.
+2025-11-17 21:43:04,419 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0050s
+2025-11-17 21:43:04,420 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 21:43:04,791 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:43:04,792 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2559s
+2025-11-17 21:43:04,795 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:05,168 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:43:05,170 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2612s
+2025-11-17 21:43:05,172 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:05,177 - backend.main - WARNING - Registration failed: Email duplicate@example.com already registered.
+2025-11-17 21:43:05,179 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0050s
+2025-11-17 21:43:05,181 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:43:05,549 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:43:05,551 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2595s
+2025-11-17 21:43:05,553 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:05,559 - backend.main - WARNING - Registration failed: Email unique@example.com already registered.
+2025-11-17 21:43:05,560 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:43:05,563 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:43:05,992 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:43:05,993 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2666s
+2025-11-17 21:43:05,995 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:06,254 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:43:06,255 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2566s
+2025-11-17 21:43:06,258 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:06,618 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:43:06,619 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2545s
+2025-11-17 21:43:06,621 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:06,876 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:43:06,877 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2531s
+2025-11-17 21:43:06,879 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:43:07,253 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:43:07,254 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2632s
+2025-11-17 21:43:07,257 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:07,511 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:43:07,512 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2539s
+2025-11-17 21:43:07,514 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:07,520 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:43:07,521 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 21:43:07,525 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:07,892 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:43:07,893 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2582s
+2025-11-17 21:43:07,896 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:08,150 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:43:08,151 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2529s
+2025-11-17 21:43:08,153 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:08,161 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:43:08,165 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0096s
+2025-11-17 21:43:08,168 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:43:08,535 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:43:08,536 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2612s
+2025-11-17 21:43:08,538 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:43:08,793 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:43:08,794 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2530s
+2025-11-17 21:43:08,796 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:43:08,806 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:43:08,808 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0092s
+2025-11-17 21:43:08,809 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 21:52:07,728 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:52:07,730 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2828s
+2025-11-17 21:52:07,732 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:08,402 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:52:08,403 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2859s
+2025-11-17 21:52:08,405 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:08,542 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:52:08,543 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0151s
+2025-11-17 21:52:08,544 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:52:09,210 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:52:09,211 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2610s
+2025-11-17 21:52:09,212 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:09,230 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:52:09,234 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0190s
+2025-11-17 21:52:09,235 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:09,376 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:52:09,377 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0140s
+2025-11-17 21:52:09,378 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:52:10,046 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:52:10,047 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2899s
+2025-11-17 21:52:10,049 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:10,065 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:52:10,070 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0180s
+2025-11-17 21:52:10,071 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:10,092 - backend.main - INFO - User testuser updated project Updated Project via API (ID: 1).
+2025-11-17 21:52:10,094 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0199s
+2025-11-17 21:52:10,096 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 21:52:10,999 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:52:11,000 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.3126s
+2025-11-17 21:52:11,001 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:11,016 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:52:11,018 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0150s
+2025-11-17 21:52:11,019 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:11,039 - backend.main - INFO - User testuser deleted project (ID: 1).
+2025-11-17 21:52:11,039 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0171s
+2025-11-17 21:52:11,041 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 21:52:11,049 - backend.main - WARNING - User testuser tried to access non-existent project with ID: 1.
+2025-11-17 21:52:11,050 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0060s
+2025-11-17 21:52:11,051 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 21:52:11,455 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:52:11,456 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2699s
+2025-11-17 21:52:11,458 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:11,829 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:52:11,830 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2627s
+2025-11-17 21:52:11,832 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:11,838 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 21:52:11,839 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:52:11,840 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:52:12,218 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:52:12,219 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2563s
+2025-11-17 21:52:12,222 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:12,229 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 21:52:12,230 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0057s
+2025-11-17 21:52:12,232 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:52:12,616 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:52:12,616 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2762s
+2025-11-17 21:52:12,619 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:12,876 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:52:12,877 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2559s
+2025-11-17 21:52:12,879 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:13,265 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:52:13,268 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2778s
+2025-11-17 21:52:13,271 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:13,552 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:52:13,553 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2759s
+2025-11-17 21:52:13,556 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:52:13,922 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:52:13,923 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2573s
+2025-11-17 21:52:13,925 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:14,207 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:52:14,207 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2784s
+2025-11-17 21:52:14,210 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:14,216 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:52:14,217 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0050s
+2025-11-17 21:52:14,219 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:14,586 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:52:14,589 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2597s
+2025-11-17 21:52:14,591 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:14,849 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:52:14,849 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2546s
+2025-11-17 21:52:14,852 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:14,860 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:52:14,860 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0057s
+2025-11-17 21:52:14,860 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:52:15,340 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:52:15,342 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.3345s
+2025-11-17 21:52:15,345 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:52:15,648 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:52:15,648 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.3001s
+2025-11-17 21:52:15,651 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:52:15,659 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:52:15,660 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0060s
+2025-11-17 21:52:15,662 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 21:53:29,684 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:53:29,686 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2454s
+2025-11-17 21:53:29,688 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:30,279 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:53:30,279 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2493s
+2025-11-17 21:53:30,282 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:30,399 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:53:30,400 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0130s
+2025-11-17 21:53:30,401 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:53:30,996 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:53:30,996 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2418s
+2025-11-17 21:53:30,998 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:31,005 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:53:31,005 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0052s
+2025-11-17 21:53:31,005 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:31,223 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:53:31,224 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0150s
+2025-11-17 21:53:31,231 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:53:31,866 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:53:31,867 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2757s
+2025-11-17 21:53:31,868 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:31,882 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:53:31,884 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0133s
+2025-11-17 21:53:31,885 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:31,901 - backend.main - INFO - User testuser updated project Updated Project via API (ID: 1).
+2025-11-17 21:53:31,902 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0150s
+2025-11-17 21:53:31,904 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 21:53:32,482 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:53:32,483 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2409s
+2025-11-17 21:53:32,484 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:32,498 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:53:32,500 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0140s
+2025-11-17 21:53:32,501 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:32,516 - backend.main - INFO - User testuser deleted project (ID: 1).
+2025-11-17 21:53:32,516 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0132s
+2025-11-17 21:53:32,517 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 21:53:32,523 - backend.main - WARNING - User testuser tried to access non-existent project with ID: 1.
+2025-11-17 21:53:32,524 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0050s
+2025-11-17 21:53:32,524 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 21:53:32,875 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:53:32,876 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2424s
+2025-11-17 21:53:32,879 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:33,225 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:53:33,226 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2421s
+2025-11-17 21:53:33,228 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:33,233 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 21:53:33,234 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:53:33,237 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:53:33,578 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:53:33,580 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2486s
+2025-11-17 21:53:33,583 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:33,588 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 21:53:33,589 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:53:33,590 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:53:33,947 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:53:33,948 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2403s
+2025-11-17 21:53:33,950 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:34,192 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:53:34,192 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2386s
+2025-11-17 21:53:34,194 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:34,539 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:53:34,540 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2415s
+2025-11-17 21:53:34,542 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:34,785 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:53:34,786 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2425s
+2025-11-17 21:53:34,788 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:53:35,134 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:53:35,135 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2547s
+2025-11-17 21:53:35,137 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:35,379 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:53:35,379 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2399s
+2025-11-17 21:53:35,381 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:35,387 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:53:35,388 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 21:53:35,390 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:35,734 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:53:35,736 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2414s
+2025-11-17 21:53:35,738 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:35,979 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:53:35,980 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2403s
+2025-11-17 21:53:35,982 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:35,990 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:53:35,991 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0070s
+2025-11-17 21:53:35,994 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:53:36,339 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:53:36,341 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2401s
+2025-11-17 21:53:36,343 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:53:36,585 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:53:36,586 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2418s
+2025-11-17 21:53:36,588 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:53:36,595 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:53:36,596 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0060s
+2025-11-17 21:53:36,598 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 21:54:27,184 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:54:27,185 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2445s
+2025-11-17 21:54:27,187 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:27,779 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:54:27,779 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2490s
+2025-11-17 21:54:27,781 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:27,898 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:54:27,899 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0140s
+2025-11-17 21:54:27,899 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:54:28,706 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:54:28,706 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2279s
+2025-11-17 21:54:28,706 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:28,737 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:54:28,741 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0173s
+2025-11-17 21:54:28,742 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:28,861 - backend.main - WARNING - Failed login attempt for username: testuser
+2025-11-17 21:54:28,862 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0133s
+2025-11-17 21:54:28,863 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:54:29,460 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:54:29,460 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2400s
+2025-11-17 21:54:29,461 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:29,475 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:54:29,477 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0140s
+2025-11-17 21:54:29,478 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:29,480 - backend.main - INFO - User testuser updated project Updated Project via API (ID: 1).
+2025-11-17 21:54:29,496 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0159s
+2025-11-17 21:54:29,497 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 21:54:30,093 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:54:30,093 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2474s
+2025-11-17 21:54:30,094 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:30,107 - backend.main - INFO - User testuser created project Test Project (ID: 1).
+2025-11-17 21:54:30,108 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0122s
+2025-11-17 21:54:30,110 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:30,124 - backend.main - INFO - User testuser deleted project (ID: 1).
+2025-11-17 21:54:30,125 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0130s
+2025-11-17 21:54:30,126 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 21:54:30,131 - backend.main - WARNING - User testuser tried to access non-existent project with ID: 1.
+2025-11-17 21:54:30,132 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0052s
+2025-11-17 21:54:30,133 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 21:54:30,483 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:54:30,484 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2447s
+2025-11-17 21:54:30,486 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:30,827 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:54:30,828 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2393s
+2025-11-17 21:54:30,830 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:30,836 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 21:54:30,837 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:54:30,839 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:54:31,180 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:54:31,182 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2411s
+2025-11-17 21:54:31,184 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:31,189 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 21:54:31,190 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:54:31,192 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:54:31,530 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:54:31,531 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2511s
+2025-11-17 21:54:31,533 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:31,776 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:54:31,776 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2392s
+2025-11-17 21:54:31,778 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:32,118 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:54:32,119 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2414s
+2025-11-17 21:54:32,121 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:32,365 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:54:32,367 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2433s
+2025-11-17 21:54:32,368 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:54:32,709 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:54:32,710 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2403s
+2025-11-17 21:54:32,713 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:32,955 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:54:32,955 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2400s
+2025-11-17 21:54:32,958 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:32,963 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:54:32,964 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 21:54:32,966 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:33,311 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:54:33,313 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2401s
+2025-11-17 21:54:33,315 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:33,558 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:54:33,558 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2405s
+2025-11-17 21:54:33,561 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:33,568 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:54:33,569 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0060s
+2025-11-17 21:54:33,572 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:54:33,913 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:54:33,915 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2416s
+2025-11-17 21:54:33,917 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:54:34,161 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:54:34,162 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2414s
+2025-11-17 21:54:34,164 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:54:34,172 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:54:34,173 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0060s
+2025-11-17 21:54:34,174 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 21:55:09,095 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:55:09,097 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2474s
+2025-11-17 21:55:09,098 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:09,689 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:55:09,690 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2495s
+2025-11-17 21:55:09,691 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:55:10,274 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:55:10,274 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2406s
+2025-11-17 21:55:10,276 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:55:13,704 - backend.main - INFO - User testuser logged in successfully.
+2025-11-17 21:55:13,704 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2387s
+2025-11-17 21:55:13,706 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:55:18,183 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:55:18,184 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2436s
+2025-11-17 21:55:18,186 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:18,531 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:55:18,531 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2424s
+2025-11-17 21:55:18,531 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:18,531 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 21:55:18,531 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0000s
+2025-11-17 21:55:18,531 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:55:18,883 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:55:18,884 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2396s
+2025-11-17 21:55:18,886 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:18,891 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 21:55:18,893 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:55:18,894 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:55:19,238 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:55:19,239 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2407s
+2025-11-17 21:55:19,241 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:19,483 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:55:19,483 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2409s
+2025-11-17 21:55:19,485 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:55:19,828 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:55:19,829 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2400s
+2025-11-17 21:55:19,831 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:20,074 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:55:20,075 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2415s
+2025-11-17 21:55:20,077 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:55:20,435 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:55:20,437 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2548s
+2025-11-17 21:55:20,439 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:20,682 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:55:20,682 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2414s
+2025-11-17 21:55:20,684 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:55:20,690 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:55:20,691 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-17 21:55:20,693 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:21,035 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:55:21,036 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2413s
+2025-11-17 21:55:21,039 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:21,281 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:55:21,281 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2397s
+2025-11-17 21:55:21,284 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:55:21,291 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:55:21,293 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0060s
+2025-11-17 21:55:21,295 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:55:21,630 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:55:21,630 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2337s
+2025-11-17 21:55:21,630 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:55:21,882 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:55:21,882 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2521s
+2025-11-17 21:55:21,884 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:55:21,891 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:55:21,892 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0050s
+2025-11-17 21:55:21,894 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 21:56:05,346 - backend.main - INFO - New user registered: testuser_36802 with role engineer.
+2025-11-17 21:56:05,348 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2469s
+2025-11-17 21:56:05,350 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:05,943 - backend.main - INFO - User testuser_61662 logged in successfully.
+2025-11-17 21:56:05,943 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2503s
+2025-11-17 21:56:05,945 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:56:06,529 - backend.main - INFO - User testuser_11031 logged in successfully.
+2025-11-17 21:56:06,529 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2412s
+2025-11-17 21:56:06,531 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:56:10,106 - backend.main - INFO - User testuser_96077 logged in successfully.
+2025-11-17 21:56:10,106 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2421s
+2025-11-17 21:56:10,108 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:56:14,843 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:56:14,844 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2440s
+2025-11-17 21:56:14,846 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:15,196 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:56:15,197 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2472s
+2025-11-17 21:56:15,200 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:15,205 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 21:56:15,206 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0041s
+2025-11-17 21:56:15,208 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:56:15,548 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:56:15,549 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2439s
+2025-11-17 21:56:15,551 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:15,557 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 21:56:15,558 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0045s
+2025-11-17 21:56:15,560 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:56:15,904 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:56:15,905 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2427s
+2025-11-17 21:56:15,907 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:16,165 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:56:16,165 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2552s
+2025-11-17 21:56:16,168 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:56:16,515 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:56:16,516 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2422s
+2025-11-17 21:56:16,518 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:16,761 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:56:16,762 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2423s
+2025-11-17 21:56:16,764 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:56:17,108 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:56:17,109 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2441s
+2025-11-17 21:56:17,111 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:17,356 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:56:17,357 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2430s
+2025-11-17 21:56:17,360 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:56:17,366 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:56:17,367 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0053s
+2025-11-17 21:56:17,369 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:17,712 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:56:17,714 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2420s
+2025-11-17 21:56:17,716 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:17,961 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:56:17,961 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2428s
+2025-11-17 21:56:17,963 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:56:17,971 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:56:17,972 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0060s
+2025-11-17 21:56:17,974 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:56:18,322 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:56:18,323 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2458s
+2025-11-17 21:56:18,326 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:56:18,573 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:56:18,573 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2442s
+2025-11-17 21:56:18,575 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:56:18,582 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:56:18,583 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0052s
+2025-11-17 21:56:18,585 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 21:57:03,933 - backend.main - INFO - New user registered: testuser_62751 with role engineer.
+2025-11-17 21:57:03,935 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2439s
+2025-11-17 21:57:03,936 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:04,292 - backend.main - WARNING - Failed login attempt for username: testuser_45593
+2025-11-17 21:57:04,293 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0131s
+2025-11-17 21:57:04,294 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:57:05,087 - backend.main - INFO - User fixtureuser_15590 logged in successfully.
+2025-11-17 21:57:05,088 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2579s
+2025-11-17 21:57:05,089 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:05,094 - backend.main - INFO - User fixtureuser_15590 accessed their own profile.
+2025-11-17 21:57:05,095 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 21:57:05,096 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:05,683 - backend.main - INFO - User fixtureuser_35910 logged in successfully.
+2025-11-17 21:57:05,684 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2533s
+2025-11-17 21:57:05,685 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:05,701 - backend.main - INFO - User fixtureuser_35910 created project Test Project (ID: 1).
+2025-11-17 21:57:05,704 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0171s
+2025-11-17 21:57:05,705 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:06,286 - backend.main - INFO - User fixtureuser_56487 logged in successfully.
+2025-11-17 21:57:06,287 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2416s
+2025-11-17 21:57:06,288 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:06,301 - backend.main - INFO - User fixtureuser_56487 created project Test Project (ID: 1).
+2025-11-17 21:57:06,303 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0130s
+2025-11-17 21:57:06,304 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:06,312 - backend.main - INFO - User fixtureuser_56487 accessed list of projects.
+2025-11-17 21:57:06,313 - backend.main - INFO - Request: GET http://testserver/projects/ - Status: 200 - Time: 0.0060s
+2025-11-17 21:57:06,315 - httpx - INFO - HTTP Request: GET http://testserver/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:06,895 - backend.main - INFO - User fixtureuser_13571 logged in successfully.
+2025-11-17 21:57:06,896 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2404s
+2025-11-17 21:57:06,897 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:06,910 - backend.main - INFO - User fixtureuser_13571 created project Test Project (ID: 1).
+2025-11-17 21:57:06,912 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0132s
+2025-11-17 21:57:06,913 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:06,929 - backend.main - INFO - User fixtureuser_13571 updated project Updated Project via API (ID: 1).
+2025-11-17 21:57:06,931 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0162s
+2025-11-17 21:57:06,932 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 21:57:07,505 - backend.main - INFO - User fixtureuser_64569 logged in successfully.
+2025-11-17 21:57:07,505 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2318s
+2025-11-17 21:57:07,505 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:07,529 - backend.main - INFO - User fixtureuser_64569 created project Test Project (ID: 1).
+2025-11-17 21:57:07,531 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0262s
+2025-11-17 21:57:07,532 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:07,547 - backend.main - INFO - User fixtureuser_64569 deleted project (ID: 1).
+2025-11-17 21:57:07,548 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0140s
+2025-11-17 21:57:07,549 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 21:57:07,555 - backend.main - WARNING - User fixtureuser_64569 tried to access non-existent project with ID: 1.
+2025-11-17 21:57:07,556 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0053s
+2025-11-17 21:57:07,557 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 21:57:07,904 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:57:07,905 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2431s
+2025-11-17 21:57:07,907 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:08,250 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:57:08,251 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2408s
+2025-11-17 21:57:08,255 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:08,260 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 21:57:08,261 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0051s
+2025-11-17 21:57:08,262 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:57:08,605 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:57:08,606 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2402s
+2025-11-17 21:57:08,609 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:08,614 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 21:57:08,615 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 21:57:08,617 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:57:08,960 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:57:08,961 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2409s
+2025-11-17 21:57:08,963 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:09,205 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:57:09,205 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2400s
+2025-11-17 21:57:09,207 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:09,552 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:57:09,554 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2480s
+2025-11-17 21:57:09,556 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:09,797 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:57:09,798 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2404s
+2025-11-17 21:57:09,800 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:57:10,138 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:57:10,139 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2406s
+2025-11-17 21:57:10,142 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:10,384 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:57:10,384 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2400s
+2025-11-17 21:57:10,387 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:10,392 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:57:10,393 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 21:57:10,395 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:10,742 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:57:10,743 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2414s
+2025-11-17 21:57:10,745 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:10,987 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:57:10,987 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2400s
+2025-11-17 21:57:10,990 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:11,033 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:57:11,035 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0423s
+2025-11-17 21:57:11,037 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:57:11,382 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:57:11,383 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2388s
+2025-11-17 21:57:11,386 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:11,628 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:57:11,629 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2405s
+2025-11-17 21:57:11,630 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:11,630 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:57:11,630 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0000s
+2025-11-17 21:57:11,630 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 21:57:42,182 - backend.main - INFO - New user registered: testuser_41457 with role engineer.
+2025-11-17 21:57:42,184 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2429s
+2025-11-17 21:57:42,186 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:42,780 - backend.main - INFO - User fixtureuser_16297 logged in successfully.
+2025-11-17 21:57:42,780 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2495s
+2025-11-17 21:57:42,782 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:43,362 - backend.main - INFO - User fixtureuser_72683 logged in successfully.
+2025-11-17 21:57:43,363 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2395s
+2025-11-17 21:57:43,364 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:43,369 - backend.main - INFO - User fixtureuser_72683 accessed their own profile.
+2025-11-17 21:57:43,370 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 21:57:43,371 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:43,954 - backend.main - INFO - User fixtureuser_28954 logged in successfully.
+2025-11-17 21:57:43,954 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2406s
+2025-11-17 21:57:43,956 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:43,972 - backend.main - INFO - User fixtureuser_28954 created project Test Project (ID: 1).
+2025-11-17 21:57:43,975 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0161s
+2025-11-17 21:57:43,977 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:44,558 - backend.main - INFO - User fixtureuser_25565 logged in successfully.
+2025-11-17 21:57:44,558 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2531s
+2025-11-17 21:57:44,559 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:44,572 - backend.main - INFO - User fixtureuser_25565 created project Test Project (ID: 1).
+2025-11-17 21:57:44,574 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0130s
+2025-11-17 21:57:44,575 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:44,583 - backend.main - INFO - User fixtureuser_25565 accessed list of projects.
+2025-11-17 21:57:44,584 - backend.main - INFO - Request: GET http://testserver/projects/ - Status: 200 - Time: 0.0063s
+2025-11-17 21:57:44,586 - httpx - INFO - HTTP Request: GET http://testserver/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:45,168 - backend.main - INFO - User fixtureuser_1024 logged in successfully.
+2025-11-17 21:57:45,169 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2416s
+2025-11-17 21:57:45,170 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:45,184 - backend.main - INFO - User fixtureuser_1024 created project Test Project (ID: 1).
+2025-11-17 21:57:45,186 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0142s
+2025-11-17 21:57:45,187 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:45,204 - backend.main - INFO - User fixtureuser_1024 updated project Updated Project via API (ID: 1).
+2025-11-17 21:57:45,205 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0159s
+2025-11-17 21:57:45,207 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 21:57:45,786 - backend.main - INFO - User fixtureuser_77931 logged in successfully.
+2025-11-17 21:57:45,787 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2416s
+2025-11-17 21:57:45,788 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:45,802 - backend.main - INFO - User fixtureuser_77931 created project Test Project (ID: 1).
+2025-11-17 21:57:45,805 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0141s
+2025-11-17 21:57:45,806 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:45,820 - backend.main - INFO - User fixtureuser_77931 deleted project (ID: 1).
+2025-11-17 21:57:45,821 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0130s
+2025-11-17 21:57:45,822 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 21:57:45,827 - backend.main - WARNING - User fixtureuser_77931 tried to access non-existent project with ID: 1.
+2025-11-17 21:57:45,828 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0050s
+2025-11-17 21:57:45,829 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 21:57:46,179 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 21:57:46,180 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2443s
+2025-11-17 21:57:46,182 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:46,529 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 21:57:46,530 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2416s
+2025-11-17 21:57:46,532 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:46,538 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 21:57:46,539 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0050s
+2025-11-17 21:57:46,540 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:57:46,881 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 21:57:46,881 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2368s
+2025-11-17 21:57:46,881 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:46,881 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 21:57:46,881 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0000s
+2025-11-17 21:57:46,881 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 21:57:47,237 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 21:57:47,239 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2406s
+2025-11-17 21:57:47,241 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:47,483 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 21:57:47,484 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2406s
+2025-11-17 21:57:47,486 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:47,833 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 21:57:47,835 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2414s
+2025-11-17 21:57:47,837 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:48,079 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 21:57:48,081 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2418s
+2025-11-17 21:57:48,082 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 21:57:48,425 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 21:57:48,427 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2427s
+2025-11-17 21:57:48,429 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:48,671 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 21:57:48,672 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2421s
+2025-11-17 21:57:48,674 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:48,681 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 21:57:48,682 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0044s
+2025-11-17 21:57:48,684 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:49,027 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 21:57:49,028 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2404s
+2025-11-17 21:57:49,030 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:49,273 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 21:57:49,274 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2403s
+2025-11-17 21:57:49,276 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:49,284 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 21:57:49,286 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0082s
+2025-11-17 21:57:49,288 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 21:57:49,666 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 21:57:49,668 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2772s
+2025-11-17 21:57:49,670 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 21:57:50,017 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 21:57:50,018 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.3444s
+2025-11-17 21:57:50,028 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 21:57:50,036 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 21:57:50,037 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0070s
+2025-11-17 21:57:50,039 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 22:09:11,555 - backend.main - INFO - New user registered: testuser_43556 with role engineer.
+2025-11-17 22:09:11,557 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2654s
+2025-11-17 22:09:11,559 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:12,218 - backend.main - INFO - User fixtureuser_88154 logged in successfully.
+2025-11-17 22:09:12,220 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2777s
+2025-11-17 22:09:12,221 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:12,911 - backend.main - INFO - User fixtureuser_7026 logged in successfully.
+2025-11-17 22:09:12,911 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2825s
+2025-11-17 22:09:12,913 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:12,918 - backend.main - INFO - User fixtureuser_7026 accessed their own profile.
+2025-11-17 22:09:12,919 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 22:09:12,921 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:13,863 - backend.main - INFO - User fixtureuser_68905 logged in successfully.
+2025-11-17 22:09:13,864 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.3439s
+2025-11-17 22:09:13,865 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:14,510 - backend.main - INFO - User fixtureuser_21737 logged in successfully.
+2025-11-17 22:09:14,511 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2611s
+2025-11-17 22:09:14,512 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:15,179 - backend.main - INFO - User fixtureuser_31334 logged in successfully.
+2025-11-17 22:09:15,181 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2748s
+2025-11-17 22:09:15,182 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:15,842 - backend.main - INFO - User fixtureuser_2548 logged in successfully.
+2025-11-17 22:09:15,843 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2699s
+2025-11-17 22:09:15,844 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:16,277 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 22:09:16,279 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2802s
+2025-11-17 22:09:16,282 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:16,677 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 22:09:16,679 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2793s
+2025-11-17 22:09:16,681 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:16,688 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 22:09:16,689 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0055s
+2025-11-17 22:09:16,691 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 22:09:17,088 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 22:09:17,089 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2830s
+2025-11-17 22:09:17,091 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:17,110 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 22:09:17,112 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0050s
+2025-11-17 22:09:17,113 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 22:09:17,501 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 22:09:17,502 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2690s
+2025-11-17 22:09:17,505 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:17,789 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 22:09:17,790 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2834s
+2025-11-17 22:09:17,793 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:18,182 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 22:09:18,183 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2777s
+2025-11-17 22:09:18,186 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:18,464 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 22:09:18,465 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2764s
+2025-11-17 22:09:18,467 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 22:09:18,860 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 22:09:18,861 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2788s
+2025-11-17 22:09:18,865 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:19,133 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 22:09:19,133 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2660s
+2025-11-17 22:09:19,135 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:19,143 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 22:09:19,144 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0050s
+2025-11-17 22:09:19,146 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:19,545 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 22:09:19,547 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2735s
+2025-11-17 22:09:19,550 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:19,820 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 22:09:19,820 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2685s
+2025-11-17 22:09:19,823 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:19,832 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 22:09:19,833 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0080s
+2025-11-17 22:09:19,837 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 22:09:20,237 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 22:09:20,239 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2760s
+2025-11-17 22:09:20,241 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:09:20,522 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 22:09:20,522 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2774s
+2025-11-17 22:09:20,525 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:09:20,541 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 22:09:20,543 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0160s
+2025-11-17 22:09:20,545 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 22:10:30,697 - backend.main - INFO - New user registered: testuser_74695 with role engineer.
+2025-11-17 22:10:30,699 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2574s
+2025-11-17 22:10:30,701 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:31,338 - backend.main - INFO - User fixtureuser_74566 logged in successfully.
+2025-11-17 22:10:31,339 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2700s
+2025-11-17 22:10:31,340 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:31,961 - backend.main - INFO - User fixtureuser_88889 logged in successfully.
+2025-11-17 22:10:31,962 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2544s
+2025-11-17 22:10:31,964 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:31,969 - backend.main - INFO - User fixtureuser_88889 accessed their own profile.
+2025-11-17 22:10:31,969 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-17 22:10:31,973 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:32,598 - backend.main - INFO - User fixtureuser_70229 logged in successfully.
+2025-11-17 22:10:32,599 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2582s
+2025-11-17 22:10:32,600 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:33,494 - backend.main - INFO - User fixtureuser_25274 logged in successfully.
+2025-11-17 22:10:33,495 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2552s
+2025-11-17 22:10:33,496 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:33,512 - backend.main - INFO - User fixtureuser_25274 created project Test Project (ID: 1).
+2025-11-17 22:10:33,516 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0170s
+2025-11-17 22:10:33,517 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:33,524 - backend.main - INFO - User fixtureuser_25274 accessed list of projects.
+2025-11-17 22:10:33,526 - backend.main - INFO - Request: GET http://testserver/projects/ - Status: 200 - Time: 0.0060s
+2025-11-17 22:10:33,527 - httpx - INFO - HTTP Request: GET http://testserver/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:34,140 - backend.main - INFO - User fixtureuser_62992 logged in successfully.
+2025-11-17 22:10:34,141 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2546s
+2025-11-17 22:10:34,143 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:34,156 - backend.main - INFO - User fixtureuser_62992 created project Test Project (ID: 1).
+2025-11-17 22:10:34,157 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0133s
+2025-11-17 22:10:34,159 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:34,177 - backend.main - INFO - User fixtureuser_62992 updated project Updated Project via API (ID: 1).
+2025-11-17 22:10:34,179 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0181s
+2025-11-17 22:10:34,180 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 22:10:34,846 - backend.main - INFO - User fixtureuser_3981 logged in successfully.
+2025-11-17 22:10:34,847 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2969s
+2025-11-17 22:10:34,848 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:34,862 - backend.main - INFO - User fixtureuser_3981 created project Test Project (ID: 1).
+2025-11-17 22:10:34,865 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0150s
+2025-11-17 22:10:34,866 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:34,880 - backend.main - INFO - User fixtureuser_3981 deleted project (ID: 1).
+2025-11-17 22:10:34,881 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0132s
+2025-11-17 22:10:34,881 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 22:10:34,886 - backend.main - WARNING - User fixtureuser_3981 tried to access non-existent project with ID: 1.
+2025-11-17 22:10:34,886 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0050s
+2025-11-17 22:10:34,886 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 22:10:35,266 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 22:10:35,267 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2618s
+2025-11-17 22:10:35,269 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:35,637 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 22:10:35,638 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2547s
+2025-11-17 22:10:35,640 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:35,645 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 22:10:35,647 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 22:10:35,648 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 22:10:36,022 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 22:10:36,023 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2624s
+2025-11-17 22:10:36,025 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:36,030 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 22:10:36,032 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0043s
+2025-11-17 22:10:36,033 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 22:10:36,394 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 22:10:36,395 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2507s
+2025-11-17 22:10:36,398 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:36,657 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 22:10:36,658 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2580s
+2025-11-17 22:10:36,661 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:37,030 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 22:10:37,030 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2511s
+2025-11-17 22:10:37,030 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:37,288 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 22:10:37,289 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2533s
+2025-11-17 22:10:37,291 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 22:10:37,655 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 22:10:37,656 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2567s
+2025-11-17 22:10:37,659 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:37,914 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 22:10:37,915 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2537s
+2025-11-17 22:10:37,917 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:37,923 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 22:10:37,924 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 22:10:37,926 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:38,300 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 22:10:38,301 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2710s
+2025-11-17 22:10:38,303 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:38,561 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 22:10:38,562 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2570s
+2025-11-17 22:10:38,564 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:38,573 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 22:10:38,574 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0071s
+2025-11-17 22:10:38,577 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 22:10:38,950 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 22:10:38,952 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2623s
+2025-11-17 22:10:38,955 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:10:39,211 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 22:10:39,212 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2552s
+2025-11-17 22:10:39,215 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:10:39,222 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 22:10:39,223 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0060s
+2025-11-17 22:10:39,225 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-17 22:11:22,162 - backend.main - INFO - New user registered: testuser_74387 with role engineer.
+2025-11-17 22:11:22,164 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2662s
+2025-11-17 22:11:22,166 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:22,821 - backend.main - INFO - User fixtureuser_41774 logged in successfully.
+2025-11-17 22:11:22,822 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2769s
+2025-11-17 22:11:22,823 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:23,476 - backend.main - INFO - User fixtureuser_36137 logged in successfully.
+2025-11-17 22:11:23,476 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2589s
+2025-11-17 22:11:23,478 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:23,483 - backend.main - INFO - User fixtureuser_36137 accessed their own profile.
+2025-11-17 22:11:23,483 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 22:11:23,484 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:24,158 - backend.main - INFO - User fixtureuser_83829 logged in successfully.
+2025-11-17 22:11:24,158 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2947s
+2025-11-17 22:11:24,160 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:24,178 - backend.main - INFO - User fixtureuser_83829 created project Test Project (ID: 1).
+2025-11-17 22:11:24,182 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0200s
+2025-11-17 22:11:24,183 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:24,834 - backend.main - INFO - User fixtureuser_51403 logged in successfully.
+2025-11-17 22:11:24,835 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2635s
+2025-11-17 22:11:24,836 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:24,850 - backend.main - INFO - User fixtureuser_51403 created project Test Project (ID: 1).
+2025-11-17 22:11:24,853 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0136s
+2025-11-17 22:11:24,854 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:24,861 - backend.main - INFO - User fixtureuser_51403 accessed list of projects.
+2025-11-17 22:11:24,864 - backend.main - INFO - Request: GET http://testserver/projects/ - Status: 200 - Time: 0.0080s
+2025-11-17 22:11:24,865 - httpx - INFO - HTTP Request: GET http://testserver/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:25,545 - backend.main - INFO - User fixtureuser_9671 logged in successfully.
+2025-11-17 22:11:25,549 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.3026s
+2025-11-17 22:11:25,550 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:25,573 - backend.main - INFO - User fixtureuser_9671 created project Test Project (ID: 1).
+2025-11-17 22:11:25,582 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0261s
+2025-11-17 22:11:25,583 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:25,605 - backend.main - INFO - User fixtureuser_9671 updated project Updated Project via API (ID: 1).
+2025-11-17 22:11:25,607 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0210s
+2025-11-17 22:11:25,612 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-17 22:11:26,349 - backend.main - INFO - User fixtureuser_9723 logged in successfully.
+2025-11-17 22:11:26,349 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.3201s
+2025-11-17 22:11:26,351 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:26,365 - backend.main - INFO - User fixtureuser_9723 created project Test Project (ID: 1).
+2025-11-17 22:11:26,367 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0141s
+2025-11-17 22:11:26,369 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:26,386 - backend.main - INFO - User fixtureuser_9723 deleted project (ID: 1).
+2025-11-17 22:11:26,387 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0142s
+2025-11-17 22:11:26,388 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-17 22:11:26,393 - backend.main - WARNING - User fixtureuser_9723 tried to access non-existent project with ID: 1.
+2025-11-17 22:11:26,394 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0050s
+2025-11-17 22:11:26,395 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-17 22:11:26,770 - backend.main - INFO - New user registered: testuser with role engineer.
+2025-11-17 22:11:26,772 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2644s
+2025-11-17 22:11:26,774 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:27,133 - backend.main - INFO - New user registered: user1 with role engineer.
+2025-11-17 22:11:27,134 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2533s
+2025-11-17 22:11:27,137 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:27,143 - backend.main - WARNING - Registration failed: Username user1 already taken.
+2025-11-17 22:11:27,144 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0050s
+2025-11-17 22:11:27,145 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 22:11:27,512 - backend.main - INFO - New user registered: duplicateuser with role engineer.
+2025-11-17 22:11:27,513 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2536s
+2025-11-17 22:11:27,515 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:27,521 - backend.main - WARNING - Registration failed: Username duplicateuser already taken.
+2025-11-17 22:11:27,522 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-17 22:11:27,524 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-17 22:11:27,891 - backend.main - INFO - New user registered: loginuser with role engineer.
+2025-11-17 22:11:27,892 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2592s
+2025-11-17 22:11:27,894 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:28,151 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-17 22:11:28,152 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2549s
+2025-11-17 22:11:28,154 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:28,527 - backend.main - INFO - New user registered: invalidpassuser with role engineer.
+2025-11-17 22:11:28,528 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2571s
+2025-11-17 22:11:28,530 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:28,788 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-17 22:11:28,789 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2584s
+2025-11-17 22:11:28,792 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-17 22:11:29,164 - backend.main - INFO - New user registered: meuser with role manager.
+2025-11-17 22:11:29,165 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2657s
+2025-11-17 22:11:29,167 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:29,425 - backend.main - INFO - User meuser logged in successfully.
+2025-11-17 22:11:29,425 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2551s
+2025-11-17 22:11:29,427 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:29,433 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-17 22:11:29,434 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-17 22:11:29,437 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:29,801 - backend.main - INFO - New user registered: userbyid with role engineer.
+2025-11-17 22:11:29,803 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2620s
+2025-11-17 22:11:29,805 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:30,075 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-17 22:11:30,076 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2672s
+2025-11-17 22:11:30,078 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:30,088 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-17 22:11:30,089 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0080s
+2025-11-17 22:11:30,091 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-17 22:11:30,500 - backend.main - INFO - New user registered: reader with role engineer.
+2025-11-17 22:11:30,501 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.3018s
+2025-11-17 22:11:30,504 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-17 22:11:30,761 - backend.main - INFO - User reader logged in successfully.
+2025-11-17 22:11:30,762 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2561s
+2025-11-17 22:11:30,764 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-17 22:11:30,771 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-17 22:11:30,772 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0050s
+2025-11-17 22:11:30,775 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"

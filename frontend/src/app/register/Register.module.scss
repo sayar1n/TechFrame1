@@ -1,93 +1,83 @@
 .registerContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  background-color: #f0f2f5;
-}
+  justify-content: center;
+  min-height: calc(100vh - 80px); // Высота экрана минус высота хедера
+  padding: 2rem;
+  background-color: #f4f7f6;
 
-.registerBox {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-
-  h2 {
-    margin-bottom: 24px;
-    color: #333333;
+  h1 {
+    margin-bottom: 2rem;
+    color: #333;
   }
 
-  .errorText {
-    color: #e74c3c;
-    margin-bottom: 16px;
-  }
+  .registerForm {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 
-  .successText {
-    color: #27ae60;
-    margin-bottom: 16px;
-  }
-
-  .inputGroup {
-    margin-bottom: 20px;
-    text-align: left;
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      color: #555555;
-      font-weight: 600;
+    .error {
+      color: #e74c3c;
+      margin-bottom: 1rem;
+      text-align: center;
     }
 
-    input {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #dddddd;
-      border-radius: 4px;
-      font-size: 16px;
-      transition: border-color 0.2s ease-in-out;
+    .success {
+      color: #28a745;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
 
-      &:focus {
-        border-color: #28a745;
-        outline: none;
+    .formGroup {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #555;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
       }
     }
-  }
 
-  button {
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-
-    &:hover {
-      background-color: #218838;
-    }
-
-    &:disabled {
-      background-color: #cccccc;
-      cursor: not-allowed;
-    }
-  }
-
-  .loginLink {
-    margin-top: 20px;
-    color: #555555;
-
-    a {
-      color: #28a745;
-      text-decoration: none;
+    .registerButton {
+      width: 100%;
+      padding: 0.9rem 1.5rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
 
       &:hover {
-        text-decoration: underline;
+        background-color: #218838;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
       }
     }
   }

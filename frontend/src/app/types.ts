@@ -6,18 +6,19 @@ export interface User {
   is_active: boolean;
 }
 
-export interface LoginData {
+export interface UserLogin {
   username: string;
   password: string;
 }
 
-export interface RegisterData {
+export interface UserCreate {
   username: string;
   email: string;
   password: string;
+  role: "manager" | "engineer" | "observer";
 }
 
-export interface TokenResponse {
+export interface Token {
   access_token: string;
   token_type: string;
 }

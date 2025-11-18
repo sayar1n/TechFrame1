@@ -1,0 +1,193 @@
+import axios from 'axios';
+import { UserCreate, UserLogin, User, Token, Project, ProjectCreate, Defect, DefectCreate, Comment, CommentCreate } from '@/app/types';
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000';
+
+export const apiClient = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+export const loginUser = async (userData: UserLogin): Promise<Token> => {
+  const response = await apiClient.post(
+    '/token',
+    new URLSearchParams({
+      username: userData.username,
+      password: userData.password,
+    }),
+    {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    }
+  );
+  return response.data;
+};
+
+export const registerUser = async (userData: UserCreate): Promise<User> => {
+  const response = await apiClient.post('/register/', userData);
+  return response.data;
+};
+
+export const fetchCurrentUser = async (token: string): Promise<User> => {
+  const response = await apiClient.get('/users/me/', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const createProject = async (token: string, userId: number, projectData: ProjectCreate): Promise<Project> => {
+  const response = await apiClient.post(`/users/${userId}/projects/`, projectData, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const updateProject = async (token: string, projectId: number, projectData: ProjectCreate): Promise<Project> => {
+  const response = await apiClient.put(`/projects/${projectId}`, projectData, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const deleteProject = async (token: string, projectId: number): Promise<void> => {
+  await apiClient.delete(`/projects/${projectId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+};
+
+export const fetchProjectById = async (token: string, projectId: number): Promise<Project> => {
+  const response = await apiClient.get(`/projects/${projectId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const fetchProjects = async (token: string): Promise<Project[]> => {
+  const response = await apiClient.get('/projects/', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const fetchDefects = async (token: string): Promise<Defect[]> => {
+  const response = await apiClient.get('/defects/', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const createDefect = async (token: string, defectData: DefectCreate): Promise<Defect> => {
+  const response = await apiClient.post('/defects/', defectData, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const updateDefect = async (token: string, defectId: number, defectData: DefectCreate): Promise<Defect> => {
+  const response = await apiClient.put(`/defects/${defectId}`, defectData, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const deleteDefect = async (token: string, defectId: number): Promise<void> => {
+  await apiClient.delete(`/defects/${defectId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+};
+
+export const fetchCommentsForDefect = async (token: string, defectId: number): Promise<Comment[]> => {
+  const response = await apiClient.get(`/defects/${defectId}/comments/`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const createComment = async (token: string, defectId: number, commentData: CommentCreate): Promise<Comment> => {
+  const response = await apiClient.post(`/defects/${defectId}/comments/`, commentData, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const fetchUsers = async (token: string): Promise<User[]> => {
+  const response = await apiClient.get('/admin/users/', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+
+export const updateUserRole = async (token: string, userId: number, newRole: "manager" | "engineer" | "observer"): Promise<User> => {
+  const response = await apiClient.put(
+    `/users/${userId}/role`,
+    { new_role: newRole }, // Отправляем объект с полем new_role
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
+  return response.data;
+};
+
+// Добавляем интерцептор для автоматического добавления токена к запросам
+apiClient.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem('access_token');
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+apiClient.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response) {
+      // Сервер ответил со статусом, отличным от 2xx
+      console.error('API Error Response Data:', JSON.stringify(error.response.data, null, 2));
+      console.error('API Error Status:', error.response.status);
+      console.error('API Error Headers:', error.response.headers);
+    } else if (error.request) {
+      // Запрос был сделан, но ответа не получено
+      console.error('API Error Request:', error.request);
+    } else {
+      // Что-то пошло не так при настройке запроса
+      console.error('Error Message:', error.message);
+    }
+    return Promise.reject(error);
+  }
+);
