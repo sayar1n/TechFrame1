@@ -44,8 +44,8 @@ origins = [
     # Add other origins as needed in production
 ]
 
-# Объединяем предопределенные origins с вашим локальным IP-адресом
-alle_origins = origins + ["http://10.0.85.2:3000"]
+# Объединяем предопределенные origins с вашим локальным IP-адресом и localhost:3000
+alle_origins = origins + ["http://10.0.85.2:3000", "http://localhost:3000"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -495,83 +495,87 @@ def export_defects_to_csv_excel(
     due_end_date: Optional[datetime] = Query(None),
     search_query: Optional[str] = Query(None)
 ):
-    if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
-        logger.warning(f"User {current_user.username} not authorized to export reports.")
-        raise HTTPException(status_code=403, detail="Not authorized to export reports")
+    try:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+            logger.warning(f"User {current_user.username} not authorized to export reports.")
+            raise HTTPException(status_code=403, detail="Not authorized to export reports")
 
-    defects = crud.get_defects(
-        db=db,
-        project_id=project_id,
-        status=status,
-        priority=priority,
-        assignee_id=assignee_id,
-        reporter_id=reporter_id,
-        created_start_date=created_start_date,
-        created_end_date=created_end_date,
-        due_start_date=due_start_date,
-        due_end_date=due_end_date,
-        search_query=search_query,
-    )
+        defects = crud.get_defects(
+            db=db,
+            project_id=project_id,
+            status=status,
+            priority=priority,
+            assignee_id=assignee_id,
+            reporter_id=reporter_id,
+            created_start_date=created_start_date,
+            created_end_date=created_end_date,
+            due_start_date=due_start_date,
+            due_end_date=due_end_date,
+            search_query=search_query,
+        )
 
-    headers = {"Content-Disposition": f"attachment; filename=\"defects_report.{format}\""}
+        headers = {"Content-Disposition": f"attachment; filename=\"defects_report.{format}\""}
 
-    if format == "csv":
-        output = StringIO()
-        writer = csv.writer(output)
+        if format == "csv":
+            output = StringIO()
+            writer = csv.writer(output)
 
-        # Write header
-        writer.writerow(["ID", "Title", "Description", "Priority", "Status", "Created At", "Updated At", "Due Date", "Reporter ID", "Assignee ID", "Project ID"])
+            # Write header
+            writer.writerow(["ID", "Title", "Description", "Priority", "Status", "Created At", "Updated At", "Due Date", "Reporter ID", "Assignee ID", "Project ID"])
 
-        # Write data
-        for defect in defects:
-            writer.writerow([
-                defect.id,
-                defect.title,
-                defect.description,
-                defect.priority.value if defect.priority else "",
-                defect.status.value if defect.status else "",
-                defect.created_at.isoformat() if defect.created_at else "",
-                defect.updated_at.isoformat() if defect.updated_at else "",
-                defect.due_date.isoformat() if defect.due_date else "",
-                defect.reporter_id,
-                defect.assignee_id,
-                defect.project_id
-            ])
+            # Write data
+            for defect in defects:
+                writer.writerow([
+                    defect.id,
+                    defect.title,
+                    defect.description,
+                    defect.priority if defect.priority else "",
+                    defect.status if defect.status else "",
+                    defect.created_at.isoformat() if defect.created_at else "",
+                    defect.updated_at.isoformat() if defect.updated_at else "",
+                    defect.due_date.isoformat() if defect.due_date else "",
+                    defect.reporter_id,
+                    defect.assignee_id,
+                    defect.project_id
+                ])
 
-        output.seek(0)
-        logger.info(f"User {current_user.username} exported defects report to CSV.")
-        return StreamingResponse(output, headers=headers, media_type="text/csv")
+            output.seek(0)
+            logger.info(f"User {current_user.username} exported defects report to CSV.")
+            return StreamingResponse(output, headers=headers, media_type="text/csv")
 
-    elif format == "xlsx":
-        wb = Workbook()
-        ws = wb.active
-        ws.title = "Defects Report"
+        elif format == "xlsx":
+            wb = Workbook()
+            ws = wb.active
+            ws.title = "Defects Report"
 
-        # Write header
-        ws.append(["ID", "Title", "Description", "Priority", "Status", "Created At", "Updated At", "Due Date", "Reporter ID", "Assignee ID", "Project ID"])
+            # Write header
+            ws.append(["ID", "Title", "Description", "Priority", "Status", "Created At", "Updated At", "Due Date", "Reporter ID", "Assignee ID", "Project ID"])
 
-        # Write data
-        for defect in defects:
-            ws.append([
-                defect.id,
-                defect.title,
-                defect.description,
-                defect.priority.value if defect.priority else "",
-                defect.status.value if defect.status else "",
-                defect.created_at.isoformat() if defect.created_at else "",
-                defect.updated_at.isoformat() if defect.updated_at else "",
-                defect.due_date.isoformat() if defect.due_date else "",
-                defect.reporter_id,
-                defect.assignee_id,
-                defect.project_id
-            ])
+            # Write data
+            for defect in defects:
+                ws.append([
+                    defect.id,
+                    defect.title,
+                    defect.description,
+                    defect.priority if defect.priority else "",
+                    defect.status if defect.status else "",
+                    defect.created_at.isoformat() if defect.created_at else "",
+                    defect.updated_at.isoformat() if defect.updated_at else "",
+                    defect.due_date.isoformat() if defect.due_date else "",
+                    defect.reporter_id,
+                    defect.assignee_id,
+                    defect.project_id
+                ])
 
-        excel_file = io.BytesIO()
-        wb.save(excel_file)
-        excel_file.seek(0)
-        
-        logger.info(f"User {current_user.username} exported defects report to XLSX.")
-        return StreamingResponse(excel_file, headers=headers, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+            excel_file = io.BytesIO()
+            wb.save(excel_file)
+            excel_file.seek(0)
+            
+            logger.info(f"User {current_user.username} exported defects report to XLSX.")
+            return StreamingResponse(excel_file, headers=headers, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-    else:
-        raise HTTPException(status_code=400, detail="Invalid format. Choose 'csv' or 'xlsx'.")
+        else:
+            raise HTTPException(status_code=400, detail="Invalid format. Choose 'csv' or 'xlsx'.")
+    except Exception as e:
+        logger.error(f"Error exporting defects report: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Failed to generate report.")

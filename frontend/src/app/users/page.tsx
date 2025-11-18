@@ -42,6 +42,10 @@ const UsersPage = () => {
     setIsUpdatingRole(true);
     setError(null);
     try {
+      // "admin" is not valid for updateUserRole, so restrict to correct roles
+      if (newRole === "admin") {
+        throw new Error('Роль "admin" не может быть выдана этим способом.');
+      }
       const updatedUser = await updateUserRole(token, userId, newRole);
       setUsers(prevUsers => prevUsers.map(u => u.id === userId ? updatedUser : u));
       alert(`Роль пользователя ${updatedUser.username} успешно обновлена на ${updatedUser.role}.`);
