@@ -87,3 +87,34 @@ export interface AttachmentCreate {
   file_path: string;
   defect_id: number;
 }
+
+// Analytical Interfaces
+export interface AnalyticsSummary {
+  total_defects: number;
+  overdue_defects: number;
+  completion_percentage: number;
+  active_projects: number;
+}
+
+export interface DefectCountByStatus {
+  status: string;
+  count: number;
+}
+
+export interface DefectCountByPriority {
+  priority: string;
+  count: number;
+}
+
+export interface DefectCreationTrendItem {
+  date: string; // ISO string for date
+  count: number;
+}
+
+export interface ProjectPerformanceItem {
+  project_id: number;
+  project_title: string;
+  completed_defects: number;
+  total_defects: number;
+  completion_percentage: number;
+}

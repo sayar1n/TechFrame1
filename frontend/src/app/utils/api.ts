@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { UserCreate, UserLogin, User, Token, Project, ProjectCreate, Defect, DefectCreate, Comment, CommentCreate, Attachment } from '@/app/types';
+import { UserCreate, UserLogin, User, Token, Project, ProjectCreate, Defect, DefectCreate, Comment, CommentCreate, Attachment, AnalyticsSummary, DefectCountByStatus, DefectCountByPriority, DefectCreationTrendItem, ProjectPerformanceItem } from '@/app/types';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000';
 
@@ -205,6 +205,62 @@ export const exportDefectsToCsvExcel = async (token: string, format: "csv" | "xl
     },
     params: { format, ...filters },
     responseType: 'blob', // Важно для получения бинарных данных файла
+  });
+  return response.data;
+};
+
+// Analytics API functions
+export const fetchAnalyticsSummary = async (token: string, startDate?: string, endDate?: string): Promise<AnalyticsSummary> => {
+  const params = { start_date: startDate, end_date: endDate };
+  const response = await apiClient.get('/reports/analytics/summary', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    params: params,
+  });
+  return response.data;
+};
+
+export const fetchStatusDistribution = async (token: string, startDate?: string, endDate?: string): Promise<DefectCountByStatus[]> => {
+  const params = { start_date: startDate, end_date: endDate };
+  const response = await apiClient.get('/reports/analytics/status-distribution', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    params: params,
+  });
+  return response.data;
+};
+
+export const fetchPriorityDistribution = async (token: string, startDate?: string, endDate?: string): Promise<DefectCountByPriority[]> => {
+  const params = { start_date: startDate, end_date: endDate };
+  const response = await apiClient.get('/reports/analytics/priority-distribution', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    params: params,
+  });
+  return response.data;
+};
+
+export const fetchCreationTrend = async (token: string, days: number = 30): Promise<DefectCreationTrendItem[]> => {
+  const params = { days: days };
+  const response = await apiClient.get('/reports/analytics/creation-trend', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    params: params,
+  });
+  return response.data;
+};
+
+export const fetchProjectPerformance = async (token: string, startDate?: string, endDate?: string): Promise<ProjectPerformanceItem[]> => {
+  const params = { start_date: startDate, end_date: endDate };
+  const response = await apiClient.get('/reports/analytics/project-performance', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    params: params,
   });
   return response.data;
 };

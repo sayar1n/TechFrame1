@@ -1,13 +1,13 @@
 2025-11-18 14:25:41,455 - backend.main - ERROR - Error exporting defects report: 'str' object has no attribute 'value'
 Traceback (most recent call last):
-  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\main.py", line 560, in export_defects_to_csv_excel
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 560, in export_defects_to_csv_excel
     defect.priority.value if defect.priority else "",
     ^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'str' object has no attribute 'value'
 2025-11-18 14:25:41,467 - backend.main - INFO - Request: GET http://localhost:8000/reports/defects/export?format=xlsx - Status: 500 - Time: 0.0302s
 2025-11-18 14:25:42,797 - backend.main - ERROR - Error exporting defects report: 'str' object has no attribute 'value'
 Traceback (most recent call last):
-  File "C:\Users\koshk\OneDrive\Документы\Фреймоворки\1\backend\main.py", line 532, in export_defects_to_csv_excel
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 532, in export_defects_to_csv_excel
     defect.priority.value if defect.priority else "",
     ^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'str' object has no attribute 'value'
@@ -16,3 +16,212 @@ AttributeError: 'str' object has no attribute 'value'
 2025-11-18 14:27:06,908 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0680s
 2025-11-18 14:27:48,500 - backend.main - INFO - User 111 exported defects report to CSV.
 2025-11-18 14:27:48,501 - backend.main - INFO - Request: GET http://localhost:8000/reports/defects/export?format=csv - Status: 200 - Time: 0.0070s
+2025-11-18 14:36:43,342 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0000s
+2025-11-18 14:36:43,420 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0511s
+2025-11-18 14:42:13,675 - backend.main - INFO - User 123 logged in successfully.
+2025-11-18 14:42:13,678 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2906s
+2025-11-18 14:42:13,685 - backend.main - INFO - User 123 accessed their own profile.
+2025-11-18 14:42:13,734 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0501s
+2025-11-18 14:42:21,768 - backend.main - INFO - Request: OPTIONS http://localhost:8000/token - Status: 200 - Time: 0.0000s
+2025-11-18 14:42:22,054 - backend.main - INFO - User 111 logged in successfully.
+2025-11-18 14:42:22,055 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2847s
+2025-11-18 14:42:22,064 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 14:42:22,064 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-18 14:43:03,222 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:43:02.899Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:43:03,225 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:43:02.899Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:43:03,228 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0010s
+2025-11-18 14:43:03,229 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:43:02.899Z - Status: 200 - Time: 0.0020s
+2025-11-18 14:43:03,231 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:43:02.910Z - Status: 200 - Time: 0.0040s
+2025-11-18 14:43:03,233 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:43:02.899Z - Status: 200 - Time: 0.0060s
+2025-11-18 14:43:03,235 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:43:02.910Z - Status: 200 - Time: 0.0080s
+2025-11-18 14:43:03,236 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:43:02.910Z - Status: 200 - Time: 0.0080s
+2025-11-18 14:43:03,240 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0010s
+2025-11-18 14:43:03,242 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:43:02.910Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:43:03,253 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:43:02.899Z - Status: 200 - Time: 0.0090s
+2025-11-18 14:43:03,631 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:43:02.899Z - Status: 200 - Time: 0.0911s
+2025-11-18 14:43:03,634 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:43:02.910Z - Status: 200 - Time: 0.0931s
+2025-11-18 14:43:03,697 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0610s
+2025-11-18 14:43:03,708 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:43:02.910Z - Status: 200 - Time: 0.0290s
+2025-11-18 14:43:03,734 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0050s
+2025-11-18 14:44:03,137 - backend.main - INFO - Configuring CORS with allowed origins: ['http://10.0.85.2:3000', 'http://localhost', 'http://localhost:8000', 'http://localhost:3000']
+2025-11-18 14:44:47,224 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:8000', 'http://localhost', 'http://10.0.85.2:3000', 'http://localhost:3000']
+2025-11-18 14:46:59,531 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost', 'http://localhost:3000', 'http://10.0.85.2:3000', 'http://localhost:8000']
+2025-11-18 14:47:13,256 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:13,286 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 14:47:13,321 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0630s
+2025-11-18 14:47:29,866 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:47:29.849Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:47:29,874 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:47:29.849Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:29,878 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:47:29.849Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:29,918 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:47:29.849Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:29,929 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:47:29.851Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:29,932 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:47:29.851Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:29,935 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:47:29.851Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:29,938 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:47:29.851Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:47:29,949 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:47:29.849Z - Status: 200 - Time: 0.0080s
+2025-11-18 14:47:30,192 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:47:29.849Z - Status: 200 - Time: 0.0240s
+2025-11-18 14:47:30,236 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:47:29.851Z - Status: 200 - Time: 0.0680s
+2025-11-18 14:47:30,248 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:47:29.851Z - Status: 200 - Time: 0.0120s
+2025-11-18 14:47:30,251 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0090s
+2025-11-18 14:47:30,257 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0050s
+2025-11-18 14:51:32,990 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost', 'http://localhost:8000', 'http://10.0.85.2:3000', 'http://localhost:3000']
+2025-11-18 14:51:53,094 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:8000', 'http://10.0.85.2:3000', 'http://localhost', 'http://localhost:3000']
+2025-11-18 14:52:17,016 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:3000', 'http://10.0.85.2:3000', 'http://localhost:8000', 'http://localhost']
+2025-11-18 14:52:29,524 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 14:52:29,580 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.1616s
+2025-11-18 14:52:31,372 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:52:31.354Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:52:31,377 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:52:31.354Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:52:31,396 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:52:31.354Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:52:31,398 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:52:31.354Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:52:31,404 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:52:31.355Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:52:31,409 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:52:31.355Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:52:31,412 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:52:31.355Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:52:31,419 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:52:31.355Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:52:31,451 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0300s
+2025-11-18 14:52:31,457 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:52:31.354Z - Status: 200 - Time: 0.0350s
+2025-11-18 14:52:31,471 - backend.main - ERROR - Error in get_status_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in get_status_distribution
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in <listcomp>
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+                                               ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:52:31,475 - backend.main - ERROR - Error in get_priority_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in get_priority_distribution
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in <listcomp>
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+                                                   ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:52:31,477 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:52:31.354Z - Status: 500 - Time: 0.0130s
+2025-11-18 14:52:31,479 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:52:31.354Z - Status: 500 - Time: 0.0110s
+2025-11-18 14:52:31,514 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:52:31.354Z - Status: 200 - Time: 0.0320s
+2025-11-18 14:52:31,524 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:52:31.355Z - Status: 200 - Time: 0.0360s
+2025-11-18 14:52:31,562 - backend.main - ERROR - Error in get_status_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in get_status_distribution
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in <listcomp>
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+                                               ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:52:31,578 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:52:31.355Z - Status: 500 - Time: 0.0239s
+2025-11-18 14:52:31,578 - backend.main - ERROR - Error in get_priority_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in get_priority_distribution
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in <listcomp>
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+                                                   ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:52:31,595 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:52:31.355Z - Status: 500 - Time: 0.0339s
+2025-11-18 14:52:31,597 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:52:31.355Z - Status: 200 - Time: 0.0130s
+2025-11-18 14:52:31,608 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0080s
+2025-11-18 14:53:01,965 - backend.main - INFO - User 111 logged in successfully.
+2025-11-18 14:53:01,966 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2495s
+2025-11-18 14:53:01,970 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:01,974 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 14:53:01,974 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0020s
+2025-11-18 14:53:05,493 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:53:05.466Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:05,498 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:53:05.466Z - Status: 200 - Time: 0.0050s
+2025-11-18 14:53:05,510 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:53:05.466Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:05,524 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:05,527 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:53:05.466Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:05,530 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:53:05.467Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:53:05,532 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:53:05.467Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:05,535 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:53:05.467Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:53:05,537 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:05,539 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:53:05.467Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:53:05,548 - backend.main - ERROR - Error in get_status_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in get_status_distribution
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in <listcomp>
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+                                               ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:53:05,550 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:53:05.466Z - Status: 200 - Time: 0.0090s
+2025-11-18 14:53:05,552 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:53:05.466Z - Status: 500 - Time: 0.0105s
+2025-11-18 14:53:05,558 - backend.main - ERROR - Error in get_priority_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in get_priority_distribution
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in <listcomp>
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+                                                   ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:53:05,566 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:53:05.466Z - Status: 500 - Time: 0.0120s
+2025-11-18 14:53:05,570 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0140s
+2025-11-18 14:53:05,599 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:53:05.466Z - Status: 200 - Time: 0.0180s
+2025-11-18 14:53:05,604 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:53:05.467Z - Status: 200 - Time: 0.0220s
+2025-11-18 14:53:05,612 - backend.main - ERROR - Error in get_status_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in get_status_distribution
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 647, in <listcomp>
+    return [schemas.DefectCountByStatus(status=status.value, count=count) for status, count in results]
+                                               ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:53:05,617 - backend.main - ERROR - Error in get_priority_distribution: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in get_priority_distribution
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\koshk\OneDrive\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\1\backend\main.py", line 670, in <listcomp>
+    return [schemas.DefectCountByPriority(priority=priority.value, count=count) for priority, count in results]
+                                                   ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2025-11-18 14:53:05,618 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:53:05.467Z - Status: 500 - Time: 0.0110s
+2025-11-18 14:53:05,624 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:53:05.467Z - Status: 500 - Time: 0.0170s
+2025-11-18 14:53:05,639 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:53:05.467Z - Status: 200 - Time: 0.0120s
+2025-11-18 14:53:05,640 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0100s
+2025-11-18 14:55:53,348 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:3000', 'http://10.0.85.2:3000', 'http://localhost', 'http://localhost:8000']
+2025-11-18 14:56:21,403 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 14:56:21,452 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0861s
+2025-11-18 14:56:21,456 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:56:21,456 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0020s
+2025-11-18 14:56:21,457 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0020s
+2025-11-18 14:56:21,458 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0030s
+2025-11-18 14:56:21,459 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0040s
+2025-11-18 14:56:21,543 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0355s
+2025-11-18 14:56:21,544 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0355s
+2025-11-18 14:56:21,546 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0375s
+2025-11-18 14:56:21,551 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:56:21.065Z - Status: 200 - Time: 0.0415s
+2025-11-18 14:56:21,556 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0378s
+2025-11-18 14:57:08,357 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:57:08,359 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:57:08,361 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:57:08,365 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:57:08,384 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 14:57:08,397 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0310s
+2025-11-18 14:57:08,450 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0830s
+2025-11-18 14:57:08,452 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0850s
+2025-11-18 14:57:08,455 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0870s
+2025-11-18 14:57:08,462 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0220s
+2025-11-18 14:57:08,465 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:57:08.042Z - Status: 200 - Time: 0.0180s
+2025-11-18 14:58:02,536 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0000s
+2025-11-18 14:58:02,583 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0010s
+2025-11-18 14:58:02,599 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:58:02,606 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:58:02,616 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0000s
+2025-11-18 14:58:02,639 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0061s
+2025-11-18 14:58:02,653 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0060s
+2025-11-18 14:58:02,665 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 14:58:02,665 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-18 14:58:02,678 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0100s
+2025-11-18 14:58:02,695 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0123s
+2025-11-18 14:58:02,721 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T11:58:02.550Z - Status: 200 - Time: 0.0090s
+2025-11-18 14:58:04,042 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/defects/export?format=csv - Status: 200 - Time: 0.0000s
+2025-11-18 14:58:04,055 - backend.main - INFO - User 111 exported defects report to CSV.
+2025-11-18 14:58:04,056 - backend.main - INFO - Request: GET http://localhost:8000/reports/defects/export?format=csv - Status: 200 - Time: 0.0090s
+2025-11-18 14:58:19,424 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/defects/export?format=xlsx - Status: 200 - Time: 0.0000s
+2025-11-18 14:58:19,476 - backend.main - INFO - User 111 exported defects report to XLSX.
+2025-11-18 14:58:19,477 - backend.main - INFO - Request: GET http://localhost:8000/reports/defects/export?format=xlsx - Status: 200 - Time: 0.0470s

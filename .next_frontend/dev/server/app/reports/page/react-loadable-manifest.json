@@ -1,0 +1,10 @@
+{
+  "[project]/frontend/src/app/components/Header.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/frontend/src/app/components/Header.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/frontend_d0d7d508._.js",
+      "static/chunks/frontend_src_app_components_Header_module_scss_module_c6e3637c.css",
+      "static/chunks/frontend_src_app_components_Header_tsx_9de1b454._.js"
+    ]
+  }
+}

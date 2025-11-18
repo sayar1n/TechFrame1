@@ -1,77 +1,177 @@
 .reportsContainer {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 
-  h1 {
-    margin-bottom: 2rem;
-    color: #333;
+  .loadingMessage, .errorMessage, .accessDenied {
     text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #555;
   }
 
-  .error {
+  .errorMessage {
     color: #e74c3c;
-    text-align: center;
-    margin-bottom: 1rem;
   }
 
-  .exportSection {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  .accessDenied {
+    color: #f39c12;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 2rem;
-    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
 
-    h2 {
-      margin-top: 0;
-      margin-bottom: 1.5rem;
+    h1 {
+      margin: 0;
       color: #333;
+      font-size: 2.2rem;
     }
 
-    .exportButton {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.2s ease-in-out;
-      margin: 0 0.5rem;
+    .headerActions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
 
-      &:hover {
-        background-color: #0056b3;
+      .timeRangeSelect {
+        padding: 0.5rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        appearance: none; /* Убираем стандартную стрелку */
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%20197.3l-13.9-13.9L146.2%20272.3%2018.5%20183.4%204.6%20197.3l141.6%20141.6z%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.7em top 50%, 0 0;
+        background-size: 0.65em auto, 100%;
+
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
       }
 
-      &:disabled {
-        background-color: #cccccc;
-        cursor: not-allowed;
+      .exportButton {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 0.5rem 1.2rem;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+          background-color: #218838;
+        }
+
+        &:disabled {
+          background-color: #cccccc;
+          cursor: not-allowed;
+        }
       }
     }
   }
 
-  .chartsSection {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  .summaryCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 
-    h2 {
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-      color: #333;
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      .cardTitle {
+        font-size: 1rem;
+        color: #777;
+        margin-bottom: 0.5rem;
+      }
+
+      .cardValue {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.5rem;
+
+        &.overdue {
+          color: #dc3545;
+        }
+        &.completed {
+          color: #28a745;
+        }
+      }
+
+      .cardSubtitle {
+        font-size: 0.9rem;
+        color: #999;
+      }
+    }
+  }
+
+  .chartsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 1.5rem;
+
+    .chartCard {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        color: #333;
+        text-align: center;
+      }
+    }
+  }
+
+  .projectProgressItem {
+    margin-bottom: 1rem;
+
+    p {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #555;
     }
 
-    .chartPlaceholder {
-      border: 1px dashed #ccc;
-      padding: 2rem;
-      text-align: center;
-      margin-bottom: 1rem;
-      color: #777;
-      min-height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
+    .progressBarContainer {
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      height: 20px;
+      overflow: hidden;
+      position: relative;
+
+      .progressBarFill {
+        height: 100%;
+        background-color: #28a745;
+        border-radius: 10px;
+        transition: width 0.5s ease-in-out;
+      }
+
+      .progressBarText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
     }
   }
 }

@@ -17,6 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from passlib.context import CryptContext
 from openpyxl import Workbook
 from starlette.responses import FileResponse
+from sqlalchemy import func, extract # Добавлен импорт func и extract
 
 from backend import crud, models, schemas
 from .database import engine, SessionLocal
@@ -45,7 +46,8 @@ origins = [
 ]
 
 # Объединяем предопределенные origins с вашим локальным IP-адресом и localhost:3000
-alle_origins = origins + ["http://10.0.85.2:3000", "http://localhost:3000"]
+alle_origins = list(set(origins + ["http://10.0.85.2:3000", "http://localhost:3000"])) # Использование set для уникальности
+logger.info(f"Configuring CORS with allowed origins: {alle_origins}") # Добавлено логирование
 
 app.add_middleware(
     CORSMiddleware,
@@ -579,3 +581,183 @@ def export_defects_to_csv_excel(
     except Exception as e:
         logger.error(f"Error exporting defects report: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Failed to generate report.")
+
+# Analytics API endpoints
+@app.get("/reports/analytics/summary", response_model=schemas.AnalyticsSummary, tags=["Analytics"], summary="Get summary analytics for defects and projects")
+def get_analytics_summary(
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user),
+    start_date: Optional[datetime] = Query(None),
+    end_date: Optional[datetime] = Query(None),
+):
+    try:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+            raise HTTPException(status_code=403, detail="Not authorized to view analytics")
+
+        query = db.query(models.Defect)
+        if start_date: query = query.filter(models.Defect.created_at >= start_date)
+        if end_date: query = query.filter(models.Defect.created_at <= end_date)
+        defects = query.all()
+
+        total_defects = len(defects)
+        
+        overdue_defects = 0
+        completed_defects = 0
+        active_projects_set = set()
+
+        for defect in defects:
+            if defect.due_date and defect.due_date < datetime.now() and defect.status not in [schemas.DefectStatus.closed, schemas.DefectStatus.cancelled]:
+                overdue_defects += 1
+            if defect.status in [schemas.DefectStatus.closed, schemas.DefectStatus.cancelled]:
+                completed_defects += 1
+            if defect.status not in [schemas.DefectStatus.closed, schemas.DefectStatus.cancelled]:
+                active_projects_set.add(defect.project_id)
+        
+        completion_percentage = (completed_defects / total_defects * 100) if total_defects > 0 else 0.0
+        active_projects = len(active_projects_set)
+
+        return schemas.AnalyticsSummary(
+            total_defects=total_defects,
+            overdue_defects=overdue_defects,
+            completion_percentage=round(completion_percentage, 2),
+            active_projects=active_projects
+        )
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error in get_analytics_summary: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Failed to retrieve summary analytics.")
+
+@app.get("/reports/analytics/status-distribution", response_model=List[schemas.DefectCountByStatus], tags=["Analytics"], summary="Get defect distribution by status")
+def get_status_distribution(
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user),
+    start_date: Optional[datetime] = Query(None),
+    end_date: Optional[datetime] = Query(None),
+):
+    try:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+            raise HTTPException(status_code=403, detail="Not authorized to view analytics")
+        
+        query = db.query(models.Defect.status, func.count(models.Defect.id)).group_by(models.Defect.status)
+        if start_date: query = query.filter(models.Defect.created_at >= start_date)
+        if end_date: query = query.filter(models.Defect.created_at <= end_date)
+        
+        results = query.all()
+        return [schemas.DefectCountByStatus(status=status, count=count) for status, count in results]
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error in get_status_distribution: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Failed to retrieve status distribution.")
+
+@app.get("/reports/analytics/priority-distribution", response_model=List[schemas.DefectCountByPriority], tags=["Analytics"], summary="Get defect distribution by priority")
+def get_priority_distribution(
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user),
+    start_date: Optional[datetime] = Query(None),
+    end_date: Optional[datetime] = Query(None),
+):
+    try:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+            raise HTTPException(status_code=403, detail="Not authorized to view analytics")
+
+        query = db.query(models.Defect.priority, func.count(models.Defect.id)).group_by(models.Defect.priority)
+        if start_date: query = query.filter(models.Defect.created_at >= start_date)
+        if end_date: query = query.filter(models.Defect.created_at <= end_date)
+        
+        results = query.all()
+        return [schemas.DefectCountByPriority(priority=priority, count=count) for priority, count in results]
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error in get_priority_distribution: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Failed to retrieve priority distribution.")
+
+@app.get("/reports/analytics/creation-trend", response_model=List[schemas.DefectCreationTrendItem], tags=["Analytics"], summary="Get defect creation trend over time")
+def get_creation_trend(
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user),
+    days: int = Query(30, description="Number of past days to get trend for"),
+):
+    try:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+            raise HTTPException(status_code=403, detail="Not authorized to view analytics")
+
+        end_date = datetime.now()
+        start_date = end_date - timedelta(days=days)
+
+        # Group by date (year, month, day)
+        results = db.query(
+            func.date(models.Defect.created_at).label('date'),
+            func.count(models.Defect.id).label('count')
+        ).filter(
+            models.Defect.created_at >= start_date,
+            models.Defect.created_at <= end_date
+        ).group_by(func.date(models.Defect.created_at)).order_by('date').all()
+
+        return [schemas.DefectCreationTrendItem(date=date, count=count) for date, count in results]
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error in get_creation_trend: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Failed to retrieve creation trend.")
+
+@app.get("/reports/analytics/project-performance", response_model=List[schemas.ProjectPerformanceItem], tags=["Analytics"], summary="Get project performance statistics")
+def get_project_performance(
+    db: Session = Depends(get_db),
+    current_user: schemas.User = Depends(get_current_active_user),
+    start_date: Optional[datetime] = Query(None),
+    end_date: Optional[datetime] = Query(None),
+):
+    try:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+            raise HTTPException(status_code=403, detail="Not authorized to view analytics")
+
+        # Subquery for total defects per project
+        total_defects_subquery = db.query(
+            models.Defect.project_id,
+            func.count(models.Defect.id).label('total_defects')
+        ).group_by(models.Defect.project_id).subquery()
+
+        # Subquery for completed defects per project
+        completed_defects_subquery = db.query(
+            models.Defect.project_id,
+            func.count(models.Defect.id).label('completed_defects')
+        ).filter(
+            models.Defect.status.in_([schemas.DefectStatus.closed, schemas.DefectStatus.cancelled])
+        ).group_by(models.Defect.project_id).subquery()
+
+        # Main query to join project info with defect counts
+        results = db.query(
+            models.Project.id,
+            models.Project.title,
+            total_defects_subquery.c.total_defects,
+            completed_defects_subquery.c.completed_defects
+        ).outerjoin(
+            total_defects_subquery,
+            models.Project.id == total_defects_subquery.c.project_id
+        ).outerjoin(
+            completed_defects_subquery,
+            models.Project.id == completed_defects_subquery.c.project_id
+        ).all()
+
+        performance_data = []
+        for project_id, project_title, total_defects, completed_defects in results:
+            total_defects = total_defects if total_defects is not None else 0
+            completed_defects = completed_defects if completed_defects is not None else 0
+            completion_percentage = (completed_defects / total_defects * 100) if total_defects > 0 else 0.0
+            performance_data.append(schemas.ProjectPerformanceItem(
+                project_id=project_id,
+                project_title=project_title,
+                completed_defects=completed_defects,
+                total_defects=total_defects,
+                completion_percentage=round(completion_percentage, 2)
+            ))
+        
+        return performance_data
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error in get_project_performance: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Failed to retrieve project performance.")
