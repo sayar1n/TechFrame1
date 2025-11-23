@@ -22,7 +22,7 @@ const EditProjectPage = () => {
       if (!token || authLoading || isNaN(projectId)) return;
 
       try {
-        const fetchedProject = await fetchProjectById(token, projectId);
+        const fetchedProject = await fetchProjectById(token!, projectId);
         setProject(fetchedProject);
       } catch (err: any) {
         setError(err.message || 'Не удалось загрузить данные проекта.');
