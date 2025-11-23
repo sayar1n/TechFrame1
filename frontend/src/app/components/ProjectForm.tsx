@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ProjectCreate, Project } from '../../types';
+import { ProjectCreate, Project } from '@/app/types';
 import styles from './ProjectForm.module.scss';
 
 interface ProjectFormProps {
