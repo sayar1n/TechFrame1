@@ -225,3 +225,225 @@ AttributeError: 'str' object has no attribute 'value'
 2025-11-18 14:58:19,424 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/defects/export?format=xlsx - Status: 200 - Time: 0.0000s
 2025-11-18 14:58:19,476 - backend.main - INFO - User 111 exported defects report to XLSX.
 2025-11-18 14:58:19,477 - backend.main - INFO - Request: GET http://localhost:8000/reports/defects/export?format=xlsx - Status: 200 - Time: 0.0470s
+2025-11-18 14:58:56,335 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:3000', 'http://10.0.85.2:3000', 'http://localhost:8000', 'http://localhost']
+2025-11-18 15:19:51,292 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0000s
+2025-11-18 15:19:51,293 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0011s
+2025-11-18 15:19:51,306 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 401 - Time: 0.0111s
+2025-11-18 15:19:51,310 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 401 - Time: 0.0020s
+2025-11-18 15:19:55,868 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0010s
+2025-11-18 15:19:55,871 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0030s
+2025-11-18 15:19:55,905 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 401 - Time: 0.0020s
+2025-11-18 15:19:55,910 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 401 - Time: 0.0020s
+2025-11-18 15:19:57,375 - backend.main - INFO - Request: OPTIONS http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0010s
+2025-11-18 15:19:57,383 - backend.main - INFO - Request: OPTIONS http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0010s
+2025-11-18 15:19:57,413 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 401 - Time: 0.0030s
+2025-11-18 15:19:57,418 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 401 - Time: 0.0020s
+2025-11-18 15:20:06,203 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost', 'http://localhost:8000', 'http://10.0.85.2:3000', 'http://localhost:3000']
+2025-11-18 15:20:15,490 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:15,500 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0073s
+2025-11-18 15:20:31,357 - backend.main - INFO - User 111 logged in successfully.
+2025-11-18 15:20:31,361 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.3013s
+2025-11-18 15:20:31,547 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-18 15:20:31,604 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0802s
+2025-11-18 15:20:34,736 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,798 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,812 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,821 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,826 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0010s
+2025-11-18 15:20:34,829 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,835 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0010s
+2025-11-18 15:20:34,839 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,845 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,853 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0000s
+2025-11-18 15:20:34,868 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0120s
+2025-11-18 15:20:34,902 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0240s
+2025-11-18 15:20:34,935 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0191s
+2025-11-18 15:20:34,951 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0110s
+2025-11-18 15:20:34,965 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T12:20:34.720Z - Status: 200 - Time: 0.0111s
+2025-11-18 15:20:34,981 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0090s
+2025-11-18 15:20:34,987 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0040s
+2025-11-18 15:20:34,997 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0060s
+2025-11-18 15:20:35,003 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-18T12:20:34.728Z - Status: 200 - Time: 0.0040s
+2025-11-18 15:20:35,009 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0040s
+2025-11-18 15:20:36,260 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0050s
+2025-11-18 15:20:36,265 - backend.main - INFO - Request: GET http://localhost:8000/admin/users/ - Status: 200 - Time: 0.0030s
+2025-11-18 15:20:37,794 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-18 15:20:37,801 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0120s
+2025-11-18 15:20:37,806 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-18 15:20:37,810 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0070s
+2025-11-18 15:20:39,654 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-18 15:20:39,657 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0073s
+2025-11-18 15:20:39,663 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-18 15:20:39,668 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0081s
+2025-11-23 22:54:16,301 - backend.main - INFO - Configuring CORS with allowed origins: ['http://10.0.85.2:3000', 'http://localhost:8000', 'http://localhost', 'http://localhost:3000']
+2025-11-23 22:54:25,703 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0010s
+2025-11-23 22:54:25,705 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:26,397 - backend.main - INFO - User fixtureuser_44907 logged in successfully.
+2025-11-23 22:54:26,400 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2606s
+2025-11-23 22:54:26,400 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 22:54:27,072 - backend.main - INFO - User fixtureuser_76543 logged in successfully.
+2025-11-23 22:54:27,072 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2451s
+2025-11-23 22:54:27,077 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 22:54:27,083 - backend.main - INFO - User fixtureuser_76543 accessed their own profile.
+2025-11-23 22:54:27,083 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0056s
+2025-11-23 22:54:27,083 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-23 22:54:27,713 - backend.main - INFO - User fixtureuser_52013 logged in successfully.
+2025-11-23 22:54:27,713 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2625s
+2025-11-23 22:54:27,715 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 22:54:27,727 - backend.main - INFO - User fixtureuser_52013 created project Test Project (ID: 1).
+2025-11-23 22:54:27,735 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0189s
+2025-11-23 22:54:27,736 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 22:54:28,344 - backend.main - INFO - User fixtureuser_47396 logged in successfully.
+2025-11-23 22:54:28,344 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2469s
+2025-11-23 22:54:28,344 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 22:54:28,363 - backend.main - INFO - User fixtureuser_47396 created project Test Project (ID: 1).
+2025-11-23 22:54:28,365 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0141s
+2025-11-23 22:54:28,366 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 22:54:28,372 - backend.main - INFO - User fixtureuser_47396 accessed list of projects.
+2025-11-23 22:54:28,377 - backend.main - INFO - Request: GET http://testserver/projects/ - Status: 200 - Time: 0.0077s
+2025-11-23 22:54:28,377 - httpx - INFO - HTTP Request: GET http://testserver/projects/ "HTTP/1.1 200 OK"
+2025-11-23 22:54:29,014 - backend.main - INFO - User fixtureuser_47125 logged in successfully.
+2025-11-23 22:54:29,015 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2473s
+2025-11-23 22:54:29,017 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 22:54:29,028 - backend.main - INFO - User fixtureuser_47125 created project Test Project (ID: 1).
+2025-11-23 22:54:29,034 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0146s
+2025-11-23 22:54:29,035 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 22:54:29,053 - backend.main - INFO - User fixtureuser_47125 updated project Updated Project via API (ID: 1).
+2025-11-23 22:54:29,054 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0160s
+2025-11-23 22:54:29,056 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-23 22:54:29,662 - backend.main - INFO - User fixtureuser_60605 logged in successfully.
+2025-11-23 22:54:29,662 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2451s
+2025-11-23 22:54:29,664 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 22:54:29,679 - backend.main - INFO - User fixtureuser_60605 created project Test Project (ID: 1).
+2025-11-23 22:54:29,679 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0134s
+2025-11-23 22:54:29,679 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 22:54:29,694 - backend.main - INFO - User fixtureuser_60605 deleted project (ID: 1).
+2025-11-23 22:54:29,694 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0111s
+2025-11-23 22:54:29,700 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-23 22:54:29,706 - backend.main - WARNING - User fixtureuser_60605 tried to access non-existent project with ID: 1.
+2025-11-23 22:54:29,707 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0076s
+2025-11-23 22:54:29,708 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-23 22:54:29,825 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:29,827 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:29,944 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:29,944 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:29,950 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0005s
+2025-11-23 22:54:29,950 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,066 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:30,066 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,071 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:30,071 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,194 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:30,199 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,215 - backend.main - WARNING - Failed login attempt for username: loginuser
+2025-11-23 22:54:30,216 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0169s
+2025-11-23 22:54:30,218 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-23 22:54:30,339 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:30,342 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,358 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-23 22:54:30,358 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0140s
+2025-11-23 22:54:30,360 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-23 22:54:30,465 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0010s
+2025-11-23 22:54:30,468 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,479 - backend.main - WARNING - Failed login attempt for username: meuser
+2025-11-23 22:54:30,483 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0130s
+2025-11-23 22:54:30,483 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-23 22:54:30,615 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:30,617 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,733 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 405 - Time: 0.0000s
+2025-11-23 22:54:30,738 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 405 Method Not Allowed"
+2025-11-23 22:54:30,752 - backend.main - WARNING - Failed login attempt for username: reader
+2025-11-23 22:54:30,755 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.0142s
+2025-11-23 22:54:30,755 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-23 23:15:07,703 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:3000', 'http://10.0.85.2:3000', 'http://localhost:8000', 'http://localhost']
+2025-11-23 23:15:16,400 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2473s
+2025-11-23 23:15:16,403 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:16,993 - backend.main - INFO - User fixtureuser_80397 logged in successfully.
+2025-11-23 23:15:16,993 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2478s
+2025-11-23 23:15:16,993 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:17,590 - backend.main - INFO - User fixtureuser_54719 logged in successfully.
+2025-11-23 23:15:17,590 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2467s
+2025-11-23 23:15:17,591 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:17,597 - backend.main - INFO - User fixtureuser_54719 accessed their own profile.
+2025-11-23 23:15:17,597 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0030s
+2025-11-23 23:15:17,597 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:18,176 - backend.main - INFO - User fixtureuser_54302 logged in successfully.
+2025-11-23 23:15:18,176 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2399s
+2025-11-23 23:15:18,178 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:18,196 - backend.main - INFO - User fixtureuser_54302 created project Test Project (ID: 1).
+2025-11-23 23:15:18,200 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0189s
+2025-11-23 23:15:18,201 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:18,790 - backend.main - INFO - User fixtureuser_76279 logged in successfully.
+2025-11-23 23:15:18,790 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2293s
+2025-11-23 23:15:18,790 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:18,812 - backend.main - INFO - User fixtureuser_76279 created project Test Project (ID: 1).
+2025-11-23 23:15:18,813 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0128s
+2025-11-23 23:15:18,814 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:18,818 - backend.main - INFO - User fixtureuser_76279 accessed list of projects.
+2025-11-23 23:15:18,821 - backend.main - INFO - Request: GET http://testserver/projects/ - Status: 200 - Time: 0.0076s
+2025-11-23 23:15:18,821 - httpx - INFO - HTTP Request: GET http://testserver/projects/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:19,396 - backend.main - INFO - User fixtureuser_20536 logged in successfully.
+2025-11-23 23:15:19,396 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2328s
+2025-11-23 23:15:19,396 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:19,414 - backend.main - INFO - User fixtureuser_20536 created project Test Project (ID: 1).
+2025-11-23 23:15:19,416 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0205s
+2025-11-23 23:15:19,417 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:19,427 - backend.main - INFO - User fixtureuser_20536 updated project Updated Project via API (ID: 1).
+2025-11-23 23:15:19,427 - backend.main - INFO - Request: PUT http://testserver/projects/1 - Status: 200 - Time: 0.0066s
+2025-11-23 23:15:19,427 - httpx - INFO - HTTP Request: PUT http://testserver/projects/1 "HTTP/1.1 200 OK"
+2025-11-23 23:15:20,044 - backend.main - INFO - User fixtureuser_11983 logged in successfully.
+2025-11-23 23:15:20,044 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2387s
+2025-11-23 23:15:20,044 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:20,054 - backend.main - INFO - User fixtureuser_11983 created project Test Project (ID: 1).
+2025-11-23 23:15:20,054 - backend.main - INFO - Request: POST http://testserver/users/1/projects/ - Status: 200 - Time: 0.0101s
+2025-11-23 23:15:20,054 - httpx - INFO - HTTP Request: POST http://testserver/users/1/projects/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:20,077 - backend.main - INFO - User fixtureuser_11983 deleted project (ID: 1).
+2025-11-23 23:15:20,078 - backend.main - INFO - Request: DELETE http://testserver/projects/1 - Status: 204 - Time: 0.0242s
+2025-11-23 23:15:20,079 - httpx - INFO - HTTP Request: DELETE http://testserver/projects/1 "HTTP/1.1 204 No Content"
+2025-11-23 23:15:20,085 - backend.main - WARNING - User fixtureuser_11983 tried to access non-existent project with ID: 1.
+2025-11-23 23:15:20,085 - backend.main - INFO - Request: GET http://testserver/projects/1 - Status: 404 - Time: 0.0047s
+2025-11-23 23:15:20,085 - httpx - INFO - HTTP Request: GET http://testserver/projects/1 "HTTP/1.1 404 Not Found"
+2025-11-23 23:15:20,442 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2454s
+2025-11-23 23:15:20,445 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:20,806 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2454s
+2025-11-23 23:15:20,809 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:20,815 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0040s
+2025-11-23 23:15:20,816 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-23 23:15:21,169 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2416s
+2025-11-23 23:15:21,169 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:21,176 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 400 - Time: 0.0066s
+2025-11-23 23:15:21,176 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-11-23 23:15:21,519 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2391s
+2025-11-23 23:15:21,525 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:21,764 - backend.main - INFO - User loginuser logged in successfully.
+2025-11-23 23:15:21,764 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2379s
+2025-11-23 23:15:21,767 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:22,147 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2768s
+2025-11-23 23:15:22,147 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:22,398 - backend.main - WARNING - Failed login attempt for username: invalidpassuser
+2025-11-23 23:15:22,398 - backend.main - INFO - Request: POST http://testserver/token - Status: 401 - Time: 0.2452s
+2025-11-23 23:15:22,402 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 401 Unauthorized"
+2025-11-23 23:15:22,778 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2586s
+2025-11-23 23:15:22,782 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:23,028 - backend.main - INFO - User meuser logged in successfully.
+2025-11-23 23:15:23,029 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2442s
+2025-11-23 23:15:23,032 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:23,038 - backend.main - INFO - User meuser accessed their own profile.
+2025-11-23 23:15:23,039 - backend.main - INFO - Request: GET http://testserver/users/me/ - Status: 200 - Time: 0.0050s
+2025-11-23 23:15:23,042 - httpx - INFO - HTTP Request: GET http://testserver/users/me/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:23,432 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2479s
+2025-11-23 23:15:23,435 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:23,698 - backend.main - INFO - User userbyid logged in successfully.
+2025-11-23 23:15:23,698 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2606s
+2025-11-23 23:15:23,698 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:23,710 - backend.main - INFO - User userbyid accessed user with ID: 1.
+2025-11-23 23:15:23,710 - backend.main - INFO - Request: GET http://testserver/users/1 - Status: 200 - Time: 0.0120s
+2025-11-23 23:15:23,714 - httpx - INFO - HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-11-23 23:15:24,068 - backend.main - INFO - Request: POST http://testserver/users/ - Status: 200 - Time: 0.2438s
+2025-11-23 23:15:24,068 - httpx - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-11-23 23:15:24,325 - backend.main - INFO - User reader logged in successfully.
+2025-11-23 23:15:24,325 - backend.main - INFO - Request: POST http://testserver/token - Status: 200 - Time: 0.2564s
+2025-11-23 23:15:24,328 - httpx - INFO - HTTP Request: POST http://testserver/token "HTTP/1.1 200 OK"
+2025-11-23 23:15:24,334 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
+2025-11-23 23:15:24,337 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0087s
+2025-11-23 23:15:24,339 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"

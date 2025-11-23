@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Project } from '../../../types';
-import { fetchProjectById } from '../../../utils/api';
-import { useAuth } from '../../../context/AuthContext';
+import { Project } from '@/app/types';
+import { fetchProjectById, deleteProject } from '@/app/utils/api';
+import { useAuth } from '@/app/context/AuthContext';
 import styles from './ProjectDetailsPage.module.scss';
 
 interface ProjectDetailsPageProps {
@@ -42,8 +42,12 @@ const ProjectDetailsPage = ({ params }: ProjectDetailsPageProps) => {
 
   const handleDeleteClick = async () => {
     if (!confirm('Вы уверены, что хотите удалить этот проект?')) return;
+    if (!token) {
+      setError('Для удаления проекта необходимо войти в систему.');
+      return;
+    }
     try {
-      await deleteProject(token, projectId);
+      await deleteProject(token!, projectId);
       router.push('/projects');
     } catch (err: any) {
       setError(err.message || 'Не удалось удалить проект.');

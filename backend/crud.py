@@ -178,12 +178,12 @@ def delete_comment(db: Session, comment_id: int):
 def get_attachment(db: Session, attachment_id: int):
     return db.query(models.Attachment).filter(models.Attachment.id == attachment_id).first()
 
-def create_attachment(db: Session, attachment: schemas.AttachmentCreate, uploader_id: int, filename: str, file_path: str):
+def create_attachment(db: Session, attachment: schemas.AttachmentCreate, uploader_id: int):
     db_attachment = models.Attachment(
         defect_id=attachment.defect_id,
         uploader_id=uploader_id,
-        filename=filename,
-        file_path=file_path
+        filename=attachment.filename,
+        file_path=attachment.file_path
     )
     db.add(db_attachment)
     db.commit()

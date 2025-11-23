@@ -20,7 +20,7 @@ from starlette.responses import FileResponse
 from sqlalchemy import func, extract # Добавлен импорт func и extract
 
 from backend import crud, models, schemas
-from .database import engine, SessionLocal
+from backend.database import engine, SessionLocal
 
 # Configure logging
 logging.basicConfig(
@@ -147,13 +147,17 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
 @app.post("/register/", response_model=schemas.User, tags=["Users"])
 async def register_new_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db_user_email = crud.get_user_by_email(db, email=user.email)
-    if db_user_email:
-        raise HTTPException(status_code=400, detail="Email already registered")
     db_user_username = crud.get_user_by_username(db, username=user.username)
-    if db_user_username:
+    if db_user_email or db_user_username:
         raise HTTPException(status_code=400, detail="Username already taken")
+    return crud.create_user(db=db, user=user, pwd_context=pwd_context)
 
-    user.role = schemas.UserRole.observer  # Принудительно устанавливаем роль "observer"
+@app.post("/users/", response_model=schemas.User, tags=["Users"])
+async def create_user_api(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user_email = crud.get_user_by_email(db, email=user.email)
+    db_user_username = crud.get_user_by_username(db, username=user.username)
+    if db_user_email or db_user_username:
+        raise HTTPException(status_code=400, detail="Username already taken")
     return crud.create_user(db=db, user=user, pwd_context=pwd_context)
 
 @app.get("/users/me/", response_model=schemas.User, tags=["Users"])
@@ -427,8 +431,8 @@ def create_upload_attachment_for_defect(
     with open(file_location, "wb+") as file_object:
         shutil.copyfileobj(file.file, file_object)
     
-    attachment_create = schemas.AttachmentCreate(defect_id=defect_id)
-    new_attachment = crud.create_attachment(db=db, attachment=attachment_create, uploader_id=current_user.id, filename=file.filename, file_path=file_location)
+    attachment_create = schemas.AttachmentCreate(defect_id=defect_id, filename=file.filename, file_path=file_location)
+    new_attachment = crud.create_attachment(db=db, attachment=attachment_create, uploader_id=current_user.id)
     logger.info(f"User {current_user.username} added attachment {new_attachment.filename} (ID: {new_attachment.id}) to defect {defect_id}.")
     return new_attachment
 

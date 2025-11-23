@@ -129,14 +129,31 @@ cd <НАЗВАНИЕ_ВАШЕЙ_ПАПКИ_ПРОЕКТА>
 
 2.  **Запустите тесты с отчетом о покрытии:**
 
+    Вариант A (Windows, с активацией venv):
+
+    ```powershell
+    cd backend
+    .\venv\Scripts\Activate.ps1
+    coverage run -m pytest tests
+    coverage report -m
+    coverage html
+    ```
+
+    Вариант B (Windows, без активации venv, из корня проекта):
+
+    ```powershell
+    backend\venv\Scripts\python -m coverage run -m pytest backend/tests
+    backend\venv\Scripts\python -m coverage report -m
+    ```
+
+    macOS/Linux (с активацией venv):
+
     ```bash
     cd backend
-    coverage run -m pytest tests/
+    source venv/bin/activate
+    coverage run -m pytest tests
     coverage report -m
-    # Для создания интерактивного HTML-отчета:
     coverage html
-    # Отчет будет доступен в каталоге htmlcov/
-    cd ..
     ```
 
 ### 2.6. Контроль доступа к логам

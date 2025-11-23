@@ -177,7 +177,7 @@ export const deleteAttachment = async (token: string, defectId: number, attachme
 };
 
 export const fetchUsers = async (token: string): Promise<User[]> => {
-  const response = await apiClient.get('/admin/users/', {
+  const response = await apiClient.get('/users/', {
     headers: {
       Authorization: `Bearer ${token}`,
     },

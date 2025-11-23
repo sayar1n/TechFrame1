@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 import { Defect, Project, User } from '@/app/types';
 import { fetchDefectById, deleteDefect, updateDefect, fetchProjects, fetchUsers } from '@/app/utils/api';
 import { useAuth } from '@/app/context/AuthContext';
@@ -10,15 +10,9 @@ import styles from './DefectDetailsPage.module.scss';
 import Link from 'next/link'; // Импортируем Link
 import AttachmentSection from '@/app/components/AttachmentSection'; // Импортируем AttachmentSection
 
-interface DefectDetailsPageProps {
-  params: {
-    id: string;
-  };
-}
-
-const DefectDetailsPage = ({ params }: DefectDetailsPageProps) => {
-  const { id } = params;
-  const defectId = parseInt(id, 10);
+const DefectDetailsPage = () => {
+  const params = useParams();
+  const defectId = parseInt(String(params?.id), 10);
   const { token, isLoading: authLoading, user } = useAuth();
   const router = useRouter();
   const [defect, setDefect] = useState<Defect | null>(null);
@@ -77,7 +71,15 @@ const DefectDetailsPage = ({ params }: DefectDetailsPageProps) => {
     setIsLoading(true);
     setError(null);
     try {
-      const updatedDefect = await updateDefect(token, defectId, { ...defect, status: newStatus });
+      const updatedDefect = await updateDefect(token!, defectId, {
+        title: defect.title,
+        description: defect.description ?? undefined,
+        priority: defect.priority,
+        status: newStatus,
+        due_date: defect.due_date ?? undefined,
+        project_id: defect.project_id,
+        assignee_id: defect.assignee_id ?? undefined,
+      });
       setDefect(updatedDefect);
     } catch (err: any) {
       setError(err.message || 'Не удалось обновить статус дефекта.');

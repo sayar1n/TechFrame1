@@ -101,6 +101,8 @@ class AttachmentBase(BaseModel):
     file_path: str
 
 class AttachmentCreate(BaseModel):
+    filename: str
+    file_path: str
     defect_id: int
 
 class Attachment(AttachmentBase):

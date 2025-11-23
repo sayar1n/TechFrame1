@@ -1,20 +1,14 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 import DefectForm from '@/app/components/DefectForm';
 import { fetchDefectById, updateDefect, fetchProjects, fetchUsers } from '@/app/utils/api';
 import { useAuth } from '@/app/context/AuthContext';
 import { Defect, DefectCreate, Project, User } from '@/app/types';
 import styles from './EditDefectPage.module.scss'; // Предполагается, что файл стилей будет создан
 
-interface EditDefectPageProps {
-  params: {
-    id: string;
-  };
-}
-
-const EditDefectPage = ({ params }: EditDefectPageProps) => {
+const EditDefectPage = () => {
   const [defectId, setDefectId] = useState<number | null>(null);
   const { token, isLoading: authLoading } = useAuth();
   const router = useRouter();
@@ -24,16 +18,13 @@ const EditDefectPage = ({ params }: EditDefectPageProps) => {
   const [loadingData, setLoadingData] = useState(false); // Изменяем имя стейта
   const [error, setError] = useState<string | null>(null);
 
+  const params = useParams();
   useEffect(() => {
-    // Извлекаем id из pathname после гидратации на клиенте
-    if (typeof window !== 'undefined') {
-      const pathParts = window.location.pathname.split('/');
-      const idFromPath = parseInt(pathParts[pathParts.length - 2], 10); // /defects/[id]/edit
-      if (!isNaN(idFromPath)) {
-        setDefectId(idFromPath);
-      }
+    const idFromParams = parseInt(String(params?.id), 10);
+    if (!isNaN(idFromParams)) {
+      setDefectId(idFromParams);
     }
-  }, []);
+  }, [params]);
 
   useEffect(() => {
     const fetchData = async () => {

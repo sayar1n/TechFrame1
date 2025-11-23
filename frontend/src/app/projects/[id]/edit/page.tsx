@@ -1,22 +1,16 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import ProjectForm from '../../../components/ProjectForm';
-import { fetchProjectById, updateProject } from '../../../utils/api';
-import { useAuth } from '../../../context/AuthContext';
-import { Project, ProjectCreate } from '../../../types';
+import { useRouter, useParams } from 'next/navigation';
+import ProjectForm from '@/app/components/ProjectForm';
+import { fetchProjectById, updateProject } from '@/app/utils/api';
+import { useAuth } from '@/app/context/AuthContext';
+import { Project, ProjectCreate } from '@/app/types';
 import styles from './EditProjectPage.module.scss'; // Предполагается, что файл стилей будет создан
 
-interface EditProjectPageProps {
-  params: {
-    id: string;
-  };
-}
-
-const EditProjectPage = ({ params }: EditProjectPageProps) => {
-  const { id } = params;
-  const projectId = parseInt(id, 10);
+const EditProjectPage = () => {
+  const params = useParams();
+  const projectId = parseInt(String(params?.id), 10);
   const { token, isLoading: authLoading } = useAuth();
   const router = useRouter();
   const [project, setProject] = useState<Project | null>(null);
@@ -47,7 +41,7 @@ const EditProjectPage = ({ params }: EditProjectPageProps) => {
     setIsLoading(true);
     setError(null);
     try {
-      await updateProject(token, projectId, projectData);
+      await updateProject(token!, projectId, projectData);
       router.push(`/projects/${projectId}`);
     } catch (err: any) {
       setError(err.message || 'Не удалось обновить проект.');
