@@ -36,7 +36,7 @@ const ProjectsPage = () => {
   };
 
   const handleEditProject = (projectId: number) => {
-    router.push(`/projects/${projectId}/edit`);
+    router.push(`/projects/${projectId}`);
   };
 
   const handleDeleteProject = async (projectId: number) => {
@@ -144,7 +144,7 @@ const ProjectsPage = () => {
                 <td>
                   {(user?.role === 'manager' || user?.id === project.owner_id || user?.role === 'admin') && (
                     <>
-                      <button onClick={() => handleEditProject(project.id)} className={styles.editButton}>Редактировать</button>
+                      <button onClick={() => handleEditProject(project.id)} className={styles.editButton}>Осмотр</button>
                       <button onClick={() => handleDeleteProject(project.id)} className={styles.deleteButton}>Удалить</button>
                     </>
                   )}

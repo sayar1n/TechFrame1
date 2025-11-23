@@ -39,7 +39,7 @@ const DefectsPage = () => {
   };
 
   const handleEditDefect = (defectId: number) => {
-    router.push(`/defects/${defectId}/edit`);
+    router.push(`/defects/${defectId}`);
   };
 
   const handleDeleteDefect = async (defectId: number) => {
@@ -172,7 +172,7 @@ const DefectsPage = () => {
                 <td>
                   {(user?.role === 'manager' || user?.id === defect.reporter_id || user?.id === defect.assignee_id || user?.role === 'admin') && (
                     <>
-                      <button onClick={() => handleEditDefect(defect.id)} className={styles.editButton}>Редактировать</button>
+                      <button onClick={() => handleEditDefect(defect.id)} className={styles.editButton}>Осмотр</button>
                       <button onClick={() => handleDeleteDefect(defect.id)} className={styles.deleteButton}>Удалить</button>
                     </>
                   )}
