@@ -1,21 +1,15 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 import { Project } from '@/app/types';
 import { fetchProjectById, deleteProject } from '@/app/utils/api';
 import { useAuth } from '@/app/context/AuthContext';
 import styles from './ProjectDetailsPage.module.scss';
 
-interface ProjectDetailsPageProps {
-  params: {
-    id: string;
-  };
-}
-
-const ProjectDetailsPage = ({ params }: ProjectDetailsPageProps) => {
-  const { id } = params;
-  const projectId = parseInt(id, 10);
+const ProjectDetailsPage = () => {
+  const params = useParams();
+  const projectId = parseInt(String(params?.id), 10);
   const { token, isLoading, user } = useAuth();
   const router = useRouter();
   const [project, setProject] = useState<Project | null>(null);
