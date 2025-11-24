@@ -1,0 +1,43 @@
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db
+
+# Python
+**/__pycache__/
+*.pyc
+*.pyo
+/venv/
+/.venv/
+/env/
+/.pytest_cache/
+/backend/.pytest_cache/
+/htmlcov/
+/backend/htmlcov/
+/.coverage
+/backend/.coverage
+
+# Logs
+/*.log
+app.log
+/backend/*.log
+_/logs/
+
+
+# SQLite DB files and backups
+/sql_app.db
+/sql_app.sqlite
+/backups/
+
+# Node / Next.js
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/.next_frontend/
+
+# Env files
+.env
+.env.*
+/frontend/.env.local
+

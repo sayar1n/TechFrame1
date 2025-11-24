@@ -616,3 +616,165 @@ AttributeError: 'str' object has no attribute 'value'
 2025-11-24 12:57:05,874 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0035s
 2025-11-24 12:57:07,537 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/2/role?new_role=observer - Status: 200 - Time: 0.0001s
 2025-11-24 12:57:07,567 - backend.main - INFO - Request: PUT http://localhost:8000/users/2/role?new_role=observer - Status: 200 - Time: 0.0266s
+2025-11-24 12:58:10,012 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:10,016 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:10,051 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 12:58:10,065 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0222s
+2025-11-24 12:58:10,073 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 12:58:10,087 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0200s
+2025-11-24 12:58:12,250 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:12,253 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0004s
+2025-11-24 12:58:12,302 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 12:58:12,314 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0205s
+2025-11-24 12:58:12,328 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 12:58:12,341 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0231s
+2025-11-24 12:58:13,000 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0040s
+2025-11-24 12:58:13,007 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0042s
+2025-11-24 12:58:14,248 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,254 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,270 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,274 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,280 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,284 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,287 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,295 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0003s
+2025-11-24 12:58:14,297 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0015s
+2025-11-24 12:58:14,300 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:14,360 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0406s
+2025-11-24 12:58:14,362 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0421s
+2025-11-24 12:58:14,363 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0435s
+2025-11-24 12:58:14,365 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0453s
+2025-11-24 12:58:14,370 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:14.230Z - Status: 200 - Time: 0.0503s
+2025-11-24 12:58:14,383 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0594s
+2025-11-24 12:58:14,391 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0221s
+2025-11-24 12:58:14,391 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0228s
+2025-11-24 12:58:14,394 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:14.231Z - Status: 200 - Time: 0.0243s
+2025-11-24 12:58:14,405 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0098s
+2025-11-24 12:58:31,277 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 12:58:31,281 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0113s
+2025-11-24 12:58:31,283 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0006s
+2025-11-24 12:58:31,293 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0013s
+2025-11-24 12:58:31,300 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0075s
+2025-11-24 12:58:31,301 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0091s
+2025-11-24 12:58:31,305 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0221s
+2025-11-24 12:58:31,356 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0641s
+2025-11-24 12:58:31,360 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0570s
+2025-11-24 12:58:31,362 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0514s
+2025-11-24 12:58:31,364 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:31.269Z - Status: 200 - Time: 0.0529s
+2025-11-24 12:58:38,429 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 12:58:38,430 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0062s
+2025-11-24 12:58:38,527 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:38,530 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0001s
+2025-11-24 12:58:38,532 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0005s
+2025-11-24 12:58:38,573 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:58:38,588 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0558s
+2025-11-24 12:58:38,597 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0583s
+2025-11-24 12:58:38,598 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0604s
+2025-11-24 12:58:38,599 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0618s
+2025-11-24 12:58:38,603 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:58:38.523Z - Status: 200 - Time: 0.0129s
+2025-11-24 12:59:26,883 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 12:59:26,883 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0081s
+2025-11-24 12:59:26,999 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:59:27,002 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0002s
+2025-11-24 12:59:27,005 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0003s
+2025-11-24 12:59:27,014 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0016s
+2025-11-24 12:59:27,057 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0528s
+2025-11-24 12:59:27,070 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0620s
+2025-11-24 12:59:27,071 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0572s
+2025-11-24 12:59:27,083 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0616s
+2025-11-24 12:59:27,088 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T12:59:26.995Z - Status: 200 - Time: 0.0190s
+2025-11-24 13:02:57,701 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0017s
+2025-11-24 13:02:57,791 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:02:57.788Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:02:57,794 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:02:57.788Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:02:57,796 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:02:57.788Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:02:57,801 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:02:57.788Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:02:57,803 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 401 - Time: 0.0036s
+2025-11-24 13:02:57,810 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:02:57.788Z - Status: 401 - Time: 0.0060s
+2025-11-24 13:02:57,811 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:02:57.788Z - Status: 401 - Time: 0.0084s
+2025-11-24 13:02:57,811 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:02:57.788Z - Status: 401 - Time: 0.0078s
+2025-11-24 13:02:57,816 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:02:57.788Z - Status: 401 - Time: 0.0109s
+2025-11-24 13:03:03,542 - backend.main - INFO - User 111 logged in successfully.
+2025-11-24 13:03:03,543 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2350s
+2025-11-24 13:03:03,551 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 13:03:03,552 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0042s
+2025-11-24 13:03:07,931 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0056s
+2025-11-24 13:03:07,943 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0054s
+2025-11-24 13:03:08,519 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:03:08,522 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:03:08,528 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0003s
+2025-11-24 13:03:08,530 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0005s
+2025-11-24 13:03:08,532 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0004s
+2025-11-24 13:03:08,533 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0017s
+2025-11-24 13:03:08,534 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0022s
+2025-11-24 13:03:08,555 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:03:08,588 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0282s
+2025-11-24 13:03:08,590 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0300s
+2025-11-24 13:03:08,591 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0315s
+2025-11-24 13:03:08,593 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0329s
+2025-11-24 13:03:08,597 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0367s
+2025-11-24 13:03:08,599 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0350s
+2025-11-24 13:03:08,620 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0242s
+2025-11-24 13:03:08,623 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0244s
+2025-11-24 13:03:08,624 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:03:08.504Z - Status: 200 - Time: 0.0275s
+2025-11-24 13:03:08,625 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:03:08.506Z - Status: 200 - Time: 0.0265s
+2025-11-24 13:03:40,415 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 13:03:40,416 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0079s
+2025-11-24 13:03:40,670 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:03:40,675 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0003s
+2025-11-24 13:03:40,676 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0013s
+2025-11-24 13:03:40,678 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0002s
+2025-11-24 13:03:40,719 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0393s
+2025-11-24 13:03:40,723 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0323s
+2025-11-24 13:03:40,725 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0343s
+2025-11-24 13:03:40,730 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0364s
+2025-11-24 13:03:40,732 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T13:03:40.666Z - Status: 200 - Time: 0.0260s
+2025-11-24 13:04:34,413 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0062s
+2025-11-24 13:04:34,443 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0132s
+2025-11-24 13:04:35,204 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 13:04:35,218 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0223s
+2025-11-24 13:04:35,231 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 13:04:35,250 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0292s
+2025-11-24 13:04:39,006 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2 - Status: 200 - Time: 0.0003s
+2025-11-24 13:04:39,009 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2 - Status: 200 - Time: 0.0031s
+2025-11-24 13:04:39,026 - backend.main - INFO - User 111 accessed defect апрапр (ID: 2).
+2025-11-24 13:04:39,037 - backend.main - INFO - Request: GET http://localhost:8000/defects/2 - Status: 200 - Time: 0.0195s
+2025-11-24 13:04:39,056 - backend.main - INFO - User 111 accessed defect апрапр (ID: 2).
+2025-11-24 13:04:39,073 - backend.main - INFO - Request: GET http://localhost:8000/defects/2 - Status: 200 - Time: 0.0311s
+2025-11-24 13:04:39,087 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 13:04:39,097 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0002s
+2025-11-24 13:04:39,104 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0009s
+2025-11-24 13:04:39,107 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2/attachments/ - Status: 200 - Time: 0.0036s
+2025-11-24 13:04:39,111 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2/attachments/ - Status: 200 - Time: 0.0009s
+2025-11-24 13:04:39,121 - backend.main - INFO - User 111 accessed comments for defect 2.
+2025-11-24 13:04:39,125 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0484s
+2025-11-24 13:04:39,128 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0173s
+2025-11-24 13:04:39,134 - backend.main - INFO - User 111 accessed attachments for defect 2.
+2025-11-24 13:04:39,147 - backend.main - INFO - User 111 accessed comments for defect 2.
+2025-11-24 13:04:39,148 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 13:04:39,148 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0064s
+2025-11-24 13:04:39,149 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/attachments/ - Status: 200 - Time: 0.0323s
+2025-11-24 13:04:39,152 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0205s
+2025-11-24 13:04:39,159 - backend.main - INFO - User 111 accessed attachments for defect 2.
+2025-11-24 13:04:39,161 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/attachments/ - Status: 200 - Time: 0.0084s
+2025-11-24 13:04:39,170 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0395s
+2025-11-24 13:04:39,180 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0048s
+2025-11-24 13:04:43,059 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0002s
+2025-11-24 13:04:43,095 - backend.main - INFO - User 111 added comment (ID: 1) to defect 2.
+2025-11-24 13:04:43,096 - backend.main - INFO - Request: POST http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0339s
+2025-11-24 13:04:43,108 - backend.main - INFO - User 111 accessed comments for defect 2.
+2025-11-24 13:04:43,109 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0076s
+2025-11-24 13:05:08,790 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 13:05:08,790 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0047s
+2025-11-24 13:05:08,821 - backend.main - INFO - User 111 accessed defect апрапр (ID: 2).
+2025-11-24 13:05:08,842 - backend.main - INFO - Request: GET http://localhost:8000/defects/2 - Status: 200 - Time: 0.0341s
+2025-11-24 13:05:08,893 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 13:05:08,912 - backend.main - INFO - User 111 accessed attachments for defect 2.
+2025-11-24 13:05:08,913 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/attachments/ - Status: 200 - Time: 0.0217s
+2025-11-24 13:05:08,913 - backend.main - INFO - User 111 accessed comments for defect 2.
+2025-11-24 13:05:08,918 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0268s
+2025-11-24 13:05:08,939 - backend.main - INFO - User 111 accessed comments for defect 2.
+2025-11-24 13:05:08,941 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/comments/ - Status: 200 - Time: 0.0166s
+2025-11-24 13:05:08,942 - backend.main - INFO - User 111 accessed attachments for defect 2.
+2025-11-24 13:05:08,945 - backend.main - INFO - Request: GET http://localhost:8000/defects/2/attachments/ - Status: 200 - Time: 0.0120s
+2025-11-24 13:05:08,951 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0881s
+2025-11-24 13:05:08,961 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0043s
