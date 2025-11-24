@@ -1673,3 +1673,205 @@ AttributeError: 'str' object has no attribute 'value'
 2025-11-24 15:49:55,800 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0109s
 2025-11-24 15:49:55,817 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0499s
 2025-11-24 15:49:55,849 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0265s
+2025-11-24 15:58:57,087 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 15:58:57,088 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0061s
+2025-11-24 15:58:57,232 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 15:58:57,236 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0097s
+2025-11-24 15:58:57,256 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 15:58:57,275 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0246s
+2025-11-24 15:58:57,294 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0002s
+2025-11-24 15:58:57,302 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0040s
+2025-11-24 15:58:57,317 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 15:58:57,319 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0101s
+2025-11-24 15:58:57,322 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 15:58:57,323 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0085s
+2025-11-24 15:58:57,330 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 15:58:57,332 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0083s
+2025-11-24 15:58:57,333 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 15:58:57,337 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0089s
+2025-11-24 16:07:18,026 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:18,040 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 16:07:18,041 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0062s
+2025-11-24 16:07:18,154 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3 - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:18,166 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:18,172 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0108s
+2025-11-24 16:07:18,232 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:18,240 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:18,256 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:18,258 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0006s
+2025-11-24 16:07:18,261 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:18,264 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0007s
+2025-11-24 16:07:18,268 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0332s
+2025-11-24 16:07:18,271 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:18,279 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:18,280 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0047s
+2025-11-24 16:07:18,281 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0185s
+2025-11-24 16:07:18,285 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0168s
+2025-11-24 16:07:18,293 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:18,296 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0100s
+2025-11-24 16:07:18,315 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:18,318 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0274s
+2025-11-24 16:07:20,227 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:20,231 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0116s
+2025-11-24 16:07:20,424 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:20,441 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0242s
+2025-11-24 16:07:20,451 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0036s
+2025-11-24 16:07:21,734 - backend.main - INFO - User 1111 updated defect 123123 (ID: 3).
+2025-11-24 16:07:21,738 - backend.main - INFO - Request: PUT http://localhost:8000/defects/3 - Status: 200 - Time: 0.0180s
+2025-11-24 16:07:21,823 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:21,829 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0133s
+2025-11-24 16:07:21,876 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:21,881 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0436s
+2025-11-24 16:07:22,052 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:22,070 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0238s
+2025-11-24 16:07:22,080 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:22,086 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0156s
+2025-11-24 16:07:22,090 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:22,093 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:22,096 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0115s
+2025-11-24 16:07:22,100 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0236s
+2025-11-24 16:07:22,125 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:22,128 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0308s
+2025-11-24 16:07:22,129 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:22,132 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0102s
+2025-11-24 16:07:22,145 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0683s
+2025-11-24 16:07:22,154 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0030s
+2025-11-24 16:07:24,718 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:24,735 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0213s
+2025-11-24 16:07:24,750 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:24,769 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0262s
+2025-11-24 16:07:30,233 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/2/projects/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:30,262 - backend.main - INFO - User 1111 created project 111 (ID: 3).
+2025-11-24 16:07:30,266 - backend.main - INFO - Request: POST http://localhost:8000/users/2/projects/ - Status: 200 - Time: 0.0295s
+2025-11-24 16:07:30,340 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:30,362 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0309s
+2025-11-24 16:07:30,374 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:30,392 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0268s
+2025-11-24 16:07:34,740 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/3 - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:34,779 - backend.main - INFO - User 1111 deleted project (ID: 3).
+2025-11-24 16:07:34,780 - backend.main - INFO - Request: DELETE http://localhost:8000/projects/3 - Status: 204 - Time: 0.0355s
+2025-11-24 16:07:37,519 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:37,528 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:07:37,567 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:07:37,580 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0201s
+2025-11-24 16:07:37,590 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:07:37,605 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0219s
+2025-11-24 16:07:38,734 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:38,741 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0156s
+2025-11-24 16:07:38,758 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:38,767 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0236s
+2025-11-24 16:07:38,958 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:38,984 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0328s
+2025-11-24 16:07:38,995 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:39,000 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:39,009 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0127s
+2025-11-24 16:07:39,010 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0318s
+2025-11-24 16:07:39,024 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:39,027 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0409s
+2025-11-24 16:07:39,044 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:39,049 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0151s
+2025-11-24 16:07:39,057 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:39,079 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0645s
+2025-11-24 16:07:39,100 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.1011s
+2025-11-24 16:07:39,111 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0057s
+2025-11-24 16:07:40,322 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:40,330 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0139s
+2025-11-24 16:07:40,543 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:40,557 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0212s
+2025-11-24 16:07:40,566 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0033s
+2025-11-24 16:07:43,232 - backend.main - INFO - User 1111 updated defect 123123 (ID: 3).
+2025-11-24 16:07:43,237 - backend.main - INFO - Request: PUT http://localhost:8000/defects/3 - Status: 200 - Time: 0.0339s
+2025-11-24 16:07:43,319 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:43,324 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0154s
+2025-11-24 16:07:43,338 - backend.main - INFO - User 1111 accessed defect 123123 (ID: 3).
+2025-11-24 16:07:43,346 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0174s
+2025-11-24 16:07:43,544 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:43,566 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0288s
+2025-11-24 16:07:43,569 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:43,586 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:43,588 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0278s
+2025-11-24 16:07:43,597 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:43,598 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0325s
+2025-11-24 16:07:43,605 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0124s
+2025-11-24 16:07:43,617 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:43,620 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0132s
+2025-11-24 16:07:43,622 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:43,624 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0113s
+2025-11-24 16:07:43,639 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0616s
+2025-11-24 16:07:43,649 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0033s
+2025-11-24 16:07:49,175 - backend.main - INFO - User 1111 deleted defect (ID: 3).
+2025-11-24 16:07:49,175 - backend.main - INFO - Request: DELETE http://localhost:8000/defects/3 - Status: 204 - Time: 0.0319s
+2025-11-24 16:07:49,225 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:49,229 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0274s
+2025-11-24 16:07:49,234 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:49,236 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0148s
+2025-11-24 16:07:49,261 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:07:49,265 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0288s
+2025-11-24 16:07:49,269 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:07:49,270 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0241s
+2025-11-24 16:07:49,286 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:07:49,299 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0219s
+2025-11-24 16:07:49,331 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:07:49,341 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0307s
+2025-11-24 16:07:57,058 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:57,070 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0198s
+2025-11-24 16:07:57,079 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:07:57,093 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0196s
+2025-11-24 16:07:57,247 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0043s
+2025-11-24 16:07:57,253 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0043s
+2025-11-24 16:08:10,378 - backend.main - INFO - Request: POST http://localhost:8000/defects/ - Status: 200 - Time: 0.0275s
+2025-11-24 16:08:10,456 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:08:10,471 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0245s
+2025-11-24 16:08:10,491 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:08:10,504 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0187s
+2025-11-24 16:08:15,407 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 16:08:15,408 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0082s
+2025-11-24 16:08:15,586 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:08:15,600 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0209s
+2025-11-24 16:08:17,636 - backend.main - INFO - User 1111 accessed defect кукеу (ID: 3).
+2025-11-24 16:08:17,641 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0119s
+2025-11-24 16:08:17,649 - backend.main - INFO - User 1111 accessed defect кукеу (ID: 3).
+2025-11-24 16:08:17,656 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0116s
+2025-11-24 16:08:17,829 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:08:17,851 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0281s
+2025-11-24 16:08:17,870 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:08:17,876 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:08:17,879 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:08:17,881 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0085s
+2025-11-24 16:08:17,882 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0279s
+2025-11-24 16:08:17,885 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0234s
+2025-11-24 16:08:17,902 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:08:17,903 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:08:17,904 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0147s
+2025-11-24 16:08:17,907 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0214s
+2025-11-24 16:08:17,920 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0584s
+2025-11-24 16:08:17,930 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0039s
+2025-11-24 16:08:20,164 - backend.main - INFO - User 1111 accessed defect кукеу (ID: 3).
+2025-11-24 16:08:20,172 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0155s
+2025-11-24 16:08:20,378 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:08:20,396 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0240s
+2025-11-24 16:08:20,406 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0038s
+2025-11-24 16:08:23,679 - backend.main - INFO - User 1111 updated defect кукеу (ID: 3).
+2025-11-24 16:08:23,683 - backend.main - INFO - Request: PUT http://localhost:8000/defects/3 - Status: 200 - Time: 0.0183s
+2025-11-24 16:08:23,765 - backend.main - INFO - User 1111 accessed defect кукеу (ID: 3).
+2025-11-24 16:08:23,770 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0116s
+2025-11-24 16:08:23,795 - backend.main - INFO - User 1111 accessed defect кукеу (ID: 3).
+2025-11-24 16:08:23,801 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0157s
+2025-11-24 16:08:23,983 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:08:24,004 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0277s
+2025-11-24 16:08:24,008 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:08:24,017 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:08:24,022 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0077s
+2025-11-24 16:08:24,023 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0255s
+2025-11-24 16:08:24,025 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0202s
+2025-11-24 16:08:24,030 - backend.main - INFO - User 1111 accessed list of projects.
+2025-11-24 16:08:24,035 - backend.main - INFO - User 1111 accessed comments for defect 3.
+2025-11-24 16:08:24,038 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0115s
+2025-11-24 16:08:24,045 - backend.main - INFO - User 1111 accessed attachments for defect 3.
+2025-11-24 16:08:24,046 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0146s
+2025-11-24 16:08:24,068 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0530s
+2025-11-24 16:08:24,075 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0027s
+2025-11-24 16:10:16,810 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:10:16,827 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0231s
+2025-11-24 16:10:16,839 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:10:16,853 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0225s
