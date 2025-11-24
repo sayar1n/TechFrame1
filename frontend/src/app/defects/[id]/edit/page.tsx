@@ -57,7 +57,15 @@ const EditDefectPage = () => {
     setLoadingData(true); // Устанавливаем загрузку данных
     setError(null);
     try {
-      await updateDefect(token, defectId, defectData);
+      const payload: Omit<DefectCreate, 'project_id'> = {
+        title: defectData.title,
+        description: defectData.description,
+        priority: defectData.priority,
+        status: defectData.status,
+        due_date: defectData.due_date,
+        assignee_id: defectData.assignee_id,
+      };
+      await updateDefect(token, defectId, payload);
       router.push(`/defects/${defectId}`);
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'Не удалось обновить дефект.');

@@ -71,7 +71,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setIsLoading(true);
     try {
       // На бэкенде роль принудительно устанавливается в "observer"
-      const newUser = await registerUser({ ...userData, role: "observer" });
+      await registerUser({ ...userData, role: "observer" });
       router.push('/login');
     } catch (error) {
       console.error('Registration failed:', error);

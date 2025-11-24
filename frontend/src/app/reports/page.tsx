@@ -201,21 +201,26 @@ const ReportsPage = () => {
           <div className={styles.chartCard}>
             <h2>Распределение по приоритетам</h2>
             <ResponsiveContainer width="100%" height={300}>
-              <PieChart>
-                <Pie
-                  data={priorityDistribution as any}
-                  dataKey="count"
-                  nameKey="priority"
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={100}
-                  fill="#82ca9d"
-                  label
-                >
-                  {priorityDistribution.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
+          <PieChart>
+                {(() => {
+                  const pieData: { [key: string]: string | number }[] = priorityDistribution.map(d => ({ priority: d.priority, count: d.count }));
+                  return (
+                    <Pie
+                      data={pieData}
+                      dataKey="count"
+                      nameKey="priority"
+                      cx="50%"
+                      cy="50%"
+                      outerRadius={100}
+                      fill="#82ca9d"
+                      label
+                    >
+                      {priorityDistribution.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                      ))}
+                    </Pie>
+                  );
+                })()}
                 <Tooltip />
                 <Legend />
               </PieChart>

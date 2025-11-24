@@ -77,7 +77,6 @@ const DefectDetailsPage = () => {
         priority: defect.priority,
         status: newStatus,
         due_date: defect.due_date ?? undefined,
-        project_id: defect.project_id,
         assignee_id: defect.assignee_id ?? undefined,
       });
       setDefect(updatedDefect);
