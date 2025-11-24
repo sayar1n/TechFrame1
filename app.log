@@ -447,3 +447,39 @@ AttributeError: 'str' object has no attribute 'value'
 2025-11-23 23:15:24,334 - backend.main - WARNING - User reader tried to access non-existent user with ID: 999.
 2025-11-23 23:15:24,337 - backend.main - INFO - Request: GET http://testserver/users/999 - Status: 404 - Time: 0.0087s
 2025-11-23 23:15:24,339 - httpx - INFO - HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-11-24 12:30:04,361 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost', 'http://10.0.85.2:3000', 'http://localhost:3000', 'http://localhost:8000']
+2025-11-24 12:30:26,566 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0002s
+2025-11-24 12:30:26,652 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0831s
+2025-11-24 12:30:36,170 - backend.main - INFO - Request: OPTIONS http://localhost:8000/register/ - Status: 200 - Time: 0.0002s
+2025-11-24 12:30:36,480 - backend.main - INFO - Request: POST http://localhost:8000/register/ - Status: 200 - Time: 0.3078s
+2025-11-24 12:30:40,159 - backend.main - INFO - User 111 logged in successfully.
+2025-11-24 12:30:40,160 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2288s
+2025-11-24 12:30:40,167 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 12:30:40,167 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-24 12:31:16,219 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 12:31:16,219 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0066s
+2025-11-24 12:31:22,280 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 12:31:22,281 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0067s
+2025-11-24 12:31:24,794 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0002s
+2025-11-24 12:31:24,810 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0002s
+2025-11-24 12:31:24,829 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0069s
+2025-11-24 12:31:24,848 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0056s
+2025-11-24 12:31:33,262 - backend.main - INFO - Request: POST http://localhost:8000/register/ - Status: 400 - Time: 0.0060s
+2025-11-24 12:31:59,458 - backend.main - INFO - Request: POST http://localhost:8000/register/ - Status: 200 - Time: 0.2549s
+2025-11-24 12:32:07,980 - backend.main - INFO - User 1111 logged in successfully.
+2025-11-24 12:32:07,981 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2250s
+2025-11-24 12:32:07,989 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 12:32:07,990 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0039s
+2025-11-24 12:32:20,957 - backend.main - INFO - User 111 logged in successfully.
+2025-11-24 12:32:20,957 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2266s
+2025-11-24 12:32:20,966 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 12:32:20,966 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0038s
+2025-11-24 12:32:22,291 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0077s
+2025-11-24 12:32:22,302 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0069s
+2025-11-24 12:32:29,871 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/2/role - Status: 200 - Time: 0.0001s
+2025-11-24 12:32:29,880 - backend.main - INFO - Request: PUT http://localhost:8000/users/2/role - Status: 422 - Time: 0.0059s
+2025-11-24 12:32:35,273 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0043s
+2025-11-24 12:32:35,289 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0064s
+2025-11-24 12:32:37,069 - backend.main - INFO - Request: PUT http://localhost:8000/users/2/role - Status: 422 - Time: 0.0043s
+2025-11-24 12:32:40,257 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0079s
+2025-11-24 12:32:40,264 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0042s

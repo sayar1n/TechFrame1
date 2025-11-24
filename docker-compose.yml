@@ -5,8 +5,7 @@ services:
     build: ./backend
     command: uvicorn backend.main:app --host 0.0.0.0 --port 8000
     volumes:
-      - ./backend:/app/backend
-      - ./sql_app.db:/app/backend/sql_app.db
+      - ./:/app
     ports:
       - "8000:8000"
     environment:
