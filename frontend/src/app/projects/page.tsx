@@ -142,7 +142,7 @@ const ProjectsPage = () => {
                 <td>{project.owner_id}</td>
                 <td>{new Date(project.created_at).toLocaleDateString()}</td>
                 <td>
-                  {(user?.role === 'manager' || user?.id === project.owner_id || user?.role === 'admin') && (
+                  {(user?.role === 'admin' || (user?.role === 'engineer' && user?.id === project.owner_id)) && (
                     <>
                       <button onClick={() => handleEditProject(project.id)} className={styles.editButton}>Осмотр</button>
                       <button onClick={() => handleDeleteProject(project.id)} className={styles.deleteButton}>Удалить</button>

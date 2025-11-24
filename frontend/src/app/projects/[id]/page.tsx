@@ -60,7 +60,7 @@ const ProjectDetailsPage = () => {
     return <div>Проект не найден.</div>;
   }
 
-  const canEditOrDelete = user && (user.role === 'manager' || (user.role === 'engineer' && user.id === project.owner_id));
+  const canEditOrDelete = user && (user.role === 'admin' || (user.role === 'engineer' && user.id === project.owner_id));
 
   return (
     <div className={styles.projectDetailsContainer}>

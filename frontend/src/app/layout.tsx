@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.scss";
 import { AuthProvider } from './context/AuthContext';
-import ClientHeaderWrapper from './components/ClientHeaderWrapper'; // Импортируем новый компонент
-
-const inter = Inter({ subsets: ["latin"] });
+import ClientHeaderWrapper from './components/ClientHeaderWrapper';
 
 export const metadata: Metadata = {
   title: "Управление дефектами",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={inter.className}>
+      <body>
         <AuthProvider>
           <ClientHeaderWrapper /> {/* Используем ClientHeaderWrapper */}
           <main>

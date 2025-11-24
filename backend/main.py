@@ -53,8 +53,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=alle_origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type"],
 )
 
 @app.middleware("http")
@@ -241,7 +241,7 @@ def update_project(
     if db_project is None:
         logger.warning(f"User {current_user.username} tried to update non-existent project with ID: {project_id}.")
         raise HTTPException(status_code=404, detail="Project not found")
-    if db_project.owner_id != current_user.id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]: # Only owner or manager/admin can update
+    if db_project.owner_id != current_user.id and current_user.role not in [schemas.UserRole.admin]:
         logger.warning(f"User {current_user.username} not authorized to update project {project_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to update this project")
     updated_project = crud.update_project(db=db, project_id=project_id, project=project)
@@ -254,7 +254,7 @@ def delete_project(project_id: int, db: Session = Depends(get_db), current_user:
     if db_project is None:
         logger.warning(f"User {current_user.username} tried to delete non-existent project with ID: {project_id}.")
         raise HTTPException(status_code=404, detail="Project not found")
-    if db_project.owner_id != current_user.id and current_user.role not in [schemas.UserRole.manager, schemas.UserRole.admin]: # Only owner or manager/admin can delete
+    if db_project.owner_id != current_user.id and current_user.role not in [schemas.UserRole.admin]:
         logger.warning(f"User {current_user.username} not authorized to delete project {project_id}.")
         raise HTTPException(status_code=403, detail="Not authorized to delete this project")
     crud.delete_project(db=db, project_id=project_id)
@@ -502,7 +502,7 @@ def export_defects_to_csv_excel(
     search_query: Optional[str] = Query(None)
 ):
     try:
-        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin, schemas.UserRole.engineer]:
             logger.warning(f"User {current_user.username} not authorized to export reports.")
             raise HTTPException(status_code=403, detail="Not authorized to export reports")
 
@@ -595,7 +595,7 @@ def get_analytics_summary(
     end_date: Optional[datetime] = Query(None),
 ):
     try:
-        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin, schemas.UserRole.engineer]:
             raise HTTPException(status_code=403, detail="Not authorized to view analytics")
 
         query = db.query(models.Defect)
@@ -640,7 +640,7 @@ def get_status_distribution(
     end_date: Optional[datetime] = Query(None),
 ):
     try:
-        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin, schemas.UserRole.engineer]:
             raise HTTPException(status_code=403, detail="Not authorized to view analytics")
         
         query = db.query(models.Defect.status, func.count(models.Defect.id)).group_by(models.Defect.status)
@@ -663,7 +663,7 @@ def get_priority_distribution(
     end_date: Optional[datetime] = Query(None),
 ):
     try:
-        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin, schemas.UserRole.engineer]:
             raise HTTPException(status_code=403, detail="Not authorized to view analytics")
 
         query = db.query(models.Defect.priority, func.count(models.Defect.id)).group_by(models.Defect.priority)
@@ -685,7 +685,7 @@ def get_creation_trend(
     days: int = Query(30, description="Number of past days to get trend for"),
 ):
     try:
-        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin]:
+        if current_user.role not in [schemas.UserRole.manager, schemas.UserRole.observer, schemas.UserRole.admin, schemas.UserRole.engineer]:
             raise HTTPException(status_code=403, detail="Not authorized to view analytics")
 
         end_date = datetime.now()

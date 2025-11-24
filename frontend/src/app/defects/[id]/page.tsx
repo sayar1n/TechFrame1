@@ -100,7 +100,16 @@ const DefectDetailsPage = () => {
     return <div>Дефект не найден.</div>;
   }
 
-  const canEditOrDelete = user && (user.role === 'manager' || (user.role === 'engineer' && user.id === defect.reporter_id));
+  const canEdit = user && (
+    user.role === 'admin' ||
+    user.role === 'manager' ||
+    (user.role === 'engineer' && (user.id === defect.reporter_id || user.id === defect.assignee_id))
+  );
+  const canDelete = user && (
+    user.role === 'admin' ||
+    user.role === 'manager' ||
+    (user.role === 'engineer' && user.id === defect.reporter_id)
+  );
 
   const assignedProject = projects.find(p => p.id === defect.project_id);
   const assignedAssignee = users.find(u => u.id === defect.assignee_id);
@@ -113,7 +122,7 @@ const DefectDetailsPage = () => {
       <p><strong>Описание:</strong> {defect.description || 'Нет описания'}</p>
       <p>
         <strong>Статус:</strong>
-        {canEditOrDelete ? (
+        {canEdit ? (
           <select
             value={defect.status}
             onChange={handleStatusChange}
@@ -137,12 +146,12 @@ const DefectDetailsPage = () => {
       <p><strong>Проект:</strong> {assignedProject ? <Link href={`/projects/${assignedProject.id}`}>{assignedProject.title}</Link> : 'Неизвестен'}</p>
 
       <div className={styles.actions}>
-        {canEditOrDelete && (
+        {canEdit && (
           <button onClick={handleEditClick} className={styles.editButton}>
             Редактировать
           </button>
         )}
-        {canEditOrDelete && (
+        {canDelete && (
           <button onClick={handleDeleteClick} className={styles.deleteButton}>
             Удалить
           </button>

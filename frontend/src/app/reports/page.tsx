@@ -132,14 +132,14 @@ const ReportsPage = () => {
     return <div className={styles.errorMessage}>{error}</div>;
   }
 
-  const canViewReports = user?.role === 'manager' || user?.role === 'observer' || user?.role === 'admin';
+  const canViewReports = user?.role === 'manager' || user?.role === 'observer' || user?.role === 'admin' || user?.role === 'engineer';
 
   if (!canViewReports) {
     return <div className={styles.accessDenied}>У вас нет прав для просмотра этой страницы.</div>;
   }
 
   return (
-    <AuthGuard roles={['manager', 'observer', 'admin']}>
+    <AuthGuard roles={['manager', 'observer', 'admin', 'engineer']}>
       <div className={styles.reportsContainer}>
         <div className={styles.header}>
           <h1>Аналитика и отчеты</h1>
