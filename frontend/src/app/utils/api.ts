@@ -188,11 +188,12 @@ export const fetchUsers = async (token: string): Promise<User[]> => {
 export const updateUserRole = async (token: string, userId: number, newRole: "manager" | "engineer" | "observer"): Promise<User> => {
   const response = await apiClient.put(
     `/users/${userId}/role`,
-    { new_role: newRole }, // Отправляем объект с полем new_role
+    undefined,
     {
       headers: {
         Authorization: `Bearer ${token}`,
       },
+      params: { new_role: newRole },
     }
   );
   return response.data;
