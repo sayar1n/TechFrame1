@@ -1875,3 +1875,577 @@ AttributeError: 'str' object has no attribute 'value'
 2025-11-24 16:10:16,827 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0231s
 2025-11-24 16:10:16,839 - backend.main - INFO - User 1111 accessed list of defects with filters.
 2025-11-24 16:10:16,853 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0225s
+2025-11-24 16:19:32,532 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost', 'http://10.0.85.2:3000', 'http://localhost:8000', 'http://localhost:3000']
+2025-11-24 16:19:48,244 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0003s
+2025-11-24 16:19:48,303 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 16:19:48,419 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.1649s
+2025-11-24 16:19:48,626 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0003s
+2025-11-24 16:19:48,654 - backend.main - INFO - User 1111 accessed list of defects with filters.
+2025-11-24 16:19:48,679 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0496s
+2025-11-24 16:19:50,634 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0015s
+2025-11-24 16:19:56,993 - backend.main - INFO - User 111 logged in successfully.
+2025-11-24 16:19:56,994 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2574s
+2025-11-24 16:19:57,008 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 16:19:57,009 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0040s
+2025-11-24 16:19:58,789 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:19:58,793 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0001s
+2025-11-24 16:19:58,802 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0046s
+2025-11-24 16:19:58,816 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0122s
+2025-11-24 16:20:01,116 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 16:20:01,140 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0311s
+2025-11-24 16:20:01,149 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 16:20:01,166 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0235s
+2025-11-24 16:20:04,789 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3 - Status: 200 - Time: 0.0004s
+2025-11-24 16:20:04,791 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3 - Status: 200 - Time: 0.0027s
+2025-11-24 16:20:04,828 - backend.main - INFO - User 111 accessed defect кукеу (ID: 3).
+2025-11-24 16:20:04,834 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0160s
+2025-11-24 16:20:04,844 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0003s
+2025-11-24 16:20:04,847 - backend.main - INFO - User 111 accessed defect кукеу (ID: 3).
+2025-11-24 16:20:04,858 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0217s
+2025-11-24 16:20:04,862 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 16:20:04,868 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:20:04,883 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0034s
+2025-11-24 16:20:04,885 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0019s
+2025-11-24 16:20:04,887 - backend.main - INFO - User 111 accessed comments for defect 3.
+2025-11-24 16:20:04,889 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0045s
+2025-11-24 16:20:04,902 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0296s
+2025-11-24 16:20:04,904 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0561s
+2025-11-24 16:20:04,908 - backend.main - INFO - User 111 accessed attachments for defect 3.
+2025-11-24 16:20:04,918 - backend.main - INFO - User 111 accessed comments for defect 3.
+2025-11-24 16:20:04,918 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0277s
+2025-11-24 16:20:04,923 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0165s
+2025-11-24 16:20:04,924 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 16:20:04,929 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0082s
+2025-11-24 16:20:04,938 - backend.main - INFO - User 111 accessed attachments for defect 3.
+2025-11-24 16:20:04,940 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0096s
+2025-11-24 16:20:04,948 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0360s
+2025-11-24 16:20:04,955 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0028s
+2025-11-24 16:20:07,010 - backend.main - INFO - User 111 accessed defect кукеу (ID: 3).
+2025-11-24 16:20:07,017 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0348s
+2025-11-24 16:20:07,030 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 16:20:07,054 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0308s
+2025-11-24 16:20:07,067 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0044s
+2025-11-24 16:20:11,604 - backend.main - INFO - User 111 updated defect кукеу (ID: 3).
+2025-11-24 16:20:11,610 - backend.main - INFO - Request: PUT http://localhost:8000/defects/3 - Status: 200 - Time: 0.0308s
+2025-11-24 16:20:11,712 - backend.main - INFO - User 111 accessed defect кукеу (ID: 3).
+2025-11-24 16:20:11,721 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0166s
+2025-11-24 16:20:11,735 - backend.main - INFO - User 111 accessed defect кукеу (ID: 3).
+2025-11-24 16:20:11,745 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0172s
+2025-11-24 16:20:11,769 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 16:20:11,777 - backend.main - INFO - User 111 accessed comments for defect 3.
+2025-11-24 16:20:11,780 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0162s
+2025-11-24 16:20:11,781 - backend.main - INFO - User 111 accessed attachments for defect 3.
+2025-11-24 16:20:11,789 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0168s
+2025-11-24 16:20:11,801 - backend.main - INFO - User 111 accessed comments for defect 3.
+2025-11-24 16:20:11,802 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0186s
+2025-11-24 16:20:11,804 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0532s
+2025-11-24 16:20:11,805 - backend.main - INFO - User 111 accessed attachments for defect 3.
+2025-11-24 16:20:11,807 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0122s
+2025-11-24 16:20:11,820 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0050s
+2025-11-24 16:20:11,820 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 16:20:11,847 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0387s
+2025-11-24 16:20:11,855 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0039s
+2025-11-24 16:20:14,891 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 16:20:14,892 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0042s
+2025-11-24 16:20:15,012 - backend.main - INFO - User 111 accessed defect кукеу (ID: 3).
+2025-11-24 16:20:15,026 - backend.main - INFO - Request: GET http://localhost:8000/defects/3 - Status: 200 - Time: 0.0247s
+2025-11-24 16:20:15,052 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-24 16:20:15,065 - backend.main - INFO - User 111 accessed comments for defect 3.
+2025-11-24 16:20:15,066 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0227s
+2025-11-24 16:20:15,067 - backend.main - INFO - User 111 accessed attachments for defect 3.
+2025-11-24 16:20:15,080 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0251s
+2025-11-24 16:20:15,084 - backend.main - INFO - User 111 accessed comments for defect 3.
+2025-11-24 16:20:15,092 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/comments/ - Status: 200 - Time: 0.0222s
+2025-11-24 16:20:15,095 - backend.main - INFO - User 111 accessed attachments for defect 3.
+2025-11-24 16:20:15,096 - backend.main - INFO - Request: GET http://localhost:8000/defects/3/attachments/ - Status: 200 - Time: 0.0135s
+2025-11-24 16:20:15,100 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0652s
+2025-11-24 16:20:15,114 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0046s
+2025-11-24 16:25:02,495 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0004s
+2025-11-24 16:25:02,501 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0022s
+2025-11-24 16:25:05,830 - backend.main - INFO - User 111 logged in successfully.
+2025-11-24 16:25:05,831 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2275s
+2025-11-24 16:25:05,840 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-24 16:25:05,840 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0046s
+2025-11-24 16:25:07,996 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0002s
+2025-11-24 16:25:08,009 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0001s
+2025-11-24 16:25:08,032 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 16:25:08,047 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0223s
+2025-11-24 16:25:08,056 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-24 16:25:08,069 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0204s
+2025-11-24 16:25:08,897 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0003s
+2025-11-24 16:25:08,898 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0003s
+2025-11-24 16:25:08,924 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0045s
+2025-11-24 16:25:08,931 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0041s
+2025-11-24 16:25:11,223 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0002s
+2025-11-24 16:25:11,243 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0002s
+2025-11-24 16:25:11,262 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0005s
+2025-11-24 16:25:11,265 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0008s
+2025-11-24 16:25:11,265 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0014s
+2025-11-24 16:25:11,266 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0023s
+2025-11-24 16:25:11,269 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0045s
+2025-11-24 16:25:11,270 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0057s
+2025-11-24 16:25:11,273 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0011s
+2025-11-24 16:25:11,284 - backend.main - INFO - Request: OPTIONS http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0018s
+2025-11-24 16:25:11,338 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0650s
+2025-11-24 16:25:11,343 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0560s
+2025-11-24 16:25:11,344 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/status-distribution?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0568s
+2025-11-24 16:25:11,345 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/summary?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0628s
+2025-11-24 16:25:11,349 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0507s
+2025-11-24 16:25:11,364 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T16:25:11.210Z - Status: 200 - Time: 0.0449s
+2025-11-24 16:25:11,368 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0213s
+2025-11-24 16:25:11,375 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/priority-distribution?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0228s
+2025-11-24 16:25:11,377 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/project-performance?end_date=2025-11-24T16:25:11.211Z - Status: 200 - Time: 0.0211s
+2025-11-24 16:25:11,380 - backend.main - INFO - Request: GET http://localhost:8000/reports/analytics/creation-trend?days=365 - Status: 200 - Time: 0.0102s
+2025-11-24 18:01:56,301 - backend.main - INFO - User 1111 logged in successfully.
+2025-11-24 18:01:56,310 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.3655s
+2025-11-24 18:01:56,318 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0004s
+2025-11-24 18:01:56,328 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 18:01:56,333 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0131s
+2025-11-24 18:02:03,042 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 18:02:03,043 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0067s
+2025-11-24 18:02:03,062 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0003s
+2025-11-24 18:02:03,075 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0097s
+2025-11-24 18:02:07,027 - backend.main - INFO - User 1111 accessed their own profile.
+2025-11-24 18:02:07,028 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0057s
+2025-11-24 21:17:31,257 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:3000', 'http://localhost:8000', 'http://localhost', 'http://10.0.85.2:3000']
+2025-11-24 21:18:21,012 - backend.main - INFO - Request: GET http://127.0.0.1:8000/ - Status: 200 - Time: 0.0010s
+2025-11-24 21:18:41,056 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 200 - Time: 0.3326s
+2025-11-24 21:18:41,063 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3379s
+2025-11-24 21:18:41,068 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3451s
+2025-11-24 21:18:41,068 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3430s
+2025-11-24 21:18:41,070 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3437s
+2025-11-24 21:18:41,071 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3449s
+2025-11-24 21:18:41,073 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3468s
+2025-11-24 21:18:41,073 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3468s
+2025-11-24 21:18:41,075 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3492s
+2025-11-24 21:18:41,076 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3502s
+2025-11-24 21:18:41,319 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:41,322 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 0.2590s
+2025-11-24 21:18:41,558 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:41,789 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:42,017 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:42,254 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:42,496 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:42,751 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:42,751 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.6725s
+2025-11-24 21:18:42,752 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.6789s
+2025-11-24 21:18:42,752 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.6735s
+2025-11-24 21:18:42,753 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.6755s
+2025-11-24 21:18:42,754 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.6765s
+2025-11-24 21:18:42,756 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.6765s
+2025-11-24 21:18:43,000 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:43,238 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:43,473 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:43,728 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.6468s
+2025-11-24 21:18:43,728 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.6458s
+2025-11-24 21:18:43,728 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.4058s
+2025-11-24 21:18:43,735 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 200 - Time: 2.4085s
+2025-11-24 21:18:43,773 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.0162s
+2025-11-24 21:18:43,775 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.0151s
+2025-11-24 21:18:43,778 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.0207s
+2025-11-24 21:18:43,784 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3065s
+2025-11-24 21:18:43,788 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0647s
+2025-11-24 21:18:43,791 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0632s
+2025-11-24 21:18:43,792 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0642s
+2025-11-24 21:18:43,793 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0652s
+2025-11-24 21:18:43,794 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0662s
+2025-11-24 21:18:43,795 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0635s
+2025-11-24 21:18:43,799 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0655s
+2025-11-24 21:18:43,805 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0695s
+2025-11-24 21:18:43,810 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0723s
+2025-11-24 21:18:43,815 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0768s
+2025-11-24 21:18:44,056 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:18:44,058 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3172s
+2025-11-24 21:18:44,059 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3186s
+2025-11-24 21:18:44,061 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3201s
+2025-11-24 21:18:44,062 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3201s
+2025-11-24 21:18:44,068 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 0.3236s
+2025-11-24 21:18:44,069 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3246s
+2025-11-24 21:18:44,072 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3251s
+2025-11-24 21:18:44,076 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3273s
+2025-11-24 21:18:44,086 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3244s
+2025-11-24 21:18:44,090 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3231s
+2025-11-24 21:18:44,096 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3269s
+2025-11-24 21:18:44,099 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3248s
+2025-11-24 21:18:44,104 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3247s
+2025-11-24 21:18:44,332 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:44,335 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.5462s
+2025-11-24 21:18:44,567 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:18:44,804 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:44,806 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.0096s
+2025-11-24 21:18:45,036 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:45,037 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.2415s
+2025-11-24 21:18:45,271 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:18:45,272 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.4717s
+2025-11-24 21:18:45,272 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.4717s
+2025-11-24 21:18:45,274 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.4737s
+2025-11-24 21:18:45,509 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:18:45,746 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:18:45,987 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:18:46,224 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:46,455 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:46,456 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.6472s
+2025-11-24 21:18:46,456 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.6492s
+2025-11-24 21:18:46,686 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:18:46,925 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:46,927 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.1140s
+2025-11-24 21:18:46,928 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.1150s
+2025-11-24 21:18:47,166 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.1091s
+2025-11-24 21:18:47,167 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.1091s
+2025-11-24 21:18:47,168 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.1111s
+2025-11-24 21:18:47,168 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.1111s
+2025-11-24 21:18:47,169 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.1111s
+2025-11-24 21:18:47,169 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.3555s
+2025-11-24 21:18:47,170 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.1122s
+2025-11-24 21:18:47,417 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:47,418 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.3521s
+2025-11-24 21:18:47,419 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.3567s
+2025-11-24 21:18:47,667 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:47,668 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 200 - Time: 3.5790s
+2025-11-24 21:18:47,671 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.6000s
+2025-11-24 21:18:47,907 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:18:48,140 - backend.main - INFO - User testuser_1 logged in successfully.
+2025-11-24 21:19:48,169 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 64.0967s
+2025-11-24 21:19:48,169 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 64.0930s
+2025-11-24 21:19:48,171 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 64.0950s
+2025-11-24 21:19:48,394 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:48,403 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 64.3203s
+2025-11-24 21:19:48,404 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 64.3213s
+2025-11-24 21:19:48,404 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 64.3213s
+2025-11-24 21:19:48,624 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:48,637 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 64.5494s
+2025-11-24 21:19:48,865 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:48,866 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 64.7766s
+2025-11-24 21:19:49,099 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:49,100 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 65.0063s
+2025-11-24 21:19:49,100 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 65.0063s
+2025-11-24 21:19:49,102 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 65.0033s
+2025-11-24 21:19:49,102 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 65.0033s
+2025-11-24 21:19:49,335 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:49,337 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 65.2351s
+2025-11-24 21:19:50,033 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:50,272 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:50,272 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 65.9389s
+2025-11-24 21:19:50,506 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:50,509 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 65.7041s
+2025-11-24 21:19:50,513 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 65.4721s
+2025-11-24 21:19:50,741 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:19:50,745 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 65.4707s
+2025-11-24 21:19:50,974 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:20:21,000 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 94.3103s
+2025-11-24 21:20:21,012 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 93.8476s
+2025-11-24 21:20:21,015 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 93.8492s
+2025-11-24 21:20:21,016 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 93.8518s
+2025-11-24 21:20:21,269 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:20:21,495 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:20:21,724 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:20:21,724 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 94.5487s
+2025-11-24 21:20:21,724 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 94.5497s
+2025-11-24 21:20:21,724 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 94.5517s
+2025-11-24 21:20:21,724 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 94.0544s
+2025-11-24 21:20:21,724 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 94.0534s
+2025-11-24 21:20:21,724 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 94.0534s
+2025-11-24 21:20:21,730 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 94.0534s
+2025-11-24 21:20:21,957 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:20:21,960 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.7991s
+2025-11-24 21:20:21,960 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.7974s
+2025-11-24 21:20:22,189 - backend.main - INFO - User testuser_0 logged in successfully.
+2025-11-24 21:20:22,189 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 34.0259s
+2025-11-24 21:20:22,191 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.7971s
+2025-11-24 21:20:22,192 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.7981s
+2025-11-24 21:20:22,192 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.7981s
+2025-11-24 21:20:22,193 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.7981s
+2025-11-24 21:20:22,193 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 33.7991s
+2025-11-24 21:20:22,193 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.7991s
+2025-11-24 21:20:22,194 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.8001s
+2025-11-24 21:20:22,194 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.8001s
+2025-11-24 21:20:22,204 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 33.5663s
+2025-11-24 21:20:22,204 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.5674s
+2025-11-24 21:20:22,204 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.3375s
+2025-11-24 21:20:22,206 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.1046s
+2025-11-24 21:20:22,206 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.8688s
+2025-11-24 21:20:22,207 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.1623s
+2025-11-24 21:21:59,751 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 200 - Time: 0.2587s
+2025-11-24 21:21:59,762 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2701s
+2025-11-24 21:21:59,762 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2701s
+2025-11-24 21:21:59,764 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2697s
+2025-11-24 21:21:59,765 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2707s
+2025-11-24 21:21:59,766 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2738s
+2025-11-24 21:21:59,767 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2709s
+2025-11-24 21:21:59,767 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2714s
+2025-11-24 21:21:59,769 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2729s
+2025-11-24 21:21:59,770 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2739s
+2025-11-24 21:22:00,003 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:00,003 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 0.2420s
+2025-11-24 21:22:00,243 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:00,478 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:00,724 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:00,974 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:00,975 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.2048s
+2025-11-24 21:22:00,977 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.2080s
+2025-11-24 21:22:00,978 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.2065s
+2025-11-24 21:22:00,979 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.2075s
+2025-11-24 21:22:01,228 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:01,459 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:01,699 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:01,932 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:02,183 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:02,183 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.4104s
+2025-11-24 21:22:02,184 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.4114s
+2025-11-24 21:22:02,186 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.4115s
+2025-11-24 21:22:02,188 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.4142s
+2025-11-24 21:22:02,446 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.4423s
+2025-11-24 21:22:02,449 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 200 - Time: 2.4410s
+2025-11-24 21:22:02,495 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.5610s
+2025-11-24 21:22:02,503 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3138s
+2025-11-24 21:22:02,504 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3148s
+2025-11-24 21:22:02,505 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3163s
+2025-11-24 21:22:02,505 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3158s
+2025-11-24 21:22:02,506 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3168s
+2025-11-24 21:22:02,512 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0684s
+2025-11-24 21:22:02,515 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0667s
+2025-11-24 21:22:02,523 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0715s
+2025-11-24 21:22:02,524 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0725s
+2025-11-24 21:22:02,525 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0735s
+2025-11-24 21:22:02,526 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0745s
+2025-11-24 21:22:02,527 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0755s
+2025-11-24 21:22:02,529 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0755s
+2025-11-24 21:22:02,799 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:02,801 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3447s
+2025-11-24 21:22:02,801 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3452s
+2025-11-24 21:22:02,808 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3510s
+2025-11-24 21:22:02,809 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 0.3510s
+2025-11-24 21:22:02,812 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3517s
+2025-11-24 21:22:02,818 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3533s
+2025-11-24 21:22:02,823 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3501s
+2025-11-24 21:22:02,829 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3511s
+2025-11-24 21:22:02,834 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3520s
+2025-11-24 21:22:02,840 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3491s
+2025-11-24 21:22:02,848 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3526s
+2025-11-24 21:22:02,850 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3467s
+2025-11-24 21:22:02,856 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.3467s
+2025-11-24 21:22:03,089 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:03,320 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:03,558 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:03,802 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:04,062 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:04,308 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:04,312 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.7980s
+2025-11-24 21:22:04,553 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:04,553 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.0352s
+2025-11-24 21:22:04,554 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.0352s
+2025-11-24 21:22:04,812 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:04,813 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.2838s
+2025-11-24 21:22:04,814 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.2858s
+2025-11-24 21:22:04,814 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.2858s
+2025-11-24 21:22:04,815 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.2873s
+2025-11-24 21:22:04,816 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.2885s
+2025-11-24 21:22:04,817 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.2890s
+2025-11-24 21:22:05,137 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.3353s
+2025-11-24 21:22:05,390 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:05,633 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:05,879 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:22:06,129 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:22:36,138 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 33.3377s
+2025-11-24 21:23:06,162 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 63.3571s
+2025-11-24 21:23:06,165 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 63.3595s
+2025-11-24 21:23:06,169 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 200 - Time: 63.3417s
+2025-11-24 21:23:06,424 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:23:06,424 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 63.6136s
+2025-11-24 21:23:06,424 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 63.6131s
+2025-11-24 21:23:06,424 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 63.6131s
+2025-11-24 21:23:06,427 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 63.6161s
+2025-11-24 21:23:06,427 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 63.6161s
+2025-11-24 21:24:06,454 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 123.6377s
+2025-11-24 21:24:06,675 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:06,683 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 123.8657s
+2025-11-24 21:24:06,685 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 123.8632s
+2025-11-24 21:24:06,913 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:06,916 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 124.0891s
+2025-11-24 21:24:06,917 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.0892s
+2025-11-24 21:24:07,147 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:07,395 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:07,396 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.5628s
+2025-11-24 21:24:07,644 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:07,645 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.8061s
+2025-11-24 21:24:07,647 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 124.8081s
+2025-11-24 21:24:07,648 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.8030s
+2025-11-24 21:24:07,648 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 124.8040s
+2025-11-24 21:24:07,998 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:08,273 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:08,275 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 125.4250s
+2025-11-24 21:24:08,275 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 125.4260s
+2025-11-24 21:24:08,540 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:08,541 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 125.6868s
+2025-11-24 21:24:08,807 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:08,808 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 125.7169s
+2025-11-24 21:24:08,826 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.5120s
+2025-11-24 21:24:09,069 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:09,306 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:09,306 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.7488s
+2025-11-24 21:24:09,537 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:09,539 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.4067s
+2025-11-24 21:24:09,539 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 63.3801s
+2025-11-24 21:24:09,769 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:09,772 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 63.5974s
+2025-11-24 21:24:09,772 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 63.5954s
+2025-11-24 21:24:09,773 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 63.5964s
+2025-11-24 21:24:09,775 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.3243s
+2025-11-24 21:24:09,776 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.3254s
+2025-11-24 21:24:09,776 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.3254s
+2025-11-24 21:24:09,776 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.3254s
+2025-11-24 21:24:09,777 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.3264s
+2025-11-24 21:24:09,777 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.3264s
+2025-11-24 21:24:09,779 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.3267s
+2025-11-24 21:24:09,780 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.0966s
+2025-11-24 21:24:09,783 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.8679s
+2025-11-24 21:24:09,786 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.6385s
+2025-11-24 21:24:09,787 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.3881s
+2025-11-24 21:24:09,788 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 2.1407s
+2025-11-24 21:24:09,790 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.7775s
+2025-11-24 21:24:09,791 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.5137s
+2025-11-24 21:24:09,793 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 1.2509s
+2025-11-24 21:24:09,808 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0302s
+2025-11-24 21:24:09,810 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0282s
+2025-11-24 21:24:09,813 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0282s
+2025-11-24 21:24:09,817 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0312s
+2025-11-24 21:24:09,818 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0302s
+2025-11-24 21:24:09,819 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0302s
+2025-11-24 21:24:09,821 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0312s
+2025-11-24 21:24:09,822 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0312s
+2025-11-24 21:24:09,824 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0322s
+2025-11-24 21:24:09,826 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0312s
+2025-11-24 21:24:10,066 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:10,300 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:10,543 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:10,772 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:11,003 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:11,003 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.1834s
+2025-11-24 21:24:11,004 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.1844s
+2025-11-24 21:24:11,005 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.1833s
+2025-11-24 21:24:11,005 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.1833s
+2025-11-24 21:24:11,008 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.1847s
+2025-11-24 21:24:11,239 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:11,465 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:11,698 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:11,929 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:12,155 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:12,155 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.3281s
+2025-11-24 21:24:12,161 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.3300s
+2025-11-24 21:24:12,161 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.3327s
+2025-11-24 21:24:12,163 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.3342s
+2025-11-24 21:24:12,164 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.3394s
+2025-11-24 21:24:12,200 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.9608s
+2025-11-24 21:24:12,203 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.9621s
+2025-11-24 21:24:12,211 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0562s
+2025-11-24 21:24:12,212 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0562s
+2025-11-24 21:24:12,212 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0572s
+2025-11-24 21:24:12,213 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0582s
+2025-11-24 21:24:12,214 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0592s
+2025-11-24 21:24:12,217 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0568s
+2025-11-24 21:24:12,218 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0576s
+2025-11-24 21:24:12,220 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0554s
+2025-11-24 21:24:12,224 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0579s
+2025-11-24 21:24:12,225 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0589s
+2025-11-24 21:24:12,228 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0599s
+2025-11-24 21:24:12,233 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0638s
+2025-11-24 21:24:12,233 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0628s
+2025-11-24 21:24:12,239 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0666s
+2025-11-24 21:24:12,239 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0666s
+2025-11-24 21:24:12,241 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0688s
+2025-11-24 21:24:12,241 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0689s
+2025-11-24 21:24:12,244 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0709s
+2025-11-24 21:24:12,251 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0730s
+2025-11-24 21:24:12,255 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0700s
+2025-11-24 21:24:12,259 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0680s
+2025-11-24 21:24:12,267 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0730s
+2025-11-24 21:24:12,268 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0709s
+2025-11-24 21:24:12,272 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0709s
+2025-11-24 21:24:12,275 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.0719s
+2025-11-24 21:24:12,504 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:12,504 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2893s
+2025-11-24 21:24:12,513 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.2938s
+2025-11-24 21:24:12,741 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:12,746 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 0.5231s
+2025-11-24 21:24:12,747 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 0.5237s
+2025-11-24 21:24:12,996 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:13,230 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:24:13,463 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:24:13,693 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:24:13,923 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:14,152 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:24:14,152 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 1.9251s
+2025-11-24 21:24:14,383 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:14,612 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:24:14,843 - backend.main - INFO - User observer_0 logged in successfully.
+2025-11-24 21:24:15,071 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:15,074 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.8416s
+2025-11-24 21:24:15,075 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.8426s
+2025-11-24 21:24:15,075 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.8426s
+2025-11-24 21:24:15,077 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.8436s
+2025-11-24 21:24:15,078 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.8456s
+2025-11-24 21:24:15,079 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 2.8466s
+2025-11-24 21:24:15,314 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:15,314 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.0762s
+2025-11-24 21:24:15,315 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.0771s
+2025-11-24 21:24:15,316 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.0807s
+2025-11-24 21:24:15,318 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.0737s
+2025-11-24 21:24:15,318 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 3.0743s
+2025-11-24 21:24:15,320 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 3.0753s
+2025-11-24 21:24:15,547 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:24:45,568 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 33.3186s
+2025-11-24 21:24:45,580 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 33.3307s
+2025-11-24 21:24:45,836 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:15,848 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 123.5947s
+2025-11-24 21:26:15,848 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 123.5953s
+2025-11-24 21:26:16,088 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:16,093 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 123.8351s
+2025-11-24 21:26:16,325 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:16,326 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.0672s
+2025-11-24 21:26:16,331 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 124.0681s
+2025-11-24 21:26:16,568 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:16,569 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.3057s
+2025-11-24 21:26:16,572 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 124.3042s
+2025-11-24 21:26:16,811 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:16,811 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.5432s
+2025-11-24 21:26:16,814 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.5432s
+2025-11-24 21:26:16,814 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 124.5432s
+2025-11-24 21:26:17,045 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:17,283 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:17,283 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 125.0078s
+2025-11-24 21:26:17,283 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 125.0088s
+2025-11-24 21:26:17,534 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:17,536 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 125.2574s
+2025-11-24 21:26:17,537 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 125.2584s
+2025-11-24 21:26:17,538 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 125.0349s
+2025-11-24 21:26:17,764 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:17,768 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 125.0230s
+2025-11-24 21:26:17,998 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:18,003 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 124.5379s
+2025-11-24 21:26:48,274 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:48,503 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:48,503 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 153.8909s
+2025-11-24 21:26:48,508 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 153.4307s
+2025-11-24 21:26:48,508 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 153.1914s
+2025-11-24 21:26:48,508 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 153.1914s
+2025-11-24 21:26:48,515 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 152.9648s
+2025-11-24 21:26:48,515 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 152.9645s
+2025-11-24 21:26:48,517 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6741s
+2025-11-24 21:26:48,517 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6741s
+2025-11-24 21:26:48,517 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6741s
+2025-11-24 21:26:48,519 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6752s
+2025-11-24 21:26:48,520 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6763s
+2025-11-24 21:26:48,746 - backend.main - INFO - User manager_0 logged in successfully.
+2025-11-24 21:26:48,746 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6550s
+2025-11-24 21:26:48,758 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6674s
+2025-11-24 21:26:48,758 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.6674s
+2025-11-24 21:26:48,759 - backend.main - INFO - Request: POST http://127.0.0.1:8000/token - Status: 200 - Time: 32.4294s
+2025-11-24 21:26:48,760 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.4314s
+2025-11-24 21:26:48,760 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.4294s
+2025-11-24 21:26:48,762 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 32.1903s
+2025-11-24 21:26:48,763 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 31.9497s
+2025-11-24 21:26:48,764 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 31.7178s
+2025-11-24 21:26:48,765 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 31.4552s
+2025-11-24 21:26:48,765 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 31.2262s
+2025-11-24 21:26:48,766 - backend.main - INFO - Request: POST http://127.0.0.1:8000/users/ - Status: 400 - Time: 30.9973s
+2025-11-24 22:03:37,266 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:3000', 'http://10.0.85.2:3000', 'http://localhost:8000', 'http://localhost']
