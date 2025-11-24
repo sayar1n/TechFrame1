@@ -25,8 +25,8 @@ const UsersPage = () => {
       try {
         const fetchedUsers = await fetchUsers(token);
         setUsers(fetchedUsers);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить пользователей.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить пользователей.');
       }
     };
 
@@ -49,8 +49,8 @@ const UsersPage = () => {
       const updatedUser = await updateUserRole(token, userId, newRole);
       setUsers(prevUsers => prevUsers.map(u => u.id === userId ? updatedUser : u));
       alert(`Роль пользователя ${updatedUser.username} успешно обновлена на ${updatedUser.role}.`);
-    } catch (err: any) {
-      setError(err.message || 'Не удалось обновить роль пользователя.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось обновить роль пользователя.');
     } finally {
       setIsUpdatingRole(false);
     }

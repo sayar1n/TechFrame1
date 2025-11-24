@@ -37,8 +37,8 @@ const DefectDetailsPage = () => {
         const fetchedUsers = await fetchUsers(token);
         setUsers(fetchedUsers);
 
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить детали дефекта.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить детали дефекта.');
       }
     };
 
@@ -56,8 +56,8 @@ const DefectDetailsPage = () => {
     try {
       await deleteDefect(token!, defectId);
       router.push('/defects');
-    } catch (err: any) {
-      setError(err.message || 'Не удалось удалить дефект.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось удалить дефект.');
     } finally {
       setIsLoading(false);
     }
@@ -81,8 +81,8 @@ const DefectDetailsPage = () => {
         assignee_id: defect.assignee_id ?? undefined,
       });
       setDefect(updatedDefect);
-    } catch (err: any) {
-      setError(err.message || 'Не удалось обновить статус дефекта.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось обновить статус дефекта.');
     } finally {
       setIsLoading(false);
     }

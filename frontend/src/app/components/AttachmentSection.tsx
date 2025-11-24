@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Attachment, AttachmentCreate } from '@/app/types';
+import React, { useState, useEffect, useCallback } from 'react';
+import { Attachment } from '@/app/types';
 import { fetchAttachmentsForDefect, uploadAttachment, deleteAttachment } from '@/app/utils/api';
 import { useAuth } from '@/app/context/AuthContext';
 import styles from './AttachmentSection.module.scss';
@@ -15,23 +15,23 @@ const AttachmentSection = ({ defectId }: AttachmentSectionProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const getAttachments = async () => {
+  const getAttachments = useCallback(async () => {
     if (!token) return;
     setIsLoading(true);
     setError(null);
     try {
       const fetchedAttachments = await fetchAttachmentsForDefect(token, defectId);
       setAttachments(fetchedAttachments);
-    } catch (err: any) {
-      setError(err.message || 'Не удалось загрузить вложения.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось загрузить вложения.');
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [token, defectId]);
 
   useEffect(() => {
     getAttachments();
-  }, [token, defectId]);
+  }, [getAttachments]);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -54,9 +54,9 @@ const AttachmentSection = ({ defectId }: AttachmentSectionProps) => {
       // Assuming the backend endpoint handles the defect_id from the URL path
       await uploadAttachment(token, defectId, selectedFile as File);
       setSelectedFile(null);
-      getAttachments(); // Обновить список вложений
-    } catch (err: any) {
-      setError(err.message || 'Не удалось загрузить файл.');
+      getAttachments();
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось загрузить файл.');
     } finally {
       setIsLoading(false);
     }
@@ -69,9 +69,9 @@ const AttachmentSection = ({ defectId }: AttachmentSectionProps) => {
     setError(null);
     try {
       await deleteAttachment(token, defectId, attachmentId);
-      getAttachments(); // Обновить список вложений
-    } catch (err: any) {
-      setError(err.message || 'Не удалось удалить вложение.');
+      getAttachments();
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось удалить вложение.');
     } finally {
       setIsLoading(false);
     }

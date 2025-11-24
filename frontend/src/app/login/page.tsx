@@ -19,8 +19,8 @@ const LoginPage = () => {
     try {
       await login(username, password);
       router.push('/'); // Перенаправляем на главную страницу после успешного входа
-    } catch (err: any) {
-      setError(err.message || 'Ошибка входа');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Ошибка входа');
     }
   };
 

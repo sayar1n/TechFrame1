@@ -22,8 +22,8 @@ const ProjectDetailsPage = () => {
       try {
         const fetchedProject = await fetchProjectById(token, projectId);
         setProject(fetchedProject);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить детали проекта.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить детали проекта.');
       }
     };
 
@@ -43,8 +43,8 @@ const ProjectDetailsPage = () => {
     try {
       await deleteProject(token!, projectId);
       router.push('/projects');
-    } catch (err: any) {
-      setError(err.message || 'Не удалось удалить проект.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось удалить проект.');
     }
   };
 

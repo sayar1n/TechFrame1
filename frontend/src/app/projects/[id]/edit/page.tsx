@@ -6,7 +6,7 @@ import ProjectForm from '@/app/components/ProjectForm';
 import { fetchProjectById, updateProject } from '@/app/utils/api';
 import { useAuth } from '@/app/context/AuthContext';
 import { Project, ProjectCreate } from '@/app/types';
-import styles from './EditProjectPage.module.scss'; // Предполагается, что файл стилей будет создан
+import styles from './EditProjectPage.module.scss';
 
 const EditProjectPage = () => {
   const params = useParams();
@@ -24,8 +24,8 @@ const EditProjectPage = () => {
       try {
         const fetchedProject = await fetchProjectById(token!, projectId);
         setProject(fetchedProject);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить данные проекта.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить данные проекта.');
       }
     };
 
@@ -43,8 +43,8 @@ const EditProjectPage = () => {
     try {
       await updateProject(token!, projectId, projectData);
       router.push(`/projects/${projectId}`);
-    } catch (err: any) {
-      setError(err.message || 'Не удалось обновить проект.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось обновить проект.');
     } finally {
       setIsLoading(false);
     }

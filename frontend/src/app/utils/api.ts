@@ -199,7 +199,11 @@ export const updateUserRole = async (token: string, userId: number, newRole: "ma
   return response.data;
 };
 
-export const exportDefectsToCsvExcel = async (token: string, format: "csv" | "xlsx", filters?: Record<string, any>): Promise<Blob> => {
+export const exportDefectsToCsvExcel = async (
+  token: string,
+  format: "csv" | "xlsx",
+  filters?: Record<string, string | number | boolean | null | undefined>
+): Promise<Blob> => {
   const response = await apiClient.get('/reports/defects/export', {
     headers: {
       Authorization: `Bearer ${token}`,

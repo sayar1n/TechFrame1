@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Comment, CommentCreate, User } from '@/app/types';
 import { fetchCommentsForDefect, createComment } from '@/app/utils/api';
 import { useAuth } from '@/app/context/AuthContext';
@@ -16,23 +16,23 @@ const CommentSection = ({ defectId, users }: CommentSectionProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const getComments = async () => {
+  const getComments = useCallback(async () => {
     if (!token) return;
     setIsLoading(true);
     setError(null);
     try {
       const fetchedComments = await fetchCommentsForDefect(token, defectId);
       setComments(fetchedComments);
-    } catch (err: any) {
-      setError(err.message || 'Не удалось загрузить комментарии.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось загрузить комментарии.');
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [token, defectId]);
 
   useEffect(() => {
     getComments();
-  }, [token, defectId]);
+  }, [getComments]);
 
   const handleAddComment = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,8 +48,8 @@ const CommentSection = ({ defectId, users }: CommentSectionProps) => {
       await createComment(token, defectId, commentData);
       setNewCommentContent('');
       getComments(); // Обновить список комментариев
-    } catch (err: any) {
-      setError(err.message || 'Не удалось добавить комментарий.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось добавить комментарий.');
     } finally {
       setIsLoading(false);
     }

@@ -25,8 +25,8 @@ const CreateDefectPage = () => {
         setProjects(fetchedProjects);
         const fetchedUsers = await fetchUsers(token);
         setUsers(fetchedUsers);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить данные для формы дефекта.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить данные для формы дефекта.');
       }
     };
 
@@ -44,8 +44,8 @@ const CreateDefectPage = () => {
     try {
       await createDefect(token, defectData);
       router.push('/defects');
-    } catch (err: any) {
-      setError(err.message || 'Не удалось создать дефект.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось создать дефект.');
     } finally {
       setIsLoading(false);
     }

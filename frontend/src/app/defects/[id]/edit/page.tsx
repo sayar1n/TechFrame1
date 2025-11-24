@@ -38,8 +38,8 @@ const EditDefectPage = () => {
         setProjects(fetchedProjects);
         const fetchedUsers = await fetchUsers(token);
         setUsers(fetchedUsers);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить данные дефекта.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить данные дефекта.');
       } finally {
         setLoadingData(false); // Снимаем загрузку данных
       }
@@ -59,8 +59,8 @@ const EditDefectPage = () => {
     try {
       await updateDefect(token, defectId, defectData);
       router.push(`/defects/${defectId}`);
-    } catch (err: any) {
-      setError(err.message || 'Не удалось обновить дефект.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось обновить дефект.');
     } finally {
       setLoadingData(false); // Снимаем загрузку данных
     }

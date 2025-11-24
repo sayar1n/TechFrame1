@@ -1,4 +1,4 @@
-import { LoginData, RegisterData, TokenResponse, User } from '../types';
+import { UserLogin, UserCreate, Token, User } from '../types';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000';
 
@@ -23,7 +23,7 @@ async function fetchApi<T>(url: string, options?: FetchOptions): Promise<T> {
   return response.json();
 }
 
-export const loginUser = async (data: LoginData): Promise<TokenResponse> => {
+export const loginUser = async (data: UserLogin): Promise<Token> => {
   const form_data = new URLSearchParams();
   form_data.append('username', data.username);
   form_data.append('password', data.password);
@@ -43,7 +43,7 @@ export const loginUser = async (data: LoginData): Promise<TokenResponse> => {
   return response.json();
 };
 
-export const registerUser = async (data: RegisterData): Promise<User> => {
+export const registerUser = async (data: UserCreate): Promise<User> => {
   return fetchApi<User>('/users/', {
     method: 'POST',
     body: JSON.stringify(data),

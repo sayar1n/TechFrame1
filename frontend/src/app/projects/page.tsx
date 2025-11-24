@@ -23,8 +23,8 @@ const ProjectsPage = () => {
       try {
         const fetchedProjects = await fetchProjects(token);
         setProjects(fetchedProjects);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить проекты.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить проекты.');
       }
     };
 
@@ -49,14 +49,14 @@ const ProjectsPage = () => {
         await deleteProject(token, projectId);
         setProjects(prevProjects => prevProjects.filter(p => p.id !== projectId));
         alert('Проект успешно удален.');
-      } catch (err: any) {
-        setError(err.message || 'Не удалось удалить проект.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось удалить проект.');
       }
     }
   };
 
   const filteredAndSortedProjects = useMemo(() => {
-    let filtered = projects.filter(project =>
+    const filtered = projects.filter(project =>
       project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (project.description && project.description.toLowerCase().includes(searchTerm.toLowerCase()))
     );

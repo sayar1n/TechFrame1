@@ -20,11 +20,11 @@ const RegisterPage = () => {
     setError(null);
     setSuccess(null);
     try {
-      await registerUser({ username, email, password }); // Удаляем role из отправляемых данных
+      await registerUser({ username, email, password, role: 'observer' });
       setSuccess('Регистрация успешна! Теперь вы можете войти.');
       router.push('/login');
-    } catch (err: any) {
-      setError(err.message || 'Ошибка регистрации');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Ошибка регистрации');
     }
   };
 

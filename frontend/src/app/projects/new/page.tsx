@@ -24,8 +24,8 @@ const CreateProjectPage = () => {
     try {
       await createProject(token, user.id, projectData);
       router.push('/projects');
-    } catch (err: any) {
-      setError(err.message || 'Не удалось создать проект.');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Не удалось создать проект.');
     } finally {
       setIsLoading(false);
     }

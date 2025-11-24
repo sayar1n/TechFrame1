@@ -47,7 +47,7 @@ const ReportsPage = () => {
       setError(null);
 
       let startDate: string | undefined;
-      let endDate: string | undefined = new Date().toISOString();
+      const endDate: string | undefined = new Date().toISOString();
       let daysForTrend: number = 30;
 
       switch (timeRange) {
@@ -87,8 +87,8 @@ const ReportsPage = () => {
         setPriorityDistribution(priorityDist);
         setCreationTrend(trend);
         setProjectPerformance(performance);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить аналитические данные.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить аналитические данные.');
       } finally {
         setLoadingAnalytics(false);
       }
@@ -117,8 +117,8 @@ const ReportsPage = () => {
       a.remove();
       window.URL.revokeObjectURL(url);
       alert(`Отчет успешно экспортирован в формат ${format.toUpperCase()}.`);
-    } catch (err: any) {
-      setError(err.message || `Не удалось экспортировать отчет в формат ${format.toUpperCase()}.`);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : `Не удалось экспортировать отчет в формат ${format.toUpperCase()}.`);
     } finally {
       setIsLoading(false);
     }
@@ -203,7 +203,7 @@ const ReportsPage = () => {
             <ResponsiveContainer width="100%" height={300}>
               <PieChart>
                 <Pie
-                  data={priorityDistribution}
+                  data={priorityDistribution as any}
                   dataKey="count"
                   nameKey="priority"
                   cx="50%"
@@ -227,9 +227,9 @@ const ReportsPage = () => {
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={creationTrend}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="date" tickFormatter={(dateStr) => new Date(dateStr).toLocaleDateString()} />
+                <XAxis dataKey="date" tickFormatter={(dateStr: string) => new Date(dateStr).toLocaleDateString()} />
                 <YAxis />
-                <Tooltip labelFormatter={(label) => new Date(label).toLocaleDateString()} />
+                <Tooltip labelFormatter={(label: string) => new Date(label).toLocaleDateString()} />
                 <Legend />
                 <Line type="monotone" dataKey="count" stroke="#8884d8" activeDot={{ r: 8 }} />
               </LineChart>

@@ -26,8 +26,8 @@ const DefectsPage = () => {
       try {
         const fetchedDefects = await fetchDefects(token);
         setDefects(fetchedDefects);
-      } catch (err: any) {
-        setError(err.message || 'Не удалось загрузить дефекты.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось загрузить дефекты.');
       }
     };
 
@@ -52,8 +52,8 @@ const DefectsPage = () => {
         await deleteDefect(token, defectId);
         setDefects(prevDefects => prevDefects.filter(d => d.id !== defectId));
         alert('Дефект успешно удален.');
-      } catch (err: any) {
-        setError(err.message || 'Не удалось удалить дефект.');
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : 'Не удалось удалить дефект.');
       }
     }
   };

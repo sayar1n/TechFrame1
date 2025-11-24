@@ -1,9 +1,9 @@
 'use client';
 
-import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
+import React, { createContext, useState, useEffect, useContext, ReactNode, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { loginUser, registerUser, fetchCurrentUser } from '@/app/utils/api';
-import { User, UserLogin, UserCreate, Token } from '@/app/types';
+import { User, UserCreate, Token } from '@/app/types';
 
 interface AuthContextType {
   user: User | null;
@@ -21,6 +21,13 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [token, setToken] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const router = useRouter();
+
+  const logout = useCallback(() => {
+    setToken(null);
+    setUser(null);
+    localStorage.removeItem('access_token');
+    router.push('/login');
+  }, [router]);
 
   useEffect(() => {
     const loadUserFromStorage = async () => {
@@ -40,7 +47,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       }
     };
     loadUserFromStorage();
-  }, []);
+  }, [logout]);
 
   const login = async (username: string, password: string) => {
     setIsLoading(true);
@@ -66,20 +73,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       // На бэкенде роль принудительно устанавливается в "observer"
       const newUser = await registerUser({ ...userData, role: "observer" });
       router.push('/login');
-      return newUser;
     } catch (error) {
       console.error('Registration failed:', error);
       throw error;
     } finally {
       setIsLoading(false);
     }
-  };
-
-  const logout = () => {
-    setToken(null);
-    setUser(null);
-    localStorage.removeItem('access_token');
-    router.push('/login');
   };
 
   return (
