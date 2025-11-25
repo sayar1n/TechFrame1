@@ -76,6 +76,7 @@ class Defect(DefectBase):
     created_at: datetime
     updated_at: Optional[datetime] = None
     reporter_id: int
+    assignee_id: Optional[int] = None
     project_id: int
     comments: List["Comment"] = [] # Forward reference
     attachments: List["Attachment"] = [] # Forward reference
