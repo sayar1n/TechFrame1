@@ -3156,3 +3156,196 @@ AttributeError: 'str' object has no attribute 'value'
 2025-11-25 19:02:15,792 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0467s
 2025-11-25 19:02:15,806 - backend.main - INFO - User 111 accessed list of defects with filters.
 2025-11-25 19:02:15,824 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0283s
+2025-11-25 19:10:58,605 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost', 'http://localhost:8000', 'http://10.0.85.2:3000', 'http://localhost:3000']
+2025-11-25 19:11:05,766 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0003s
+2025-11-25 19:11:05,866 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:11:05,934 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.1484s
+2025-11-25 19:11:08,383 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0003s
+2025-11-25 19:11:08,405 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0002s
+2025-11-25 19:11:08,452 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:11:08,482 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0649s
+2025-11-25 19:11:08,494 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:11:08,522 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0361s
+2025-11-25 19:11:14,145 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/4 - Status: 200 - Time: 0.0002s
+2025-11-25 19:11:14,153 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/4 - Status: 200 - Time: 0.0002s
+2025-11-25 19:11:14,193 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:11:14,204 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0192s
+2025-11-25 19:11:14,213 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0002s
+2025-11-25 19:11:14,221 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:11:14,235 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:11:14,248 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0003s
+2025-11-25 19:11:14,254 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0066s
+2025-11-25 19:11:14,261 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0552s
+2025-11-25 19:11:14,263 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0021s
+2025-11-25 19:11:14,275 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0125s
+2025-11-25 19:11:14,283 - backend.main - INFO - User 111 accessed comments for defect 4.
+2025-11-25 19:11:14,285 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0254s
+2025-11-25 19:11:14,287 - backend.main - INFO - User 111 accessed attachments for defect 4.
+2025-11-25 19:11:14,291 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0732s
+2025-11-25 19:11:14,297 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0327s
+2025-11-25 19:11:14,302 - backend.main - INFO - User 111 accessed comments for defect 4.
+2025-11-25 19:11:14,312 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:11:14,313 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0219s
+2025-11-25 19:11:14,315 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0005s
+2025-11-25 19:11:14,322 - backend.main - INFO - User 111 accessed attachments for defect 4.
+2025-11-25 19:11:14,328 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0253s
+2025-11-25 19:11:14,329 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0071s
+2025-11-25 19:11:14,347 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0483s
+2025-11-25 19:11:14,355 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0040s
+2025-11-25 19:11:17,328 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:11:17,344 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0392s
+2025-11-25 19:11:17,382 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:11:17,452 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0776s
+2025-11-25 19:11:17,462 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0040s
+2025-11-25 19:11:26,789 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:11:26,795 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0135s
+2025-11-25 19:11:26,809 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:11:26,816 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0166s
+2025-11-25 19:11:26,881 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:11:26,890 - backend.main - INFO - User 111 accessed comments for defect 4.
+2025-11-25 19:11:26,890 - backend.main - INFO - User 111 accessed attachments for defect 4.
+2025-11-25 19:11:26,892 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0167s
+2025-11-25 19:11:26,895 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0173s
+2025-11-25 19:11:26,904 - backend.main - INFO - User 111 accessed comments for defect 4.
+2025-11-25 19:11:26,907 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0095s
+2025-11-25 19:11:26,909 - backend.main - INFO - User 111 accessed attachments for defect 4.
+2025-11-25 19:11:26,915 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0133s
+2025-11-25 19:11:26,926 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0606s
+2025-11-25 19:11:26,937 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:11:26,938 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0047s
+2025-11-25 19:11:26,966 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0370s
+2025-11-25 19:11:26,975 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0040s
+2025-11-25 19:11:37,237 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:11:37,243 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0158s
+2025-11-25 19:11:37,425 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:11:37,444 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0250s
+2025-11-25 19:11:37,455 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0056s
+2025-11-25 19:12:22,111 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:12:22,112 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0063s
+2025-11-25 19:12:22,248 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:12:22,254 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0141s
+2025-11-25 19:12:22,272 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:12:22,332 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0683s
+2025-11-25 19:12:22,343 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0047s
+2025-11-25 19:12:38,916 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:12:38,916 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0065s
+2025-11-25 19:12:38,950 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:12:38,957 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0177s
+2025-11-25 19:12:38,973 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:12:39,004 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0391s
+2025-11-25 19:12:39,014 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0040s
+2025-11-25 19:13:39,318 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:13:39,332 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0309s
+2025-11-25 19:13:39,356 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:13:39,362 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:13:39,364 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0256s
+2025-11-25 19:13:39,416 - backend.main - INFO - User 111 accessed comments for defect 4.
+2025-11-25 19:13:39,420 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0198s
+2025-11-25 19:13:39,431 - backend.main - INFO - User 111 accessed attachments for defect 4.
+2025-11-25 19:13:39,432 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0792s
+2025-11-25 19:13:39,453 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0424s
+2025-11-25 19:13:39,513 - backend.main - INFO - User 111 accessed attachments for defect 4.
+2025-11-25 19:13:39,513 - backend.main - INFO - User 111 accessed comments for defect 4.
+2025-11-25 19:13:39,516 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:13:39,548 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0390s
+2025-11-25 19:13:39,551 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/attachments/ - Status: 200 - Time: 0.0750s
+2025-11-25 19:13:39,554 - backend.main - INFO - Request: GET http://localhost:8000/defects/4/comments/ - Status: 200 - Time: 0.0785s
+2025-11-25 19:13:39,721 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.2467s
+2025-11-25 19:13:39,743 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0125s
+2025-11-25 19:14:53,172 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:14:53,177 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0210s
+2025-11-25 19:14:53,192 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:14:53,228 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0426s
+2025-11-25 19:14:53,497 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0058s
+2025-11-25 19:18:39,049 - backend.main - INFO - Configuring CORS with allowed origins: ['http://localhost:8000', 'http://localhost', 'http://10.0.85.2:3000', 'http://localhost:3000']
+2025-11-25 19:18:55,295 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:18:55,364 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.1392s
+2025-11-25 19:18:55,556 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:18:55,567 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0227s
+2025-11-25 19:18:55,584 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:18:55,617 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0426s
+2025-11-25 19:18:55,631 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0065s
+2025-11-25 19:19:40,532 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:19:40,540 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0167s
+2025-11-25 19:19:40,576 - backend.main - INFO - User 111 accessed defect Assignee Test (ID: 4).
+2025-11-25 19:19:40,582 - backend.main - INFO - Request: GET http://localhost:8000/defects/4 - Status: 200 - Time: 0.0151s
+2025-11-25 19:19:40,608 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:19:40,639 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0438s
+2025-11-25 19:19:40,659 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0042s
+2025-11-25 19:20:01,166 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:20:01,221 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.1030s
+2025-11-25 19:20:01,242 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:20:01,266 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0386s
+2025-11-25 19:20:02,805 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:20:02,842 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0471s
+2025-11-25 19:20:02,857 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:20:02,895 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0491s
+2025-11-25 19:20:03,096 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0052s
+2025-11-25 19:20:03,105 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0055s
+2025-11-25 19:20:08,088 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:20:08,089 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0044s
+2025-11-25 19:20:08,248 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:20:08,272 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0360s
+2025-11-25 19:20:08,348 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0050s
+2025-11-25 19:20:50,917 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:20:50,918 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0149s
+2025-11-25 19:20:51,165 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:20:51,204 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0884s
+2025-11-25 19:20:51,249 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0044s
+2025-11-25 19:22:12,402 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0002s
+2025-11-25 19:22:12,412 - backend.main - INFO - Request: OPTIONS http://localhost:8000/projects/ - Status: 200 - Time: 0.0001s
+2025-11-25 19:22:12,427 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:22:12,467 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0503s
+2025-11-25 19:22:12,485 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:22:12,535 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0653s
+2025-11-25 19:22:36,982 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/me/ - Status: 200 - Time: 0.0003s
+2025-11-25 19:22:36,989 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:22:36,990 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0047s
+2025-11-25 19:22:42,340 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:22:42,343 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0179s
+2025-11-25 19:23:21,436 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0004s
+2025-11-25 19:23:21,439 - backend.main - INFO - Request: OPTIONS http://localhost:8000/users/ - Status: 200 - Time: 0.0031s
+2025-11-25 19:23:21,449 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0043s
+2025-11-25 19:23:21,460 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0072s
+2025-11-25 19:23:25,804 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0002s
+2025-11-25 19:23:25,813 - backend.main - INFO - Request: OPTIONS http://localhost:8000/defects/ - Status: 200 - Time: 0.0002s
+2025-11-25 19:23:25,823 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:23:25,843 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0262s
+2025-11-25 19:23:25,853 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:23:25,874 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0283s
+2025-11-25 19:23:26,833 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:23:26,864 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0386s
+2025-11-25 19:23:26,872 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:23:26,897 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0311s
+2025-11-25 19:23:27,043 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0040s
+2025-11-25 19:23:27,050 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0046s
+2025-11-25 19:23:32,256 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:23:32,256 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0039s
+2025-11-25 19:23:32,388 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:23:32,412 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0306s
+2025-11-25 19:23:32,423 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0044s
+2025-11-25 19:24:09,056 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 401 - Time: 0.0022s
+2025-11-25 19:24:09,061 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 401 - Time: 0.0013s
+2025-11-25 19:24:16,845 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 401 - Time: 0.0011s
+2025-11-25 19:24:21,330 - backend.main - INFO - User 111 logged in successfully.
+2025-11-25 19:24:21,330 - backend.main - INFO - Request: POST http://localhost:8000/token - Status: 200 - Time: 0.2766s
+2025-11-25 19:24:21,340 - backend.main - INFO - User 111 accessed their own profile.
+2025-11-25 19:24:21,341 - backend.main - INFO - Request: GET http://localhost:8000/users/me/ - Status: 200 - Time: 0.0049s
+2025-11-25 19:24:22,691 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:24:22,748 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0677s
+2025-11-25 19:24:22,762 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:24:22,793 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0389s
+2025-11-25 19:24:51,349 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:24:51,385 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0605s
+2025-11-25 19:24:51,412 - backend.main - INFO - User 111 accessed list of defects with filters.
+2025-11-25 19:24:51,440 - backend.main - INFO - Request: GET http://localhost:8000/defects/ - Status: 200 - Time: 0.0414s
+2025-11-25 19:24:52,246 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:24:52,285 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0847s
+2025-11-25 19:24:52,302 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:24:52,354 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0625s
+2025-11-25 19:24:52,357 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0117s
+2025-11-25 19:24:52,588 - backend.main - INFO - Request: GET http://localhost:8000/users/ - Status: 200 - Time: 0.0075s
+2025-11-25 19:25:35,463 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:25:35,491 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0365s
+2025-11-25 19:25:35,502 - backend.main - INFO - User 111 accessed list of projects.
+2025-11-25 19:25:35,541 - backend.main - INFO - Request: GET http://localhost:8000/projects/ - Status: 200 - Time: 0.0444s

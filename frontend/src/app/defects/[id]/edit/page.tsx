@@ -92,7 +92,7 @@ const EditDefectPage = () => {
       <DefectForm
         initialData={defect}
         onSubmit={handleSubmit}
-        isLoading={loadingData} // Передаем loadingData в DefectForm
+        isLoading={loadingData} 
         error={error}
         projects={projects}
         users={users}
