@@ -3,12 +3,12 @@
 
   h1 {
     font-size: 2rem;
-    color: #333;
+    color: var(--foreground);
     margin-bottom: 1.5rem;
   }
 
   .error {
-    color: #e74c3c;
+    color: var(--danger);
     margin-bottom: 1rem;
     font-weight: bold;
   }
@@ -24,10 +24,12 @@
     .filterSelect,
     .sortSelect {
       padding: 0.75rem;
-      border: 1px solid #ccc;
+      border: 1px solid var(--border);
       border-radius: 5px;
       font-size: 1rem;
       min-width: 150px;
+      background: var(--table-row);
+      color: var(--foreground);
     }
 
     .searchInput {
@@ -42,36 +44,36 @@
 
     th,
     td {
-      border: 1px solid #ddd;
+      border: 1px solid var(--border);
       padding: 12px 15px;
       text-align: left;
     }
 
     th {
-      background-color: #f4f4f4;
+      background-color: rgba(59, 130, 246, 0.15);
       font-weight: bold;
-      color: #555;
+      color: var(--foreground);
     }
 
     tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
+      background-color: var(--table-row-alt);
     }
 
     tbody tr:hover {
-      background-color: #f1f1f1;
+      background-color: var(--table-row-hover);
     }
 
     .userRow {
       cursor: pointer;
 
       &:hover {
-        background-color: #e9ecef;
+        background-color: var(--table-row-hover);
       }
     }
   }
 
   p {
     margin-top: 1rem;
-    color: #666;
+    color: var(--foreground);
   }
 }

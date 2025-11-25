@@ -5,23 +5,23 @@
   justify-content: center;
   min-height: calc(100vh - 80px); // Высота экрана минус высота хедера
   padding: 2rem;
-  background-color: #f4f7f6;
+  background-color: var(--background);
 
   h1 {
     margin-bottom: 2rem;
-    color: #333;
+    color: var(--foreground);
   }
 
   .loginForm {
-    background-color: white;
+    background-color: var(--panel);
     padding: 2.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     width: 100%;
     max-width: 400px;
 
     .error {
-      color: #e74c3c;
+      color: var(--danger);
       margin-bottom: 1rem;
       text-align: center;
     }
@@ -32,7 +32,7 @@
       label {
         display: block;
         margin-bottom: 0.5rem;
-        color: #555;
+        color: var(--foreground);
         font-weight: bold;
       }
 
@@ -40,14 +40,16 @@
       input[type="password"] {
         width: 100%;
         padding: 0.8rem 1rem;
-        border: 1px solid #ddd;
+        border: 1px solid var(--border);
         border-radius: 4px;
         font-size: 1rem;
+        background: var(--table-row);
+        color: var(--foreground);
 
         &:focus {
-          border-color: #007bff;
+          border-color: var(--focus);
           outline: none;
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
         }
       }
     }
@@ -55,8 +57,8 @@
     .loginButton {
       width: 100%;
       padding: 0.9rem 1.5rem;
-      background-color: #007bff;
-      color: white;
+      background-color: var(--accent);
+      color: #fff;
       border: none;
       border-radius: 4px;
       font-size: 1.1rem;
@@ -64,7 +66,7 @@
       transition: background-color 0.2s ease-in-out;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: var(--accent-hover);
       }
 
       &:disabled {

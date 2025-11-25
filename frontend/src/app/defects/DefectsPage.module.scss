@@ -3,7 +3,7 @@
 
   h1 {
     margin-bottom: 2rem;
-    color: #333;
+    color: var(--foreground);
     text-align: center;
   }
 
@@ -18,8 +18,8 @@
     }
 
     .createButton {
-      background-color: #28a745;
-      color: white;
+      background-color: var(--success);
+      color: #fff;
       border: none;
       padding: 0.8rem 1.5rem;
       border-radius: 4px;
@@ -28,13 +28,13 @@
       transition: background-color 0.2s ease-in-out;
 
       &:hover {
-        background-color: #218838;
+        filter: brightness(0.9);
       }
     }
 
     .editButton {
-      background-color: #007bff;
-      color: white;
+      background-color: var(--accent);
+      color: #fff;
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 4px;
@@ -44,13 +44,13 @@
       margin-right: 0.5rem;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: var(--accent-hover);
       }
     }
 
     .deleteButton {
-      background-color: #dc3545;
-      color: white;
+      background-color: var(--danger);
+      color: #fff;
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 4px;
@@ -59,7 +59,7 @@
       transition: background-color 0.2s ease-in-out;
 
       &:hover {
-        background-color: #c82333;
+        filter: brightness(0.9);
       }
     }
   }
@@ -74,37 +74,40 @@
     .searchInput {
       flex-grow: 1;
       padding: 0.8rem 1rem;
-      border: 1px solid #ddd;
+      border: 1px solid var(--border);
       border-radius: 4px;
       font-size: 1rem;
       max-width: 300px;
+      background-color: var(--table-row);
+      color: var(--foreground);
 
       &:focus {
-        border-color: #007bff;
+        border-color: var(--focus);
         outline: none;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
       }
     }
 
     .filterSelect,
     .sortSelect {
       padding: 0.8rem 1rem;
-      border: 1px solid #ddd;
+      border: 1px solid var(--border);
       border-radius: 4px;
       font-size: 1rem;
-      background-color: white;
+      background-color: var(--table-row);
+      color: var(--foreground);
       cursor: pointer;
 
       &:focus {
-        border-color: #007bff;
+        border-color: var(--focus);
         outline: none;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
       }
     }
   }
 
   .error {
-    color: #e74c3c;
+    color: var(--danger);
     text-align: center;
     margin-top: 1rem;
   }
@@ -118,13 +121,13 @@
     overflow: hidden;
 
     thead {
-      background-color: #f8f9fa;
+      background-color: rgba(30, 102, 255, 0.08);
 
       th {
         padding: 1rem;
         text-align: left;
-        border-bottom: 1px solid #dee2e6;
-        color: #495057;
+        border-bottom: 1px solid var(--border);
+        color: var(--foreground);
         font-weight: 600;
       }
     }
@@ -132,21 +135,21 @@
     tbody {
       tr {
         &:nth-child(even) {
-          background-color: #f2f2f2;
+          background-color: var(--table-row-alt);
         }
 
         &:hover {
-          background-color: #e9ecef;
+          background-color: var(--table-row-hover);
         }
 
         td {
           padding: 1rem;
-          border-bottom: 1px solid #dee2e6;
-          color: #343a40;
+          border-bottom: 1px solid var(--border);
+          color: var(--foreground);
 
           a {
             text-decoration: none;
-            color: #007bff;
+            color: var(--accent);
 
             &:hover {
               text-decoration: underline;
@@ -159,15 +162,15 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #e9ecef;
+          background-color: var(--table-row-hover);
         }
       }
     }
   }
 
   .editButton {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--accent);
+    color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -177,13 +180,13 @@
     margin-right: 0.5rem;
 
     &:hover {
-      background-color: #0056b3;
+      background-color: var(--accent-hover);
     }
   }
 
   .deleteButton {
-    background-color: #dc3545;
-    color: white;
+    background-color: var(--danger);
+    color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -192,7 +195,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: #c82333;
+      filter: brightness(0.9);
     }
   }
 }

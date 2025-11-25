@@ -7,15 +7,15 @@
     text-align: center;
     padding: 2rem;
     font-size: 1.2rem;
-    color: #555;
+    color: var(--foreground);
   }
 
   .errorMessage {
-    color: #e74c3c;
+    color: var(--danger);
   }
 
   .accessDenied {
-    color: #f39c12;
+    color: var(--warning);
   }
 
   .header {
@@ -24,11 +24,11 @@
     align-items: center;
     margin-bottom: 2rem;
     padding: 1rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
 
     h1 {
       margin: 0;
-      color: #333;
+      color: var(--foreground);
       font-size: 2.2rem;
     }
 
@@ -39,27 +39,27 @@
 
       .timeRangeSelect {
         padding: 0.5rem 1rem;
-        border: 1px solid #ccc;
+        border: 1px solid var(--border);
         border-radius: 4px;
-        background-color: white;
+        background-color: var(--table-row);
         font-size: 1rem;
         cursor: pointer;
-        appearance: none; /* Убираем стандартную стрелку */
+        appearance: none;
         background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%20197.3l-13.9-13.9L146.2%20272.3%2018.5%20183.4%204.6%20197.3l141.6%20141.6z%22%2F%3E%3C%2Fsvg%3E");
         background-repeat: no-repeat;
         background-position: right 0.7em top 50%, 0 0;
         background-size: 0.65em auto, 100%;
 
         &:focus {
-          border-color: #007bff;
+          border-color: var(--focus);
           outline: none;
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
         }
       }
 
       .exportButton {
-        background-color: #28a745;
-        color: white;
+        background-color: var(--success);
+        color: #fff;
         border: none;
         padding: 0.5rem 1.2rem;
         border-radius: 4px;
@@ -68,7 +68,7 @@
         transition: background-color 0.2s ease-in-out;
 
         &:hover {
-          background-color: #218838;
+          filter: brightness(0.9);
         }
 
         &:disabled {
@@ -86,7 +86,7 @@
     margin-bottom: 2rem;
 
     .card {
-      background-color: white;
+      background-color: var(--panel);
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -94,27 +94,27 @@
 
       .cardTitle {
         font-size: 1rem;
-        color: #777;
+        color: var(--foreground);
         margin-bottom: 0.5rem;
       }
 
       .cardValue {
         font-size: 2.5rem;
         font-weight: bold;
-        color: #333;
+        color: var(--foreground);
         margin-bottom: 0.5rem;
 
         &.overdue {
-          color: #dc3545;
+          color: var(--danger);
         }
         &.completed {
-          color: #28a745;
+          color: var(--success);
         }
       }
 
       .cardSubtitle {
         font-size: 0.9rem;
-        color: #999;
+        color: var(--foreground);
       }
     }
   }
@@ -125,7 +125,7 @@
     gap: 1.5rem;
 
     .chartCard {
-      background-color: white;
+      background-color: var(--panel);
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -133,7 +133,7 @@
       h2 {
         margin-top: 0;
         margin-bottom: 1.5rem;
-        color: #333;
+        color: var(--foreground);
         text-align: center;
       }
     }
@@ -145,22 +145,22 @@
     p {
       margin-bottom: 0.5rem;
       font-weight: bold;
-      color: #555;
+      color: var(--foreground);
     }
 
-    .progressBarContainer {
-      background-color: #e0e0e0;
-      border-radius: 10px;
-      height: 20px;
-      overflow: hidden;
-      position: relative;
-
-      .progressBarFill {
-        height: 100%;
-        background-color: #28a745;
+      .progressBarContainer {
+        background-color: #e0e0e0;
         border-radius: 10px;
-        transition: width 0.5s ease-in-out;
-      }
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+
+        .progressBarFill {
+          height: 100%;
+          background-color: var(--success);
+          border-radius: 10px;
+          transition: width 0.5s ease-in-out;
+        }
 
       .progressBarText {
         position: absolute;

@@ -3,17 +3,17 @@
 
   h1 {
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--foreground);
     text-align: center;
   }
 
   p {
     margin-bottom: 0.8rem;
-    color: #555;
+    color: var(--foreground);
     font-size: 1.1rem;
-
+    
     strong {
-      color: #333;
+      color: var(--foreground);
     }
   }
 
@@ -37,22 +37,22 @@
       cursor: pointer;
       transition: background-color 0.2s ease-in-out;
       border: none;
-      color: white;
+      color: #fff;
     }
 
     .editButton {
-      background-color: #007bff;
-
+      background-color: var(--accent);
+      
       &:hover {
-        background-color: #0056b3;
+        background-color: var(--accent-hover);
       }
     }
 
     .deleteButton {
-      background-color: #dc3545;
-
+      background-color: var(--danger);
+      
       &:hover {
-        background-color: #c82333;
+        filter: brightness(0.9);
       }
     }
   }
@@ -60,7 +60,7 @@
   h2 {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--foreground);
     text-align: center;
   }
 }

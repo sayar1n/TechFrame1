@@ -3,39 +3,40 @@
 
   h1 {
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--foreground);
     text-align: center;
   }
 
   p {
     margin-bottom: 0.8rem;
-    color: #555;
+    color: var(--foreground);
     font-size: 1.1rem;
-
+    
     strong {
-      color: #333;
+      color: var(--foreground);
     }
   }
 
   .error {
-    color: #e74c3c;
+    color: var(--danger);
     text-align: center;
     margin-top: 1rem;
   }
 
   .statusSelect {
     padding: 0.4rem 0.8rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     border-radius: 4px;
     font-size: 1rem;
-    background-color: white;
+    background-color: var(--table-row);
+    color: var(--foreground);
     cursor: pointer;
     margin-left: 0.5rem;
-
+    
     &:focus {
-      border-color: #007bff;
+      border-color: var(--focus);
       outline: none;
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
     }
   }
 
@@ -51,25 +52,25 @@
   }
 
   .editButton {
-    background-color: #007bff;
-
+    background-color: var(--accent);
+    
     &:hover {
-      background-color: #0056b3;
+      background-color: var(--accent-hover);
     }
   }
 
   .deleteButton {
-    background-color: #dc3545;
-
+    background-color: var(--danger);
+    
     &:hover {
-      background-color: #c82333;
+      filter: brightness(0.9);
     }
   }
 
   h2 {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--foreground);
     text-align: center;
   }
 }

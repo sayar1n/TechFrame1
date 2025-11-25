@@ -1,18 +1,18 @@
 .commentSection {
   margin-top: 3rem;
   padding: 1.5rem;
-  background-color: #f9f9f9;
+  background-color: var(--panel);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 
   h2 {
     text-align: left;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--foreground);
   }
 
   .error {
-    color: #e74c3c;
+    color: var(--danger);
     margin-bottom: 1rem;
   }
 
@@ -20,31 +20,31 @@
     margin-bottom: 2rem;
 
     .commentItem {
-      background-color: white;
-      border: 1px solid #eee;
+      background-color: var(--table-row);
+      border: 1px solid var(--border);
       border-radius: 6px;
       padding: 1rem;
       margin-bottom: 1rem;
 
       .commentAuthor {
         font-size: 0.9rem;
-        color: #666;
+        color: var(--foreground);
         margin-bottom: 0.5rem;
 
         strong {
-          color: #333;
+          color: var(--foreground);
         }
 
         .commentDate {
           font-size: 0.8rem;
-          color: #999;
+          color: rgba(230, 240, 255, 0.7);
           margin-left: 0.5rem;
         }
       }
 
       .commentContent {
         font-size: 1rem;
-        color: #444;
+        color: var(--foreground);
         line-height: 1.5;
       }
     }
@@ -58,21 +58,23 @@
     textarea {
       width: 100%;
       padding: 0.8rem 1rem;
-      border: 1px solid #ddd;
+      border: 1px solid var(--border);
       border-radius: 4px;
       font-size: 1rem;
       resize: vertical;
+      background: var(--table-row);
+      color: var(--foreground);
 
       &:focus {
-        border-color: #007bff;
+        border-color: var(--focus);
         outline: none;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
       }
     }
 
     .submitButton {
-      background-color: #007bff;
-      color: white;
+      background-color: var(--accent);
+      color: #fff;
       border: none;
       padding: 0.8rem 1.5rem;
       border-radius: 4px;
@@ -81,7 +83,7 @@
       transition: background-color 0.2s ease-in-out;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: var(--accent-hover);
       }
 
       &:disabled {
