@@ -8,7 +8,9 @@ from passlib.context import CryptContext
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def verify_password(plain_password, hashed_password, pwd_context):
-    return pwd_context.verify(plain_password, hashed_password)
+    # Bcrypt supports at most 72 bytes; ensure consistent truncation
+    safe_secret = plain_password.encode('utf-8')[:72]
+    return pwd_context.verify(safe_secret, hashed_password)
 
 def get_password_hash(password, pwd_context):
     return pwd_context.hash(password.encode('utf-8')[:72]) # Кодируем пароль в байты и усекаем до 72 байт

@@ -18,10 +18,6 @@
 *   **JWT:** JSON Web Token.
 *   **CRUD:** Create, Read, Update, Delete.
 
-### 1.4 Ссылки
-*   Техническое задание (предоставлено пользователем).
-*   Use Case сценарии (docs/analysis/use_cases.md).
-*   User Stories (docs/analysis/user_stories.md).
 
 ## 2. Общее описание
 

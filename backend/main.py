@@ -37,17 +37,15 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Configure CORS
 origins = [
     "http://localhost",
-    "http://localhost:3000", # Next.js frontend default port
-    "http://localhost:8000", # FastAPI backend default port
-    # Add other origins as needed in production
+    "http://localhost:3000",
+    "http://localhost:8000",
+
 ]
 
-# Объединяем предопределенные origins с вашим локальным IP-адресом и localhost:3000
-alle_origins = list(set(origins + ["http://10.0.85.2:3000", "http://localhost:3000"])) # Использование set для уникальности
-logger.info(f"Configuring CORS with allowed origins: {alle_origins}") # Добавлено логирование
+alle_origins = list(set(origins + ["http://10.0.85.2:3000", "http://localhost:3000"]))
+logger.info(f"Configuring CORS with allowed origins: {alle_origins}")
 
 app.add_middleware(
     CORSMiddleware,
@@ -68,14 +66,13 @@ async def log_requests(request: Request, call_next):
 # Password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# OAuth2PasswordBearer for JWT token
-# to get a string like this run: openssl rand -hex 32
-SECRET_KEY = "your-secret-key" # TODO: Change this in production
+#Время хранения
+SECRET_KEY = "your-secret-key" # TODO: 
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
-
+#Создание
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     to_encode = data.copy()
     if expires_delta:
